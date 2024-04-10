@@ -47,3 +47,9 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Debug
+R/debug.R
+.Rproj.user
+
+/.quarto/
