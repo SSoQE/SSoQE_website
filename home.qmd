@@ -1,0 +1,48 @@
+---
+title: "Announcement Science School on Quantitative Ecology"
+---
+
+![](photos/AI_BiodivAnthropocene.jpg){width=60% fig-align="center"}
+
+*Date:* **Monday, 23.09.2024, to Saturday, 28.09.2024**
+
+*Location:* **Seminar House of the University of Bayreuth in Wallenfels, Germany**
+
+*Organising Team:* Ondřej Mottl and Antonin Machač from Charles University Prague, Czech Republic \
+Manuel Steinbauer and Franka Gaiser from University of Bayreuth, Germany
+
+*Further Instructors:* Anna Walentowitz from the University of Bayreuth, Germany \
+Gregor Mathes from the University of Zurich, Switzerland
+
+------------------------------------------------------------------------
+
+# Welcome!
+
+Nowadays, the trend in ecology goes to open-access data which are thanks to ongoing digitalisation quite big. Hence, we believe that handling big data adequately and being able to analyse it with rigourous quantitative methods are essential skills to finish your studies in ecology successfully and to pursue a career in ecology. That's why in 2024, we are offering for the first time a joint science school between the Charles University in Prague (CZ) and the University of Bayreuth (GER) on Quantitative Ecology for master as well as PhD students. This website will be used as official communication tool. Right now, you can find the first preliminary information on the event and how to sign up for it. At a later stage, we will publish a detailed schedule and materials here.
+
+### Course Objectives
+
+At the end of the course, students can
+
+-   name and make use of different open-access databases containing various ecological and environmental data.
+-   handle and pre-process all kind of big datasets more efficiently using the programming language R.
+-   explain the purpose of and implement various up-to-the-minute analysis and modelling methods in different subdisciplines of ecology (e.g. Biogeography, Evolutionary Ecology, Paleoecology) using the programming language R.
+-   judge if chosen methods were appropriate.
+-   develop their own scientific hypotheses and test them with appropriate methodology in a reproducible manner.
+-   call students from other universties their new friends. :) 
+
+### Course Contents
+
+To achieve the stated objectives, different instructors, who are doing research in various subdisciplines of ecology (e.g. Biogeography, Evolutionary Ecology, Paleoecology), will prepare theoretical and practical input for the participants. The different topics will be centered around current research projects of the instructors, and practical exercises will be executed in R. Additionally, social events, e.g. barbecue, will offer participants the chance to make new contacts.
+
+### Course Requirements
+
+-   You are a master or PhD student of ecology or a field closely related to ecology.
+-   You know the basics in R.
+-   You're knowledge of English is sufficient to follow the lectures and actively involve in group work.
+
+### Registration
+
+If you are a student of the **Charles University in Prague (CZ)**, please contact **Ondřej Mottl** (ondrej.mottl@gmail.com).\
+If you are a student of the **University of Bayreuth (GER)**, please contact **Manuel Steinbauer** (manuel.steinbauer@uni-bayreuth.de) and **Franka Gaiser** (franka.gaiser@uni-bayreuth.de). \
+If you are a student from **another institution** please send a **short CV, letter of motivation (max. 1 page) and current enrollment certificate** to all three of us.

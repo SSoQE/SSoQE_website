@@ -1,0 +1,50 @@
+---
+title: "Team"
+format: 
+  html:
+    code-fold: false
+    code-tools: false
+---
+
+## Organising Team
+
+### Franka Gaiser
+aka " "\
+![](/photos/franka.jpg){width=120}\
+PhD Student in Quantitative Ecology\
+University of Bayreuth, Bayreuth, Germany\
+email: franka.gaiser@uni-bayreuth.de
+
+### Antonin Machač 
+aka " "\
+![](/photos/antonin-machac_orig.jpg){width=120}\
+Leader of Research Group in Evolution and Biogeography\
+IMIC Czech Academy of Sciences, Prague, Czech Republic\
+email: A.Machac@email.cz
+
+### Ondřej Mottl 
+aka "the Data Wizard"\
+![](/photos/Ondra.jpg){width=120}\
+Assistant Professor for Plant Ecology\
+Department of Botany, Faculty of Science, Charles University, Prague, Czech Republic\
+email:  ondrej.mottl@gmail.com
+
+### Manuel Steinbauer
+aka "the Confused Professor"\
+![](/photos/manuel.jpg){width=120}\
+Professor for Sport Ecology\
+Bayreuth Center of Ecology and Environmental Research, University of Bayreuth, Bayreuth, Germany\
+email: manuel.steinbauer@uni-bayreuth.de
+
+## Instructors
+
+### Gregor Mathes
+![](/photos/gregor.jpg){width=120}\
+Postdoctoral Fellow in Analytical Paleontology\
+University of Zurich, Zurich, Switzerland
+
+### Anna Walentowitz
+![](/photos/Anna.jpg){width=120}\
+Postdoctoral Fellow in Biogeography\
+University of Bayreuth, Bayreuth, Switzerland
+
