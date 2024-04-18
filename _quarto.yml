@@ -6,7 +6,7 @@ website:
   title: "Science School: Quantitative Ecology"
   navbar:
     left:
-      - href: home.qmd
+      - href: index.qmd
         text: Home
       - href: R/team.qmd
         text: Team

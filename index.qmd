@@ -1,73 +1,61 @@
 ---
-title: "Title of Your Workshop Session"
+title: "Announcement Science School on Quantitative Ecology"
 ---
 
-Date: **Date and time**
+![](photos/AI_BiodivAnthropocene.jpg){width=60% fig-align="center"}
 
-Room: **Location**
+*Date:* **Monday, 23.09.2024, to Saturday, 28.09.2024**
 
-Instructors: Instructor A, B, C
+*Location:* **Seminar House of the University of Bayreuth in Wallenfels, Germany**
+
+*Organising Team:* Ondřej Mottl from Charles University in Prague, Czech Republic and Antonin Machač from the Czech Academy of Science \
+Manuel Steinbauer and Franka Gaiser from University of Bayreuth, Germany
+
+*Further Instructors:* Anna Walentowitz from the University of Bayreuth, Germany \
+Gregor Mathes from the University of Zurich, Switzerland
 
 ------------------------------------------------------------------------
 
-::: callout-note
-## This workshop template
+## Welcome!
 
-This workshop template contains 4 pages: 
+Nowadays, the trend in ecology goes to open-access data which are thanks to ongoing digitalisation quite big. Hence, we believe that handling big data adequately and being able to analyse it with rigourous quantitative methods are essential skills to finish your studies in ecology successfully and to pursue a career in ecology. That's why in 2024, we are offering for the first time a joint science school between the Charles University in Prague (CZ) and the University of Bayreuth (GER) on Quantitative Ecology for master as well as PhD students. This website will be used as official communication tool. Right now, you can find the first preliminary information on the event and how to sign up for it. At a later stage, we will publish a detailed schedule and materials here.
 
-- Home: `index.qmd` (this page)
+::: {.callout-tip}
+## Course Objectives
 
-- About: `R/about.qmd`
+At the end of the course, students can
 
-Two content pages
-
-- Page without code: `R/part_1_prep.qmd`
-
-- Page with R code: `R/part_2_eda.qmd`
-
-It is straightforward to add more content pages: you need to create a new `.qmd` file (or copy/paste the existing ones), then link the new page inside `_quarto.yml`. 
+-   name and make use of different open-access databases containing various ecological and environmental data.
+-   handle and pre-process all kind of big datasets more efficiently using the programming language R.
+-   explain the purpose of and implement various up-to-the-minute analysis and modelling methods in different subdisciplines of ecology (e.g. Biogeography, Evolutionary Ecology, Paleoecology) using the programming language R.
+-   judge if chosen methods were appropriate.
+-   develop their own scientific hypotheses and test them with appropriate methodology in a reproducible manner.
+-   call students from other universties their new friends. :) 
 :::
 
+::: {.callout-note collapse="true"}
 
-::: callout-tip
-## Homepage of your workshop
+## Course Contents
 
-This is the **homepage** `index.qmd` for your workshop, so ideally it should contain some key information such as **time and place, instructors** and information of the course/workshop. 
+To achieve the stated objectives, different instructors, who are doing research in various subdisciplines of ecology (e.g. Biogeography, Evolutionary Ecology, Paleoecology), will prepare theoretical and practical input for the participants. The different topics will be centered around current research projects of the instructors, and practical exercises will be executed in R. Additionally, social events, e.g. barbecue, will offer participants the chance to make new contacts.
 
-It should be easy to navigate.
 :::
 
+:::{.callout-warning}
+## Course Requirements
 
-# Welcome!
+-   You are a master or PhD student of ecology or a field closely related to ecology.
+-   You know the basics in R.
+-   You're knowledge of English is sufficient to follow the lectures and actively involve in group work.
 
--   The goal of the workshop is to ... (*insert your message*)
--   For example, introduce kep concepts in machine learning, such as regularisation.
--   Workshop material can be found in the workshop [github repository](https://github.com).
-
-#### Learning Objectives
-
-At the end of the tutorial, participants will be able to
-
--   understand key concepts for ... (*insert your message*)
--   For example, training machine learning models such as regularisation.
--   another objective
-
-#### Pre-requisites
-
--   Basic familiarity with R
--   Some other knowledge
-
-
-# Schedule
-
-::: callout-tip
-## Tabular schedule
-
-It can be useful to include a tabular schedule with links.
 :::
 
+:::{.callout-important}
+## Registration
+**Deadline: 15.07.2024**
 
-|     Time      |                  Topic                   |    Presenter     |
-|:--------------:|:-------------------------------------:|:--------------:|
-| 9:00 - 10:30  | [Session 1: Preparation](R/part_1_prep.qmd) | Instructor A |
-| 10:45 - 12:00 | [Session 2: Exploratory Analysis](R/part_2_eda.qmd) | Instructor B, C |
+- If you are a student of the **Charles University in Prague (CZ)**, please contact **Ondřej Mottl** (ondrej.mottl@gmail.com).
+- If you are a student of the **University of Bayreuth (GER)**, please contact **Manuel Steinbauer** (manuel.steinbauer@uni-bayreuth.de) and **Franka Gaiser** (franka.gaiser@uni-bayreuth.de). \
+- If you are a student from **another institution** please send a **short CV, letter of motivation (max. 1 page) and current enrollment certificate** to all three of us.
+
+:::
