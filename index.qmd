@@ -54,8 +54,58 @@ To achieve the stated objectives, different instructors, who are doing research 
 ## Registration
 **Deadline: 15.07.2024**
 
-- If you are a student of the **Charles University in Prague (CZ)**, please contact **Ondřej Mottl** (ondrej.mottl@gmail.com).
-- If you are a student of the **University of Bayreuth (GER)**, please contact **Manuel Steinbauer** (manuel.steinbauer@uni-bayreuth.de) and **Franka Gaiser** (franka.gaiser@uni-bayreuth.de). \
+- If you are a student of the **Charles University in Prague (CZ)**, please contact **Ondřej Mottl** (ondrej.mottl(at)gmail.com).
+- If you are a student of the **University of Bayreuth (GER)**, please contact **Manuel Steinbauer** (manuel.steinbauer(at)uni-bayreuth.de) and **Franka Gaiser** (franka.gaiser(at)uni-bayreuth.de). \
 - If you are a student from **another institution** please send a **short CV, letter of motivation (max. 1 page) and current enrollment certificate** to all three of us.
 
 :::
+
+# Meet the Team
+
+## Organising Team
+
+### Franka Gaiser <img src="/photos/franka.jpg" align="right" width="120" />
+
+* PhD Student in Quantitative Ecology
+* 🏦University of Bayreuth, Bayreuth, Germany
+* 📬email: franka.gaiser(at)uni-bayreuth.de
+* [![ORCID](https://img.shields.io/badge/orcid-0000--0003--2600--6603-brightgreen.svg)](https://orcid.org/0009-0003-2600-6603)
+* [🔗personal webiste](https://www.spowi5.uni-bayreuth.de/en/team/Gaiser/index.php)
+
+### Antonin Machač <img src="/photos/antonin-machac_orig.jpg" align="right" width="120" />
+
+* Leader of Research Group in Evolution and Biogeography
+* 🏦IMIC Czech Academy of Sciences, Prague, Czech Republic
+* 📬email: A.Machac(at)email.cz
+* [![ORCID](https://img.shields.io/badge/orcid-0000--0001--6754--5038-brightgreen.svg)](https://orcid.org/0000-0001-6754-5038)
+* [🔗personal webiste](https://machac.weebly.com/)
+
+### Ondřej Mottl <img src="/photos/Ondra.jpg" align="right" width="120" />
+
+* Assistant Professor for Plant Ecology
+* 🏦Department of Botany, Faculty of Science, Charles University, Prague, Czech Republic
+* 📬email:  ondrej.mottl(at)gmail.com
+* [![ORCID](https://img.shields.io/badge/orcid-0000--0002--9796--5081-brightgreen.svg)](https://orcid.org/0000-0002-9796-5081)
+* [🔗personal webiste](https://ondrejmottl.github.io/)
+
+### Manuel Steinbauer <img src="/photos/manuel.jpg" align="right" width="120" />
+
+* Professor for Sport Ecology
+* 🏦Bayreuth Center of Ecology and Environmental Research, University of Bayreuth, Bayreuth, Germany
+* 📬email: manuel.steinbauer(at)uni-bayreuth.de
+* [![ORCID](https://img.shields.io/badge/orcid-0000--0002--7142--9272-brightgreen.svg)](https://orcid.org/0000-0002-7142-9272)
+* [🔗personal webiste](https://www.spowi5.uni-bayreuth.de/en/team/steinbauer/index.php)
+
+## Instructors
+
+### Gregor Mathes <img src="/photos/gregor.jpg" align="right" width="120" />
+
+* Postdoctoral Fellow in Analytical Paleontology
+* 🏦University of Zurich, Zurich, Switzerland
+* [![ORCID](https://img.shields.io/badge/orcid-0000--0002--2788--1173-brightgreen.svg)](https://orcid.org/0000-0002-2788-1173)
+
+### Anna Walentowitz <img src="/photos/Anna.jpg" align="right" width="120" />
+
+* Postdoctoral Fellow in Biogeography
+* 🏦University of Bayreuth, Bayreuth, Switzerland
+* [![ORCID](https://img.shields.io/badge/orcid-0000--0001--9720--9078-brightgreen.svg)](https://orcid.org/0000-0001-9720-9078)
