@@ -3,31 +3,32 @@ project:
   output-dir: docs
 
 website:
-  title: "Workshop Title"
+  title: "Science School of Quantitative Ecology"
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - href: R/about.qmd
-        text: About
-    right:
+  #  left:
+  #    - href: index.qmd
+  #      text: Home
+  #    - href: R/team.qmd
+  #      text: Team
+    tools:
       - icon: github
         href: https://github.com/OndrejMottl/SSoQE_website
-  sidebar:
-    style: "docked"
-    search: true
-    contents:
-      - text: Preparation
-        href: R/part_1_prep.qmd
-      - text: Part I
-        href: R/part_2_eda.qmd
-  page-navigation: true
+  #sidebar:
+  #  style: "docked"
+  #  search: true
+  #  contents:
+  #    - text: Preparation
+  #      href: R/part_1_prep.qmd
+  #    - text: Part I
+  #      href: R/part_2_eda.qmd
+  # page-navigation: true
 
 format:
   html:
-    theme: minty
+    theme: flatly
     css: styles.css
     toc: true
+    toc-depth: 2
 
 editor: visual
 
