@@ -1,24 +1,35 @@
 ---
-title: "Announcement Science School on Quantitative Ecology"
+title: "Science School on Quantitative Ecology"
 ---
 
-![](photos/AI_BiodivAnthropocene.jpg){width=60% fig-align="center"}
+:::{.callout-warning}
+## Gerenal Information
 
-*Date:* **Monday, 23.09.2024, to Saturday, 28.09.2024**
+*📅Date:* **28.09.2024 - 23.09.2024** (Monday to Saturday)
 
-*Location:* **Seminar House of the University of Bayreuth in Wallenfels, Germany**
+*🗺️Location:* **Seminar House of the University of Bayreuth in Wallenfels, Germany**
 
-*Organising Team:* Ondřej Mottl from Charles University in Prague, Czech Republic and Antonin Machač from the Czech Academy of Science \
-Manuel Steinbauer and Franka Gaiser from University of Bayreuth, Germany
+*👥Who can apply:* **Master and PhD students** of ecology or a field closely related to ecology
 
-*Further Instructors:* Anna Walentowitz from the University of Bayreuth, Germany \
-Gregor Mathes from the University of Zurich, Switzerland
+*📝Registration Deadline:* **to-be-annouced**; watch this space!
 
-------------------------------------------------------------------------
+:::
 
 ## Welcome!
 
+:::: {layout="[ 35, 65 ]"}
+::: {#first-column}
+
+![](photos/AI_BiodivAnthropocene.jpg)
+:::
+
+::: {#second-column}
+
 Nowadays, the trend in ecology goes to open-access data which are thanks to ongoing digitalisation quite big. Hence, we believe that handling big data adequately and being able to analyse it with rigourous quantitative methods are essential skills to finish your studies in ecology successfully and to pursue a career in ecology. That's why in 2024, we are offering for the first time a joint science school between the Charles University in Prague (CZ) and the University of Bayreuth (GER) on Quantitative Ecology for master as well as PhD students. This website will be used as official communication tool. Right now, you can find the first preliminary information on the event and how to sign up for it. At a later stage, we will publish a detailed schedule and materials here.
+
+:::
+::::
+
 
 ::: {.callout-tip}
 ## Course Objectives

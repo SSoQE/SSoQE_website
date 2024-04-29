@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Science School: Quantitative Ecology"
+  title: "Science School of Quantitative Ecology"
   navbar:
   #  left:
   #    - href: index.qmd
