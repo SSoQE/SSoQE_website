@@ -8,13 +8,13 @@ editor:
 :::{.callout-warning}
 ## Gerenal Information
 
-*📅Date:* **28.09.2024 - 23.09.2024** (Monday to Saturday)
+📅*Date:* **23.09.2024 - 28.09.2024** (Monday to Saturday)
 
-*🗺️Location:* **Seminar House of the University of Bayreuth in Wallenfels, Germany**
+🗺️*Location:* **Seminar House of the University of Bayreuth in Wallenfels, Germany**
 
-*👥Who can apply:* **Master and PhD students** of ecology or a field closely related to ecology
+👥*Who can apply:* **Master and PhD students** of ecology or a field closely related to ecology
 
-*📝Registration Deadline:* **to-be-annouced**; watch this space!
+📝*Registration Deadline:* **to-be-annouced**; watch this space!
 
 :::
 
@@ -30,7 +30,7 @@ editor:
 
 🌍In today's world, the ability to navigate and analyze large, open-access datasets is not just an advantage—it's essential. Whether you're aiming to excel in your academic journey or carve out a successful career in ecology, mastery of quantitative methods is key.
 
-🎓Excitingly, in 2024, [Charles University in Prague](https://cuni.cz/UKEN-1.html) (CZ) and the [University of Bayreuth](https://www.uni-bayreuth.de/en) (GER) are teaming up to launch a groundbreaking **Science School in Quantitative Ecology**. This program is tailored for both Master’s and PhD students eager to advance their skills in data analysis and ecological research.
+🎓Excitingly, in 2024, [Charles University in Prague](https://cuni.cz/UKEN-1.html) (CZ) and the [University of Bayreuth](https://www.uni-bayreuth.de/en) (GER) are teaming up to launch the **Science School in Quantitative Ecology**. This program is tailored for both Master’s and PhD students eager to advance their skills in data analysis and ecological research.
 
 🌱You’ve found the official hub for all things related to the school. Here, you’ll get early access to preliminary information, registration details, and later on, the complete event schedule and educational materials. Stay tuned and get ready to transform your understanding of ecology with us!
 
