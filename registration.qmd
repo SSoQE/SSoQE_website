@@ -1,0 +1,23 @@
+---
+title: "Registration 📝"
+format: html
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+:::{.callout-important}
+**Apply by June XXth, 2024** 
+
+Send an email📬 to *ssoqe@natur.cuni.cz* with:
+
+* a certificate of enrolment
+* motivation letter (max. 1 page) in one PDF  
+
+:::
+
+We accept applications from Master’s and PhD students in environmental sciences, geography, geo-ecology, and ecology or any related field. Number of participants is limited to 25 students.
+
+Applicants can expect a response by XXXXX, XXth 2024.
+
+In case of acceptance to the science school, we expect a binding confirmation of participation by XXth, 2024. If no longer interested, we kindly ask you to inform us promptly as a spontaneous cancellation leads to the forfeiture of the place and other students no longer have the opportunity to participate in the Science School. Furthermore, additional costs and administrative work arise for us in case of spontaneous cancellation.

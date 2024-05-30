@@ -5,11 +5,15 @@ project:
 website:
   title: "Science School of Quantitative Ecology"
   navbar:
-  #  left:
-  #    - href: index.qmd
-  #      text: Home
-  #    - href: R/team.qmd
-  #      text: Team
+    left:
+      - href: about.qmd
+        text: About the Workshop
+      - href: team.qmd
+        text: Meet the Team
+      - href: logistics.qmd
+        text: Logistics
+      - href: registration.qmd
+        text: Registration
     tools:
       - icon: github
         href: https://github.com/OndrejMottl/SSoQE_website

@@ -1,0 +1,40 @@
+---
+title: "About"
+format: html
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+::: {.callout-tip}
+## Course Objectives🎯
+
+At the end of the course, you'll be able to:
+
+* 🗃️ Discover and utilize various open-access databases full of ecological and environmental data.
+* 💻 Master the art of handling and preprocessing large datasets efficiently using the [R programming language](https://en.wikipedia.org/wiki/R_(programming_language)).
+- 🌐 Clearly explain and apply cutting-edge analysis and modeling methods across different ecological subdisciplines like Biogeography, Evolutionary Ecology, and Paleoecology
+* 🕵️‍♂️ Critically evaluate the appropriateness of the methods you've employed.
+* 🔬 Formulate your own scientific hypotheses and rigorously test them using suitable methods, ensuring your work is reproducible.
+* 🤝 Make lasting connections and call students from other universities your new friends! 😊
+:::
+
+## Course Contents 📚
+Get ready to dive deep into the fascinating world of ecology! Our [diverse team of instructors](#meet-the-team), who are active researchers in various ecological subdisciplines, will guide you through both theoretical and practical aspects of the course. Here's what you can expect:
+
+* **Engaging Lectures**: Drawn directly from the instructors' current research projects, ensuring you learn the most up-to-date information.
+* **Hands-On Practice**: Sharpen your skills with practical exercises in R, tailored to help you tackle real-world data challenges.
+* **Social Events**: From barbecues to informal gatherings, you'll have plenty of opportunities to relax, network, and forge new friendships with fellow participants. 
+
+:::{.callout-note}
+## Course Requirements 📝
+To make sure you get the most out of this program, you'll need:
+
+* 🎓 To be a Master’s or PhD student in Ecology or a closely related field.
+* 🖥️ Basic proficiency in [R programming language](https://en.wikipedia.org/wiki/R_(programming_language)). Don't worry, you don't need to be an expert!
+* 🗣️ Good command of English to comfortably follow the lectures and engage actively in group discussions and activities.
+
+:::
+
+## Costs💰
+The science school is free of charge, and it includes accommodation, lectures, meals, and materials. Costs for travelling and other meals need to be covered by the applicant. However, the organiser may cover travel expenses up to XX €.

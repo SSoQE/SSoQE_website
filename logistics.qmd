@@ -1,0 +1,33 @@
+---
+title: "Logistics🏕️🗺️"
+format: html
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+## Venue🏡
+The school will take place at Seminar House of the University of Bayreuth in Wallenfels, Germany. Wallenfels is a small village in the middle of the Franconian Forest, a region in the north of Bavaria, Germany. The village is located in a valley surrounded by hills and forests. The nearest city is Kronach, which is 20 km away. The nearest train station is in Kronach, and the nearest airport is in Nuremberg.
+
+## Food🍱
+The organiser will provide breakfast, lunch, and dinner free of chanrge. If you have any dietary preferences and/or restrictions (vegetarian/vegan/...), please let us know in advance.
+
+## Accommodation🛌
+The participants will be accommodated in shared rooms at the Seminar House of the University of Bayreuth. The rooms are equipped with bunk beds, a desk, and a wardrobe. The bathrooms are shared. The participants are expected to bring their own towels, and toiletries.
+
+## Travel🚗
+The participants are expected to organize their travel. However, the organiser will refund participants travel expenses up to XX €. The participants are expected to arrive in the morning of the 23rd of Setember and leave in the eveneing on the 28th of September. The nearest train station is in Kronach, and the nearest airport is in Nuremberg. The is possibility to park a car at the Seminar House. If you want to drive a car and want to share the ride with other participants, please let us know in advance.
+
+## What to bring🎒
+- Laptop
+- Towels
+- Toiletries
+- Warm clothes
+- Hiking shoes/Raincoat (we might go hiking in the forest)
+- snacks
+- water bottle
+- music instrument
+- good mood
+
+
+
