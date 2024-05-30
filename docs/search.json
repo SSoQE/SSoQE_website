@@ -2,21 +2,21 @@
   {
     "objectID": "team.html",
     "href": "team.html",
-    "title": "Meet the Team 👥",
+    "title": "Meet the Team👥",
     "section": "",
     "text": "PhD Student in Quantitative Ecology\n🏦University of Bayreuth, Bayreuth, Germany\n📬email: franka.gaiser(at)uni-bayreuth.de\n\n🔗personal webiste\n\n\n\n\n\nLeader of Research Group in Evolution and Biogeography\n🏦IMIC Czech Academy of Sciences, Prague, Czech Republic\n📬email: A.Machac(at)email.cz\n\n🔗personal webiste\n\n\n\n\n\nAssistant Professor for Plant Ecology\n🏦Department of Botany, Faculty of Science, Charles University, Prague, Czech Republic\n📬email: ondrej.mottl(at)gmail.com\n\n🔗personal webiste\n\n\n\n\n\nProfessor for Sport Ecology\n🏦Bayreuth Center of Ecology and Environmental Research, University of Bayreuth, Bayreuth, Germany\n📬email: manuel.steinbauer(at)uni-bayreuth.de\n\n🔗personal webiste"
   },
   {
     "objectID": "team.html#organising-team",
     "href": "team.html#organising-team",
-    "title": "Meet the Team 👥",
+    "title": "Meet the Team👥",
     "section": "",
     "text": "PhD Student in Quantitative Ecology\n🏦University of Bayreuth, Bayreuth, Germany\n📬email: franka.gaiser(at)uni-bayreuth.de\n\n🔗personal webiste\n\n\n\n\n\nLeader of Research Group in Evolution and Biogeography\n🏦IMIC Czech Academy of Sciences, Prague, Czech Republic\n📬email: A.Machac(at)email.cz\n\n🔗personal webiste\n\n\n\n\n\nAssistant Professor for Plant Ecology\n🏦Department of Botany, Faculty of Science, Charles University, Prague, Czech Republic\n📬email: ondrej.mottl(at)gmail.com\n\n🔗personal webiste\n\n\n\n\n\nProfessor for Sport Ecology\n🏦Bayreuth Center of Ecology and Environmental Research, University of Bayreuth, Bayreuth, Germany\n📬email: manuel.steinbauer(at)uni-bayreuth.de\n\n🔗personal webiste"
   },
   {
     "objectID": "team.html#guest-instructors",
     "href": "team.html#guest-instructors",
-    "title": "Meet the Team 👥",
+    "title": "Meet the Team👥",
     "section": "Guest instructors 🧙",
     "text": "Guest instructors 🧙\n\nGregor Mathes \n\nPostdoctoral Fellow in Analytical Paleontology\n🏦University of Zurich, Zurich, Switzerland\n\n\n\n\nAnna Walentowitz \n\nPostdoctoral Fellow in Biogeography\n🏦University of Bayreuth, Bayreuth, Switzerland"
   },
@@ -53,7 +53,7 @@
     "href": "logistics.html#travel",
     "title": "Logistics🏕️🗺️",
     "section": "Travel🚗",
-    "text": "Travel🚗\nThe participants are expected to organize their travel. However, the organiser will refund participants travel expenses up to XX €. The participants are expected to arrive in the morning of the 23rd of Setember and leave in the eveneing on the 28th of September. The nearest train station is in Kronach, and the nearest airport is in Nuremberg. The is possibility to park a car at the Seminar House. If you want to drive a car and want to share the ride with other participants, please let us know in advance."
+    "text": "Travel🚗\nThe participants are expected to organize their travel. However, the organiser will refund participants travel expenses up to -to-be-specified- €. The participants are expected to arrive in the morning of the 23rd of Setember and leave in the eveneing on the 28th of September. The nearest train station is in Kronach, and the nearest airport is in Nuremberg. The is possibility to park a car at the Seminar House. If you want to drive a car and want to share the ride with other participants, please let us know in advance."
   },
   {
     "objectID": "logistics.html#what-to-bring",
@@ -65,23 +65,23 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About the Workshop",
     "section": "",
-    "text": "Course Objectives🎯\n\n\n\nAt the end of the course, you’ll be able to:\n\n🗃️ Discover and utilize various open-access databases full of ecological and environmental data.\n💻 Master the art of handling and preprocessing large datasets efficiently using the R programming language.\n🌐 Clearly explain and apply cutting-edge analysis and modeling methods across different ecological subdisciplines like Biogeography, Evolutionary Ecology, and Paleoecology\n🕵️‍♂️ Critically evaluate the appropriateness of the methods you’ve employed.\n🔬 Formulate your own scientific hypotheses and rigorously test them using suitable methods, ensuring your work is reproducible.\n🤝 Make lasting connections and call students from other universities your new friends! 😊"
+    "text": "Get ready to dive deep into the fascinating world of ecology! Our diverse team of instructors, who are active researchers in various ecological subdisciplines, will guide you through both theoretical and practical aspects of the course. Here’s what you can expect:\n\nEngaging Lectures🔬: Drawn directly from the instructors’ current research projects, ensuring you learn the most up-to-date information.\nHands-On Practice🤝: Sharpen your skills with practical exercises in R, tailored to help you tackle real-world data challenges.\nSocial Events😊: From barbecues to informal gatherings, you’ll have plenty of opportunities to relax, network, and forge new friendships with fellow participants.\n\n\n\n\n\n\n\n\nCourse Content 🎯\n\n\n\nDive into a diverse range of exciting subjects designed to empower you with advanced ecological analysis skills and a deep understanding of the environment. By the end of this course, you’ll be equipped to tackle pressing ecological questions such as:\n\n🌐 Quantitative Ecology Fundamentals: Understand why we use quantitative analysis in ecology, exploring the differences between data exploration, inference, and prediction.\n🛠️ Mastering Project Management: Gain proficiency in managing large, reproducible ecological projects with tools like Git/GitHub, and learn the art of clean coding and effective project planning.\n🌿 Plant Taxonomy Deep Dive: Gain a comprehensive overview of resources regarding plant taxonomy, occurrences, and traits, essential for accurate ecological research.\n🌱 From Past to Present: Seamlessly integrate paleoecological data with current plant species data to uncover ecological trends. Learn to address macro-ecological questions using paleontological data, connecting ancient life with today’s plant species.\n🌍 Evolution on a Grand Scale: Delve into macroevolution to study the processes that shape life on Earth over millions of years.\n\n\n\nAdditional Topics We Might Cover:\n\n💻 Coding for Ecologists: Enhance your coding skills in R for a variety of applications from functional programming to developing R packages.\n🎲 Statistical Sophistication: Get to grips with Bayesian basics, causal inference, multivariate analysis, and advanced modeling techniques like hiearchical models.\n🤖 Tech Meets Ecology: Explore the intersection of machine learning, deep learning, AI, and remote sensing in ecological research."
   },
   {
-    "objectID": "about.html#course-contents",
-    "href": "about.html#course-contents",
-    "title": "About",
-    "section": "Course Contents 📚",
-    "text": "Course Contents 📚\nGet ready to dive deep into the fascinating world of ecology! Our diverse team of instructors, who are active researchers in various ecological subdisciplines, will guide you through both theoretical and practical aspects of the course. Here’s what you can expect:\n\nEngaging Lectures: Drawn directly from the instructors’ current research projects, ensuring you learn the most up-to-date information.\nHands-On Practice: Sharpen your skills with practical exercises in R, tailored to help you tackle real-world data challenges.\nSocial Events: From barbecues to informal gatherings, you’ll have plenty of opportunities to relax, network, and forge new friendships with fellow participants.\n\n\n\n\n\n\n\nCourse Requirements 📝\n\n\n\nTo make sure you get the most out of this program, you’ll need:\n\n🎓 To be a Master’s or PhD student in Ecology or a closely related field.\n🖥️ Basic proficiency in R programming language. Don’t worry, you don’t need to be an expert!\n🗣️ Good command of English to comfortably follow the lectures and engage actively in group discussions and activities."
+    "objectID": "about.html#general-informartion",
+    "href": "about.html#general-informartion",
+    "title": "About the Workshop",
+    "section": "",
+    "text": "Get ready to dive deep into the fascinating world of ecology! Our diverse team of instructors, who are active researchers in various ecological subdisciplines, will guide you through both theoretical and practical aspects of the course. Here’s what you can expect:\n\nEngaging Lectures🔬: Drawn directly from the instructors’ current research projects, ensuring you learn the most up-to-date information.\nHands-On Practice🤝: Sharpen your skills with practical exercises in R, tailored to help you tackle real-world data challenges.\nSocial Events😊: From barbecues to informal gatherings, you’ll have plenty of opportunities to relax, network, and forge new friendships with fellow participants.\n\n\n\n\n\n\n\n\nCourse Content 🎯\n\n\n\nDive into a diverse range of exciting subjects designed to empower you with advanced ecological analysis skills and a deep understanding of the environment. By the end of this course, you’ll be equipped to tackle pressing ecological questions such as:\n\n🌐 Quantitative Ecology Fundamentals: Understand why we use quantitative analysis in ecology, exploring the differences between data exploration, inference, and prediction.\n🛠️ Mastering Project Management: Gain proficiency in managing large, reproducible ecological projects with tools like Git/GitHub, and learn the art of clean coding and effective project planning.\n🌿 Plant Taxonomy Deep Dive: Gain a comprehensive overview of resources regarding plant taxonomy, occurrences, and traits, essential for accurate ecological research.\n🌱 From Past to Present: Seamlessly integrate paleoecological data with current plant species data to uncover ecological trends. Learn to address macro-ecological questions using paleontological data, connecting ancient life with today’s plant species.\n🌍 Evolution on a Grand Scale: Delve into macroevolution to study the processes that shape life on Earth over millions of years.\n\n\n\nAdditional Topics We Might Cover:\n\n💻 Coding for Ecologists: Enhance your coding skills in R for a variety of applications from functional programming to developing R packages.\n🎲 Statistical Sophistication: Get to grips with Bayesian basics, causal inference, multivariate analysis, and advanced modeling techniques like hiearchical models.\n🤖 Tech Meets Ecology: Explore the intersection of machine learning, deep learning, AI, and remote sensing in ecological research."
   },
   {
     "objectID": "about.html#costs",
     "href": "about.html#costs",
-    "title": "About",
-    "section": "Costs💰",
-    "text": "Costs💰\nThe science school is free of charge, and it includes accommodation, lectures, meals, and materials. Costs for travelling and other meals need to be covered by the applicant. However, the organiser may cover travel expenses up to XX €."
+    "title": "About the Workshop",
+    "section": "Costs 💰",
+    "text": "Costs 💰\nThe science school is free of charge, and it includes accommodation, lectures, meals, and materials. Costs for travelling and other meals need to be covered by the applicant. However, the organiser may cover travel expenses up to -to-be-specified- €."
   },
   {
     "objectID": "index.html",
@@ -102,13 +102,13 @@
     "href": "index.html#page-navigation",
     "title": "Science School on Quantitative Ecology",
     "section": "Page Navigation",
-    "text": "Page Navigation\n🔍Explore the following sections to learn more about the school:\n\nAbout the School\nMeet the Team\nLogistics\nRegistration"
+    "text": "Page Navigation\n🔍Explore the following sections to learn more about the school:\n\nAbout the School🎓\nMeet the Team👥\nLogistics🏕️\nRegistration📝"
   },
   {
     "objectID": "registration.html",
     "href": "registration.html",
-    "title": "Registration 📝",
+    "title": "Registration📝",
     "section": "",
-    "text": "Important\n\n\n\nApply by June XXth, 2024\nSend an email📬 to ssoqe@natur.cuni.cz with:\n\na certificate of enrolment\nmotivation letter (max. 1 page) in one PDF\n\n\n\nWe accept applications from Master’s and PhD students in environmental sciences, geography, geo-ecology, and ecology or any related field. Number of participants is limited to 25 students.\nApplicants can expect a response by XXXXX, XXth 2024.\nIn case of acceptance to the science school, we expect a binding confirmation of participation by XXth, 2024. If no longer interested, we kindly ask you to inform us promptly as a spontaneous cancellation leads to the forfeiture of the place and other students no longer have the opportunity to participate in the Science School. Furthermore, additional costs and administrative work arise for us in case of spontaneous cancellation."
+    "text": "Course Requirements 📝\n\n\n\nTo make sure you get the most out of this program, you’ll need:\n\n🎓 To be a Master’s or PhD student in Ecology or a closely related field.\n🖥️ Basic proficiency in R programming language. Don’t worry, you don’t need to be an expert!\n🗣️ Good command of English to comfortably follow the lectures and engage actively in group discussions and activities.\n\n\n\nWe accept applications from Master’s and PhD students in environmental sciences, geography, geo-ecology, and ecology or any related field. Number of participants is limited to 25 students.\nApplicants can expect a response by -to-be-specified- 2024.\nIn case of acceptance to the science school, we expect a binding confirmation of participation by -to-be-specified- 2024. If no longer interested, we kindly ask you to inform us promptly as a spontaneous cancellation leads to the forfeiture of the place and other students no longer have the opportunity to participate in the Science School. Furthermore, additional costs and administrative work arise for us in case of spontaneous cancellation.\n\n\n\n\n\n\nImportant\n\n\n\nApply by -to-be-specified- 2024\nSend an email📬 to ssoqe@natur.cuni.cz with:\n\na certificate of enrolment\nmotivation letter (max. 1 page) in one PDF"
   }
 ]
