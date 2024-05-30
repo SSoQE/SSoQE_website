@@ -1,5 +1,5 @@
 ---
-title: "Meet the Team 👥"
+title: "Meet the Team👥"
 format: html
 editor: 
   markdown: 

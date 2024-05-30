@@ -41,7 +41,7 @@ editor:
 
 🔍Explore the following sections to learn more about the school:
 
- * [About the School](about.qmd)
- * [Meet the Team](team.qmd)
- * [Logistics](logistics.qmd)
- * [Registration](registration.qmd)
+ * [About the School🎓](about.qmd)
+ * [Meet the Team👥](team.qmd)
+ * [Logistics🏕️](logistics.qmd)
+ * [Registration📝](registration.qmd)
