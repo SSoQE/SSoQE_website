@@ -1,12 +1,12 @@
 ---
-title: "About the Workshop"
+title: "About the Workshop: Science School of Quantitative Ecology"
 format: html
 editor: 
   markdown: 
     wrap: sentence
 ---
 
-## General informartion 📚
+## General information 📚
 Get ready to dive deep into the fascinating world of ecology! Our [diverse team of instructors](team.qmd), who are active researchers in various ecological subdisciplines, will guide you through both theoretical and practical aspects of the course. Here's what you can expect:
 
 * **Engaging Lectures**🔬: Drawn directly from the instructors' current research projects, ensuring you learn the most up-to-date information.
