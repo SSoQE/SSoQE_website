@@ -51,5 +51,5 @@ editor:
 ### Anna Walentowitz <img src="/photos/Anna.jpg" align="right" width="120" />
 
 * Postdoctoral Fellow in Biogeography
-* 🏦University of Bayreuth, Bayreuth, Switzerland
+* 🏦University of Bayreuth, Bayreuth, Germany
 * [![ORCID](https://img.shields.io/badge/orcid-0000--0001--9720--9078-brightgreen.svg)](https://orcid.org/0000-0001-9720-9078)
