@@ -1,268 +1,121 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Science School on Quantitative Ecology",
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "Meet the Team👥",
     "section": "",
-    "text": "Gerenal Information\n\n\n\n📅Date: 23.09.2024 - 28.09.2024 (Monday to Saturday)\n🗺️Location: Seminar House of the University of Bayreuth in Wallenfels, Germany\n👥Who can apply: Master and PhD students of ecology or a field closely related to ecology\n📝Registration Deadline: to-be-annouced; watch this space!"
+    "text": "PhD Student in Quantitative Ecology\n🏦University of Bayreuth, Bayreuth, Germany\n📬email: franka.gaiser(at)uni-bayreuth.de\n\n🔗personal webiste\n\n\n\n\n\nLeader of Research Group in Evolution and Biogeography\n🏦IMIC Czech Academy of Sciences, Prague, Czech Republic\n📬email: A.Machac(at)email.cz\n\n🔗personal webiste\n\n\n\n\n\nAssistant Professor for Plant Ecology\n🏦Department of Botany, Faculty of Science, Charles University, Prague, Czech Republic\n📬email: ondrej.mottl(at)gmail.com\n\n🔗personal webiste\n\n\n\n\n\nProfessor for Sport Ecology\n🏦Bayreuth Center of Ecology and Environmental Research, University of Bayreuth, Bayreuth, Germany\n📬email: manuel.steinbauer(at)uni-bayreuth.de\n\n🔗personal webiste"
   },
   {
-    "objectID": "part_2_eda.html",
-    "href": "part_2_eda.html",
-    "title": "Part I",
+    "objectID": "team.html#organising-team",
+    "href": "team.html#organising-team",
+    "title": "Meet the Team👥",
     "section": "",
-    "text": "Page with R code\n\n\n\nThis page contains an example template for a lab session, where R code and results are displayed here.\nYou can find more information on how to include code in Quarto website here.\nYou can experiment with code-fold and code-tools in the yaml header above to change how the code cells look like.",
-    "crumbs": [
-      "Home",
-      "Part I"
-    ]
+    "text": "PhD Student in Quantitative Ecology\n🏦University of Bayreuth, Bayreuth, Germany\n📬email: franka.gaiser(at)uni-bayreuth.de\n\n🔗personal webiste\n\n\n\n\n\nLeader of Research Group in Evolution and Biogeography\n🏦IMIC Czech Academy of Sciences, Prague, Czech Republic\n📬email: A.Machac(at)email.cz\n\n🔗personal webiste\n\n\n\n\n\nAssistant Professor for Plant Ecology\n🏦Department of Botany, Faculty of Science, Charles University, Prague, Czech Republic\n📬email: ondrej.mottl(at)gmail.com\n\n🔗personal webiste\n\n\n\n\n\nProfessor for Sport Ecology\n🏦Bayreuth Center of Ecology and Environmental Research, University of Bayreuth, Bayreuth, Germany\n📬email: manuel.steinbauer(at)uni-bayreuth.de\n\n🔗personal webiste"
   },
   {
-    "objectID": "part_2_eda.html#a-cancer-modeling-example",
-    "href": "part_2_eda.html#a-cancer-modeling-example",
-    "title": "Part I",
-    "section": "A Cancer Modeling Example",
-    "text": "A Cancer Modeling Example\nExercise on analysis of miRNA, mRNA and protein data from the paper Aure et al, Integrated analysis reveals microRNA networks coordinately expressed with key proteins in breast cancer, Genome Medicine, 2015.\nPlease run the code provided to replicate some of the analyses. Make sure you can explain what all the analysis steps do and that you understand all the results.\nIn addition, there are some extra tasks (Task 1), where no R code is provided. Please do these tasks when you have time available at the end of the lab.\n\nLoad the data\nRead the data, and convert to matrix format.\n\nmrna &lt;- read.table(\"data/data_example.txt\", header=T, sep=\"\\t\", dec=\".\")\n\n# Convert to matrix format\n\nmrna &lt;- as.matrix(mrna)\n\nPrint the data\n\nmrna[1:4, 1:4]\n\n      OSL2R.3002T4 OSL2R.3005T1 OSL2R.3013T1 OSL2R.3030T2\nACACA      1.60034     -0.49087     -0.26553     -0.27857\nANXA1     -2.42501     -0.05416     -0.46478     -2.18393\nAR         0.39615     -0.43348     -0.10232      0.58299\nBAK1       0.78627      0.39897      0.22598     -1.31202\n\n\nVisualise the overall distribution of expression levels by histogram\n\nhist(mrna, nclass=40, xlim=c(-5,5), col=\"lightblue\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTask 1\n\n\n\nThis is a callout-note, and it can be quite useful for exercises. You can find more about callout here.\nExample: Extend the above analysis to cover all genes.",
-    "crumbs": [
-      "Home",
-      "Part I"
-    ]
+    "objectID": "team.html#guest-instructors",
+    "href": "team.html#guest-instructors",
+    "title": "Meet the Team👥",
+    "section": "Guest instructors 🧙",
+    "text": "Guest instructors 🧙\n\nGregor Mathes \n\nPostdoctoral Fellow in Analytical Paleontology\n🏦University of Zurich, Zurich, Switzerland\n\n\n\n\nAnna Walentowitz \n\nPostdoctoral Fellow in Biogeography\n🏦University of Bayreuth, Bayreuth, Germany"
+  },
+  {
+    "objectID": "logistics.html",
+    "href": "logistics.html",
+    "title": "Logistics🏕️🗺️",
+    "section": "",
+    "text": "The school will take place at Seminar House of the University of Bayreuth in Wallenfels, Germany. Wallenfels is a small village in the middle of the Franconian Forest, a region in the north of Bavaria, Germany. The village is located in a valley surrounded by hills and forests.\n\n\n\n\n\n\n\n\n\n\n\nThe participants will be accommodated in shared rooms at the Seminar House of the University of Bayreuth. The rooms are equipped with bunk beds, a desk, and a wardrobe. The bathrooms are shared. The participants are expected to bring their own towels and toiletries."
+  },
+  {
+    "objectID": "logistics.html#venue-and-accommodation",
+    "href": "logistics.html#venue-and-accommodation",
+    "title": "Logistics🏕️🗺️",
+    "section": "",
+    "text": "The school will take place at Seminar House of the University of Bayreuth in Wallenfels, Germany. Wallenfels is a small village in the middle of the Franconian Forest, a region in the north of Bavaria, Germany. The village is located in a valley surrounded by hills and forests.\n\n\n\n\n\n\n\n\n\n\n\nThe participants will be accommodated in shared rooms at the Seminar House of the University of Bayreuth. The rooms are equipped with bunk beds, a desk, and a wardrobe. The bathrooms are shared. The participants are expected to bring their own towels and toiletries."
+  },
+  {
+    "objectID": "logistics.html#food",
+    "href": "logistics.html#food",
+    "title": "Logistics🏕️🗺️",
+    "section": "Food🍱",
+    "text": "Food🍱\nThe organisers will provide breakfast, lunch, and dinner free of charge.\n\n\n\n\n\n\nWarning\n\n\n\nIf you have any dietary preferences and/or restrictions (vegetarian/vegan/…), please let us know in advance."
+  },
+  {
+    "objectID": "logistics.html#travel",
+    "href": "logistics.html#travel",
+    "title": "Logistics🏕️🗺️",
+    "section": "Travel🚗",
+    "text": "Travel🚗\nThe participants are expected to organize their travel. However, the organisers may refund participants certain travel expenses. The participants are expected to arrive in the morning of the 23rd of September and leave in the afternoon on the 28th of September. The organisers will most likely organise a shuttle service from Bayreuth. The nearest train station to Wallenfels is in Kronach, which is 20 km away, and the nearest airport is in Nuremberg. The is a possibility to park a car at the Seminar House. If you want to drive a car and want to share the ride with other participants, please let us know in advance."
+  },
+  {
+    "objectID": "logistics.html#what-to-bring",
+    "href": "logistics.html#what-to-bring",
+    "title": "Logistics🏕️🗺️",
+    "section": "What to bring🎒",
+    "text": "What to bring🎒\n\n\n\n\n\n\nWe recommend to pack\n\n\n\n\nLaptop + charger\nTowels\nToiletries\nWarm clothes\nHiking shoes/Raincoat (we might go hiking in the forest)\nSnacks\nWater bottle\nMusic instrument\nGood mood"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About the Workshop🎓",
     "section": "",
-    "text": "About page\n\n\n\nThis page contains some elaborated background information about your workshop, or the instructors.\n\n\nFor example: A central problem in machine learning is how to make an algorithm perform well not just on the training data, but also on new inputs. Many strategies in machine learning are explicitly designed to reduce this test error, possibly at the expense of increased training error. These strategies are collectively known as regularisation and they are instrumental for good performance of any kind of prediction or classification model, especially in the context of small data (many features, few samples).\nIn the hands-on tutorial we will use R to perform an integrated analysis of multi-omics data with penalised regression.\n\nContact\nInstructor A: contact\nInstructor B: contact\nInstructor C: contact"
+    "text": "Get ready to dive deep into the fascinating world of ecology! Our diverse team of instructors, who are active researchers in various ecological subdisciplines, will guide you through both theoretical and practical aspects of the course. Here’s what you can expect:\n\nEngaging Lectures🔬: Drawn directly from the instructors’ current research projects, ensuring you learn the most up-to-date information.\nHands-On Practice🤝: Sharpen your skills with practical exercises in R, tailored to help you tackle real-world data challenges.\nSocial Events😊: From barbecues to informal gatherings, you’ll have plenty of opportunities to relax, network, and forge new friendships with fellow participants."
   },
   {
-    "objectID": "part_1_prep.html",
-    "href": "part_1_prep.html",
-    "title": "Preparation",
+    "objectID": "about.html#general-information",
+    "href": "about.html#general-information",
+    "title": "About the Workshop🎓",
     "section": "",
-    "text": "Page without code\n\n\n\nThis page contains an example for some structured preparation information for a workshop. No code is executed here.\nHere are some preparation information for the participants.",
-    "crumbs": [
-      "Home",
-      "Preparation"
-    ]
+    "text": "Get ready to dive deep into the fascinating world of ecology! Our diverse team of instructors, who are active researchers in various ecological subdisciplines, will guide you through both theoretical and practical aspects of the course. Here’s what you can expect:\n\nEngaging Lectures🔬: Drawn directly from the instructors’ current research projects, ensuring you learn the most up-to-date information.\nHands-On Practice🤝: Sharpen your skills with practical exercises in R, tailored to help you tackle real-world data challenges.\nSocial Events😊: From barbecues to informal gatherings, you’ll have plenty of opportunities to relax, network, and forge new friendships with fellow participants."
   },
   {
-    "objectID": "part_1_prep.html#software",
-    "href": "part_1_prep.html#software",
-    "title": "Preparation",
-    "section": "Software",
-    "text": "Software\nIn this workshop we will be using R. You can either\n\nhave R and Rstudio installed on your laptop\nor, use Posit cloud (formerly Rstudio Cloud).\n\nPosit cloud is free of charge for personal users, yet you need to sign up for a new user account and have internet connection.\nThe R package we are using is glmnet.",
-    "crumbs": [
-      "Home",
-      "Preparation"
-    ]
+    "objectID": "about.html#course-content",
+    "href": "about.html#course-content",
+    "title": "About the Workshop🎓",
+    "section": "Course Content 🎯",
+    "text": "Course Content 🎯\n\n\n\n\n\n\nWhat to expect\n\n\n\nDive into a diverse range of exciting subjects designed to empower you with advanced ecological analysis skills and a deep understanding of the environment. By the end of this course, you’ll be equipped to tackle pressing ecological questions such as:\n\n🌐 Quantitative Ecology Fundamentals: Understand why we use quantitative analysis in ecology, exploring the differences between data exploration, inference, and prediction.\n🛠️ Mastering Project Management: Gain proficiency in managing large, reproducible ecological projects with tools like Git/GitHub, and learn the art of clean coding and effective project planning.\n🌿 Plant Taxonomy Deep Dive: Gain a comprehensive overview of resources regarding plant taxonomy, occurrences, and traits, essential for accurate (paleo)ecological research.\n🌱 From Past to Present: Seamlessly integrate paleoecological data with current plant species data to uncover ecological trends. Learn to address macro-ecological questions using paleontological data, connecting ancient life with today’s plant species.\n🌍 Evolution of Ecological Patterns: Delve into (paleo)ecological patterns on grand scales to study the processes that have shaped life on Earth over millions of years with the help of phylogenies.\n\n\n\nAdditional Topics We Might Cover:\n\n💻 Coding for Ecologists: Enhance your coding skills in R for a variety of applications from functional programming to developing R packages.\n🎲 Statistical Sophistication: Get to grips with Bayesian basics, causal inference, multivariate analysis, and advanced modeling techniques like hierarchical models.\n🤖 Tech Meets (Paleo)Ecology: Explore the intersection of machine learning, deep learning, AI, and remote sensing in (paleo)ecological research."
   },
   {
-    "objectID": "part_1_prep.html#data",
-    "href": "part_1_prep.html#data",
-    "title": "Preparation",
-    "section": "Data",
-    "text": "Data\nThe datasets we use can be found here (insert link).",
-    "crumbs": [
-      "Home",
-      "Preparation"
-    ]
+    "objectID": "about.html#costs",
+    "href": "about.html#costs",
+    "title": "About the Workshop🎓",
+    "section": "Costs 💰",
+    "text": "Costs 💰\n\n\n\n\n\n\nImportant\n\n\n\nThe science school is free of charge, and it includes accommodation, lectures, main meals, and materials. Costs for travelling need to be covered by the applicant. However, the organisers may be able to reimburse some travel expenses. See details about the logistics."
   },
   {
-    "objectID": "part_1_prep.html#code",
-    "href": "part_1_prep.html#code",
-    "title": "Preparation",
-    "section": "Code",
-    "text": "Code\nThe R scripts used in part 1 and part 2 can be found here (insert link).",
-    "crumbs": [
-      "Home",
-      "Preparation"
-    ]
+    "objectID": "about.html#credits-and-certificates",
+    "href": "about.html#credits-and-certificates",
+    "title": "About the Workshop🎓",
+    "section": "Credits and Certificates 📜",
+    "text": "Credits and Certificates 📜\nAfter the course, each participant will be eligible for:\n\nCertificate of Attendance validated by the University of Bayreuth and Charles University\nCredits: If you are a student of either of the two hosting universities, you should sign up the appropriate course to receive credits\n\nUnversity of Bayreuth: Fak220605: Paleoecology and paleobiology\nCharles University: MB120C28: Science School on Quantitative Ecology !!! NOTE that, sadly, this course will NOT be credited this run; only starting from academic year 2024/2025 !!!"
   },
   {
-    "objectID": "part_1_prep.html#resources",
-    "href": "part_1_prep.html#resources",
-    "title": "Preparation",
-    "section": "Resources",
-    "text": "Resources\nLecture notes (insert link)\nLab notes (insert link)",
-    "crumbs": [
-      "Home",
-      "Preparation"
-    ]
-  },
-  {
-    "objectID": "R/part_2_eda.html",
-    "href": "R/part_2_eda.html",
-    "title": "Part I",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Science School on Quantitative Ecology",
     "section": "",
-    "text": "Page with R code\n\n\n\nThis page contains an example template for a lab session, where R code and results are displayed here.\nYou can find more information on how to include code in Quarto website here.\nYou can experiment with code-fold and code-tools in the yaml header above to change how the code cells look like.",
-    "crumbs": [
-      "Home",
-      "Part I"
-    ]
-  },
-  {
-    "objectID": "R/part_2_eda.html#a-cancer-modeling-example",
-    "href": "R/part_2_eda.html#a-cancer-modeling-example",
-    "title": "Part I",
-    "section": "A Cancer Modeling Example",
-    "text": "A Cancer Modeling Example\nExercise on analysis of miRNA, mRNA and protein data from the paper Aure et al, Integrated analysis reveals microRNA networks coordinately expressed with key proteins in breast cancer, Genome Medicine, 2015.\nPlease run the code provided to replicate some of the analyses. Make sure you can explain what all the analysis steps do and that you understand all the results.\nIn addition, there are some extra tasks (Task 1), where no R code is provided. Please do these tasks when you have time available at the end of the lab.\n\nLoad the data\nRead the data, and convert to matrix format.\n\n\nhere() starts at D:/GITHUB/SSoQE_website\n\n\nhere() starts at D:/GITHUB/SSoQE_website\n\n\n\nmrna &lt;- read.table(\n  here::here(\"data/data_example.txt\"),\n  header = T, sep = \"\\t\", dec = \".\"\n)\n\n# Convert to matrix format\n\nmrna &lt;- as.matrix(mrna)\n\nPrint the data\n\nmrna[1:4, 1:4]\n\n      OSL2R.3002T4 OSL2R.3005T1 OSL2R.3013T1 OSL2R.3030T2\nACACA      1.60034     -0.49087     -0.26553     -0.27857\nANXA1     -2.42501     -0.05416     -0.46478     -2.18393\nAR         0.39615     -0.43348     -0.10232      0.58299\nBAK1       0.78627      0.39897      0.22598     -1.31202\n\n\nVisualise the overall distribution of expression levels by histogram\n\nhist(mrna, nclass = 40, xlim = c(-5, 5), col = \"lightblue\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTask 1\n\n\n\nThis is a callout-note, and it can be quite useful for exercises. You can find more about callout here.\nExample: Extend the above analysis to cover all genes.",
-    "crumbs": [
-      "Home",
-      "Part I"
-    ]
-  },
-  {
-    "objectID": "R/about.html",
-    "href": "R/about.html",
-    "title": "About",
-    "section": "",
-    "text": "About page\n\n\n\nThis page contains some elaborated background information about your workshop, or the instructors.\n\n\nFor example: A central problem in machine learning is how to make an algorithm perform well not just on the training data, but also on new inputs. Many strategies in machine learning are explicitly designed to reduce this test error, possibly at the expense of increased training error. These strategies are collectively known as regularisation and they are instrumental for good performance of any kind of prediction or classification model, especially in the context of small data (many features, few samples).\nIn the hands-on tutorial we will use R to perform an integrated analysis of multi-omics data with penalised regression.\n\nContact\nInstructor A: contact\nInstructor B: contact\nInstructor C: contact"
-  },
-  {
-    "objectID": "R/part_1_prep.html",
-    "href": "R/part_1_prep.html",
-    "title": "Preparation",
-    "section": "",
-    "text": "Page without code\n\n\n\nThis page contains an example for some structured preparation information for a workshop. No code is executed here.\nHere are some preparation information for the participants.",
-    "crumbs": [
-      "Home",
-      "Preparation"
-    ]
-  },
-  {
-    "objectID": "R/part_1_prep.html#software",
-    "href": "R/part_1_prep.html#software",
-    "title": "Preparation",
-    "section": "Software",
-    "text": "Software\nIn this workshop we will be using R. You can either\n\nhave R and Rstudio installed on your laptop\nor, use Posit cloud (formerly Rstudio Cloud).\n\nPosit cloud is free of charge for personal users, yet you need to sign up for a new user account and have internet connection.\nThe R package we are using is glmnet.",
-    "crumbs": [
-      "Home",
-      "Preparation"
-    ]
-  },
-  {
-    "objectID": "R/part_1_prep.html#data",
-    "href": "R/part_1_prep.html#data",
-    "title": "Preparation",
-    "section": "Data",
-    "text": "Data\nThe datasets we use can be found here (insert link).",
-    "crumbs": [
-      "Home",
-      "Preparation"
-    ]
-  },
-  {
-    "objectID": "R/part_1_prep.html#code",
-    "href": "R/part_1_prep.html#code",
-    "title": "Preparation",
-    "section": "Code",
-    "text": "Code\nThe R scripts used in part 1 and part 2 can be found here (insert link).",
-    "crumbs": [
-      "Home",
-      "Preparation"
-    ]
-  },
-  {
-    "objectID": "R/part_1_prep.html#resources",
-    "href": "R/part_1_prep.html#resources",
-    "title": "Preparation",
-    "section": "Resources",
-    "text": "Resources\nLecture notes (insert link)\nLab notes (insert link)",
-    "crumbs": [
-      "Home",
-      "Preparation"
-    ]
-  },
-  {
-    "objectID": "home.html",
-    "href": "home.html",
-    "title": "Announcement Science School on Quantitative Ecology",
-    "section": "",
-    "text": "Date: Monday, 23.09.2024, to Saturday, 28.09.2024\nLocation: Seminar House of the University of Bayreuth in Wallenfels, Germany\nOrganising Team: Ondřej Mottl from Charles University in Prague, Czech Republic and Antonin Machač from the Czech Academy of Science\nManuel Steinbauer and Franka Gaiser from University of Bayreuth, Germany\nFurther Instructors: Anna Walentowitz from the University of Bayreuth, Germany\nGregor Mathes from the University of Zurich, Switzerland"
-  },
-  {
-    "objectID": "R/team.html",
-    "href": "R/team.html",
-    "title": "Team",
-    "section": "",
-    "text": "PhD Student in Quantitative Ecology\nUniversity of Bayreuth, Bayreuth, Germany\nemail: franka.gaiser@uni-bayreuth.de\n\n\n\n\nLeader of Research Group in Evolution and Biogeography\nIMIC Czech Academy of Sciences, Prague, Czech Republic\nemail: A.Machac@email.cz\n\n\n\n\nAssistant Professor for Plant Ecology\nDepartment of Botany, Faculty of Science, Charles University, Prague, Czech Republic\nemail: ondrej.mottl@gmail.com\n\n\n\n\nProfessor for Sport Ecology\nBayreuth Center of Ecology and Environmental Research, University of Bayreuth, Bayreuth, Germany\nemail: manuel.steinbauer@uni-bayreuth.de"
-  },
-  {
-    "objectID": "R/team.html#organising-team",
-    "href": "R/team.html#organising-team",
-    "title": "Team",
-    "section": "",
-    "text": "PhD Student in Quantitative Ecology\nUniversity of Bayreuth, Bayreuth, Germany\nemail: franka.gaiser@uni-bayreuth.de\n\n\n\n\nLeader of Research Group in Evolution and Biogeography\nIMIC Czech Academy of Sciences, Prague, Czech Republic\nemail: A.Machac@email.cz\n\n\n\n\nAssistant Professor for Plant Ecology\nDepartment of Botany, Faculty of Science, Charles University, Prague, Czech Republic\nemail: ondrej.mottl@gmail.com\n\n\n\n\nProfessor for Sport Ecology\nBayreuth Center of Ecology and Environmental Research, University of Bayreuth, Bayreuth, Germany\nemail: manuel.steinbauer@uni-bayreuth.de"
-  },
-  {
-    "objectID": "R/team.html#instructors",
-    "href": "R/team.html#instructors",
-    "title": "Team",
-    "section": "Instructors",
-    "text": "Instructors\n\nGregor Mathes\n\nPostdoctoral Fellow in Analytical Paleontology\nUniversity of Zurich, Zurich, Switzerland\n\n\nAnna Walentowitz\n\nPostdoctoral Fellow in Biogeography\nUniversity of Bayreuth, Bayreuth, Switzerland"
-  },
-  {
-    "objectID": "home.html#welcome",
-    "href": "home.html#welcome",
-    "title": "Announcement Science School on Quantitative Ecology",
-    "section": "Welcome!",
-    "text": "Welcome!\nNowadays, the trend in ecology goes to open-access data which are thanks to ongoing digitalisation quite big. Hence, we believe that handling big data adequately and being able to analyse it with rigourous quantitative methods are essential skills to finish your studies in ecology successfully and to pursue a career in ecology. That’s why in 2024, we are offering for the first time a joint science school between the Charles University in Prague (CZ) and the University of Bayreuth (GER) on Quantitative Ecology for master as well as PhD students. This website will be used as official communication tool. Right now, you can find the first preliminary information on the event and how to sign up for it. At a later stage, we will publish a detailed schedule and materials here.\n\n\n\n\n\n\nCourse Objectives\n\n\n\nAt the end of the course, students can\n\nname and make use of different open-access databases containing various ecological and environmental data.\nhandle and pre-process all kind of big datasets more efficiently using the programming language R.\nexplain the purpose of and implement various up-to-the-minute analysis and modelling methods in different subdisciplines of ecology (e.g. Biogeography, Evolutionary Ecology, Paleoecology) using the programming language R.\njudge if chosen methods were appropriate.\ndevelop their own scientific hypotheses and test them with appropriate methodology in a reproducible manner.\ncall students from other universties their new friends. :)\n\n\n\n\n\n\n\n\n\nCourse Contents\n\n\n\n\n\nTo achieve the stated objectives, different instructors, who are doing research in various subdisciplines of ecology (e.g. Biogeography, Evolutionary Ecology, Paleoecology), will prepare theoretical and practical input for the participants. The different topics will be centered around current research projects of the instructors, and practical exercises will be executed in R. Additionally, social events, e.g. barbecue, will offer participants the chance to make new contacts.\n\n\n\n\n\n\n\n\n\nCourse Requirements\n\n\n\n\nYou are a master or PhD student of ecology or a field closely related to ecology.\nYou know the basics in R.\nYou’re knowledge of English is sufficient to follow the lectures and actively involve in group work.\n\n\n\n\n\n\n\n\n\nRegistration\n\n\n\nDeadline: 15.07.2024\nIf you are a student of the Charles University in Prague (CZ), please contact Ondřej Mottl (ondrej.mottl@gmail.com).\nIf you are a student of the University of Bayreuth (GER), please contact Manuel Steinbauer (manuel.steinbauer@uni-bayreuth.de) and Franka Gaiser (franka.gaiser@uni-bayreuth.de).\nIf you are a student from another institution please send a short CV, letter of motivation (max. 1 page) and current enrollment certificate to all three of us."
-  },
-  {
-    "objectID": "home.html#course-contents",
-    "href": "home.html#course-contents",
-    "title": "Announcement Science School on Quantitative Ecology",
-    "section": "Course Contents",
-    "text": "Course Contents\nTo achieve the stated objectives, different instructors, who are doing research in various subdisciplines of ecology (e.g. Biogeography, Evolutionary Ecology, Paleoecology), will prepare theoretical and practical input for the participants. The different topics will be centered around current research projects of the instructors, and practical exercises will be executed in R. Additionally, social events, e.g. barbecue, will offer participants the chance to make new contacts."
-  },
-  {
-    "objectID": "home.html#registration",
-    "href": "home.html#registration",
-    "title": "Announcement Science School on Quantitative Ecology",
-    "section": "Registration",
-    "text": "Registration\nDeadline: 15.07.2024\nIf you are a student of the Charles University in Prague (CZ), please contact Ondřej Mottl (ondrej.mottl@gmail.com).\nIf you are a student of the University of Bayreuth (GER), please contact Manuel Steinbauer (manuel.steinbauer@uni-bayreuth.de) and Franka Gaiser (franka.gaiser@uni-bayreuth.de).\nIf you are a student from another institution please send a short CV, letter of motivation (max. 1 page) and current enrollment certificate to all three of us."
+    "text": "Gerenal Information\n\n\n\n📅Date: 23.09.2024 - 28.09.2024 (Monday to Saturday)\n🗺️Location: Seminar House of the University of Bayreuth in Wallenfels, Germany\n👥Who can apply: Master and PhD students of ecology or a field closely related to ecology\n📝Registration Deadline: end of July 2024 (or full capacity!)"
   },
   {
     "objectID": "index.html#welcome",
     "href": "index.html#welcome",
     "title": "Science School on Quantitative Ecology",
     "section": "Welcome!👋",
-    "text": "Welcome!👋\n\n\n\n\n\n\n\n\n\n🌍In today’s world, the ability to navigate and analyze large, open-access datasets is not just an advantage—it’s essential. Whether you’re aiming to excel in your academic journey or carve out a successful career in ecology, mastery of quantitative methods is key.\n🎓Excitingly, in 2024, Charles University in Prague (CZ) and the University of Bayreuth (GER) are teaming up to launch the Science School in Quantitative Ecology. This program is tailored for both Master’s and PhD students eager to advance their skills in data analysis and ecological research.\n🌱You’ve found the official hub for all things related to the school. Here, you’ll get early access to preliminary information, registration details, and later on, the complete event schedule and educational materials. Stay tuned and get ready to transform your understanding of ecology with us!\n\n\n\n\n\n\n\n\n\nCourse Objectives🎯\n\n\n\nAt the end of the course, you’ll be able to:\n\n🗃️ Discover and utilize various open-access databases full of ecological and environmental data.\n💻 Master the art of handling and preprocessing large datasets efficiently using the R programming language.\n🌐 Clearly explain and apply cutting-edge analysis and modeling methods across different ecological subdisciplines like Biogeography, Evolutionary Ecology, and Paleoecology\n🕵️‍♂️ Critically evaluate the appropriateness of the methods you’ve employed.\n🔬 Formulate your own scientific hypotheses and rigorously test them using suitable methods, ensuring your work is reproducible.\n🤝 Make lasting connections and call students from other universities your new friends! 😊"
+    "text": "Welcome!👋\n\n\n\n\n\n\n🌍In today’s world, the ability to navigate and analyze large, open-access datasets is not just an advantage—it’s essential. Whether you’re aiming to excel in your academic journey or carve out a successful career in ecology, mastery of quantitative methods is key.\n🎓Excitingly, in 2024, Charles University in Prague (CZ) and the University of Bayreuth (GER) are teaming up to launch the Science School in Quantitative Ecology. This program is tailored for both Master’s and PhD students eager to advance their skills in data analysis and ecological research.\n🌱You’ve found the official hub for all things related to the school. Here, you’ll get early access to preliminary information, registration details, and later on, the complete event schedule and educational materials. Stay tuned and get ready to transform your understanding of ecology with us!"
   },
   {
-    "objectID": "index.html#organising-team",
-    "href": "index.html#organising-team",
+    "objectID": "index.html#page-navigation",
+    "href": "index.html#page-navigation",
     "title": "Science School on Quantitative Ecology",
-    "section": "Organising Team 🧑‍🚀",
-    "text": "Organising Team 🧑‍🚀\n\nFranka Gaiser \n\nPhD Student in Quantitative Ecology\n🏦University of Bayreuth, Bayreuth, Germany\n📬email: franka.gaiser(at)uni-bayreuth.de\n\n🔗personal webiste\n\n\n\nAntonin Machač \n\nLeader of Research Group in Evolution and Biogeography\n🏦IMIC Czech Academy of Sciences, Prague, Czech Republic\n📬email: A.Machac(at)email.cz\n\n🔗personal webiste\n\n\n\nOndřej Mottl \n\nAssistant Professor for Plant Ecology\n🏦Department of Botany, Faculty of Science, Charles University, Prague, Czech Republic\n📬email: ondrej.mottl(at)gmail.com\n\n🔗personal webiste\n\n\n\nManuel Steinbauer \n\nProfessor for Sport Ecology\n🏦Bayreuth Center of Ecology and Environmental Research, University of Bayreuth, Bayreuth, Germany\n📬email: manuel.steinbauer(at)uni-bayreuth.de\n\n🔗personal webiste"
+    "section": "Page Navigation",
+    "text": "Page Navigation\n🔍Explore the following sections to learn more about the school:\n\nAbout the School🎓\nMeet the Team👥\nLogistics🏕️\nRegistration📝"
   },
   {
-    "objectID": "index.html#instructors",
-    "href": "index.html#instructors",
-    "title": "Science School on Quantitative Ecology",
-    "section": "Instructors 🧙",
-    "text": "Instructors 🧙\n\nGregor Mathes \n\nPostdoctoral Fellow in Analytical Paleontology\n🏦University of Zurich, Zurich, Switzerland\n\n\n\n\nAnna Walentowitz \n\nPostdoctoral Fellow in Biogeography\n🏦University of Bayreuth, Bayreuth, Switzerland"
-  },
-  {
-    "objectID": "index.html#course-contents",
-    "href": "index.html#course-contents",
-    "title": "Science School on Quantitative Ecology",
-    "section": "Course Contents 📚",
-    "text": "Course Contents 📚\nGet ready to dive deep into the fascinating world of ecology! Our diverse team of instructors, who are active researchers in various ecological subdisciplines, will guide you through both theoretical and practical aspects of the course. Here’s what you can expect:\n\nEngaging Lectures: Drawn directly from the instructors’ current research projects, ensuring you learn the most up-to-date information.\nHands-On Practice: Sharpen your skills with practical exercises in R, tailored to help you tackle real-world data challenges.\nSocial Events: From barbecues to informal gatherings, you’ll have plenty of opportunities to relax, network, and forge new friendships with fellow participants.\n\n\n\n\n\n\n\nCourse Requirements 📝\n\n\n\nTo make sure you get the most out of this program, you’ll need:\n\n🎓 To be a Master’s or PhD student in Ecology or a closely related field.\n🖥️ Basic proficiency in R programming language. Don’t worry, you don’t need to be an expert!\n🗣️ Good command of English to comfortably follow the lectures and engage actively in group discussions and activities."
-  },
-  {
-    "objectID": "index.html#registration",
-    "href": "index.html#registration",
-    "title": "Science School on Quantitative Ecology",
-    "section": "Registration 📝",
-    "text": "Registration 📝\n\nImportant Update:\n\n\n\n\n\n\nImportant\n\n\n\nWe are currently awaiting the final decision on course funding. Registration will open as soon as we have the necessary details. Please keep checking this page for the latest updates!\n\n\nDeadline for Registration: Summer 2024 (exact date to be announced soon).\nReady to join us? Here’s how to get started:\n\nStudents from Charles University in Prague (CZ): Please reach out to Ondřej Mottl at ondrej.mottl(at)gmail.com for more information and to express your interest.\nStudents from the University of Bayreuth (GER): Please contact Franka Gaiser at franka.gaiser(at)uni-bayreuth.de or Manuel Steinbauer at manuel.steinbauer(at)uni-bayreuth.de."
-  },
-  {
-    "objectID": "index.html#guest-instructors",
-    "href": "index.html#guest-instructors",
-    "title": "Science School on Quantitative Ecology",
-    "section": "Guest instructors 🧙",
-    "text": "Guest instructors 🧙\n\nGregor Mathes \n\nPostdoctoral Fellow in Analytical Paleontology\n🏦University of Zurich, Zurich, Switzerland\n\n\n\n\nAnna Walentowitz \n\nPostdoctoral Fellow in Biogeography\n🏦University of Bayreuth, Bayreuth, Switzerland"
+    "objectID": "registration.html",
+    "href": "registration.html",
+    "title": "Registration📝",
+    "section": "",
+    "text": "Course Requirements 📝\n\n\n\nTo make sure you get the most out of this program, you’ll need:\n\n🎓 To be a Master’s or PhD student in Ecology or a closely related field.\n🖥️ Basic proficiency in R programming language. Don’t worry, you don’t need to be an expert!\n🗣️ Good command of English to comfortably follow the lectures and engage actively in group discussions and activities.\n\n\n\nWe accept applications from Master’s and PhD students in environmental sciences, geography, geo-ecology, and ecology or any related field. The number of participants is limited to 25 students.\nAfter sending the application, applicants can expect a response within 10 working days. In case of acceptance to the science school, we expect a binding confirmation of participation by the end of July. If no longer interested, we kindly ask you to inform us promptly as a spontaneous cancellation leads to the forfeiture of the place and other students no longer have the opportunity to participate in the Science School. Furthermore, additional costs and administrative work arise for us in case of spontaneous cancellation.\n\n\n\n\n\n\nImportant\n\n\n\nApplications are open until full capacity or until the end of July 2024\nSend an email📬 to ssoqe@natur.cuni.cz with:\n\na certificate of enrolment\nmotivation letter (max. 1 page) in one PDF"
   }
 ]
