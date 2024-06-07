@@ -25,14 +25,14 @@
     "href": "logistics.html",
     "title": "Logistics🏕️🗺️",
     "section": "",
-    "text": "The school will take place at Seminar House of the University of Bayreuth in Wallenfels, Germany. Wallenfels is a small village in the middle of the Franconian Forest, a region in the north of Bavaria, Germany. The village is located in a valley surrounded by hills and forests."
+    "text": "The school will take place at Seminar House of the University of Bayreuth in Wallenfels, Germany. Wallenfels is a small village in the middle of the Franconian Forest, a region in the north of Bavaria, Germany. The village is located in a valley surrounded by hills and forests.\n\n\n\n\n\n\n\n\n\n\n\nThe participants will be accommodated in shared rooms at the Seminar House of the University of Bayreuth. The rooms are equipped with bunk beds, a desk, and a wardrobe. The bathrooms are shared. The participants are expected to bring their own towels and toiletries."
   },
   {
-    "objectID": "logistics.html#venue",
-    "href": "logistics.html#venue",
+    "objectID": "logistics.html#venue-and-accommodation",
+    "href": "logistics.html#venue-and-accommodation",
     "title": "Logistics🏕️🗺️",
     "section": "",
-    "text": "The school will take place at Seminar House of the University of Bayreuth in Wallenfels, Germany. Wallenfels is a small village in the middle of the Franconian Forest, a region in the north of Bavaria, Germany. The village is located in a valley surrounded by hills and forests."
+    "text": "The school will take place at Seminar House of the University of Bayreuth in Wallenfels, Germany. Wallenfels is a small village in the middle of the Franconian Forest, a region in the north of Bavaria, Germany. The village is located in a valley surrounded by hills and forests.\n\n\n\n\n\n\n\n\n\n\n\nThe participants will be accommodated in shared rooms at the Seminar House of the University of Bayreuth. The rooms are equipped with bunk beds, a desk, and a wardrobe. The bathrooms are shared. The participants are expected to bring their own towels and toiletries."
   },
   {
     "objectID": "logistics.html#food",
@@ -42,18 +42,11 @@
     "text": "Food🍱\nThe organisers will provide breakfast, lunch, and dinner free of charge.\n\n\n\n\n\n\nWarning\n\n\n\nIf you have any dietary preferences and/or restrictions (vegetarian/vegan/…), please let us know in advance."
   },
   {
-    "objectID": "logistics.html#accommodation",
-    "href": "logistics.html#accommodation",
-    "title": "Logistics🏕️🗺️",
-    "section": "Accommodation🛌",
-    "text": "Accommodation🛌\nThe participants will be accommodated in shared rooms at the Seminar House of the University of Bayreuth. The rooms are equipped with bunk beds, a desk, and a wardrobe. The bathrooms are shared. The participants are expected to bring their own towels and toiletries."
-  },
-  {
     "objectID": "logistics.html#travel",
     "href": "logistics.html#travel",
     "title": "Logistics🏕️🗺️",
     "section": "Travel🚗",
-    "text": "Travel🚗\nThe participants are expected to organize their travel. However, the organisers may refund participants certain travel expenses. The participants are expected to arrive in the morning of the 23rd of September and leave in the afternoon on the 28th of September. The organisers will organise a shuttle service Bayreuth. The nearest train station is in Kronach, which is 20 km away, and the nearest airport is in Nuremberg. The is a possibility to park a car at the Seminar House. If you want to drive a car and want to share the ride with other participants, please let us know in advance."
+    "text": "Travel🚗\nThe participants are expected to organize their travel. However, the organisers may refund participants certain travel expenses. The participants are expected to arrive in the morning of the 23rd of September and leave in the afternoon on the 28th of September. The organisers will most likely organise a shuttle service from Bayreuth. The nearest train station to Wallenfels is in Kronach, which is 20 km away, and the nearest airport is in Nuremberg. The is a possibility to park a car at the Seminar House. If you want to drive a car and want to share the ride with other participants, please let us know in advance."
   },
   {
     "objectID": "logistics.html#what-to-bring",
@@ -81,7 +74,7 @@
     "href": "about.html#course-content",
     "title": "About the Workshop🎓",
     "section": "Course Content 🎯",
-    "text": "Course Content 🎯\n\n\n\n\n\n\nWhat to expect\n\n\n\nDive into a diverse range of exciting subjects designed to empower you with advanced ecological analysis skills and a deep understanding of the environment. By the end of this course, you’ll be equipped to tackle pressing ecological questions such as:\n\n🌐 Quantitative Ecology Fundamentals: Understand why we use quantitative analysis in ecology, exploring the differences between data exploration, inference, and prediction.\n🛠️ Mastering Project Management: Gain proficiency in managing large, reproducible ecological projects with tools like Git/GitHub, and learn the art of clean coding and effective project planning.\n🌿 Plant Taxonomy Deep Dive: Gain a comprehensive overview of resources regarding plant taxonomy, occurrences, and traits, essential for accurate ecological research.\n🌱 From Past to Present: Seamlessly integrate paleoecological data with current plant species data to uncover ecological trends. Learn to address macro-ecological questions using paleontological data, connecting ancient life with today’s plant species.\n🌍 Evolution on a Grand Scale: Delve into ecological patterns of macroevolution to study the processes that shape life on Earth over millions of years.\n\n\n\nAdditional Topics We Might Cover:\n\n💻 Coding for Ecologists: Enhance your coding skills in R for a variety of applications from functional programming to developing R packages.\n🎲 Statistical Sophistication: Get to grips with Bayesian basics, causal inference, multivariate analysis, and advanced modeling techniques like hierarchical models.\n🤖 Tech Meets (Paleo)Ecology: Explore the intersection of machine learning, deep learning, AI, and remote sensing in (paleo)ecological research."
+    "text": "Course Content 🎯\n\n\n\n\n\n\nWhat to expect\n\n\n\nDive into a diverse range of exciting subjects designed to empower you with advanced ecological analysis skills and a deep understanding of the environment. By the end of this course, you’ll be equipped to tackle pressing ecological questions such as:\n\n🌐 Quantitative Ecology Fundamentals: Understand why we use quantitative analysis in ecology, exploring the differences between data exploration, inference, and prediction.\n🛠️ Mastering Project Management: Gain proficiency in managing large, reproducible ecological projects with tools like Git/GitHub, and learn the art of clean coding and effective project planning.\n🌿 Plant Taxonomy Deep Dive: Gain a comprehensive overview of resources regarding plant taxonomy, occurrences, and traits, essential for accurate (paleo)ecological research.\n🌱 From Past to Present: Seamlessly integrate paleoecological data with current plant species data to uncover ecological trends. Learn to address macro-ecological questions using paleontological data, connecting ancient life with today’s plant species.\n🌍 Evolution of Ecological Patterns: Delve into (paleo)ecological patterns on grand scales to study the processes that have shaped life on Earth over millions of years with the help of phylogenies.\n\n\n\nAdditional Topics We Might Cover:\n\n💻 Coding for Ecologists: Enhance your coding skills in R for a variety of applications from functional programming to developing R packages.\n🎲 Statistical Sophistication: Get to grips with Bayesian basics, causal inference, multivariate analysis, and advanced modeling techniques like hierarchical models.\n🤖 Tech Meets (Paleo)Ecology: Explore the intersection of machine learning, deep learning, AI, and remote sensing in (paleo)ecological research."
   },
   {
     "objectID": "about.html#costs",
@@ -109,7 +102,7 @@
     "href": "index.html#welcome",
     "title": "Science School on Quantitative Ecology",
     "section": "Welcome!👋",
-    "text": "Welcome!👋\n\n\n\n\n\n\n\n\n\n🌍In today’s world, the ability to navigate and analyze large, open-access datasets is not just an advantage—it’s essential. Whether you’re aiming to excel in your academic journey or carve out a successful career in ecology, mastery of quantitative methods is key.\n🎓Excitingly, in 2024, Charles University in Prague (CZ) and the University of Bayreuth (GER) are teaming up to launch the Science School in Quantitative Ecology. This program is tailored for both Master’s and PhD students eager to advance their skills in data analysis and ecological research.\n🌱You’ve found the official hub for all things related to the school. Here, you’ll get early access to preliminary information, registration details, and later on, the complete event schedule and educational materials. Stay tuned and get ready to transform your understanding of ecology with us!"
+    "text": "Welcome!👋\n\n\n\n\n\n\n🌍In today’s world, the ability to navigate and analyze large, open-access datasets is not just an advantage—it’s essential. Whether you’re aiming to excel in your academic journey or carve out a successful career in ecology, mastery of quantitative methods is key.\n🎓Excitingly, in 2024, Charles University in Prague (CZ) and the University of Bayreuth (GER) are teaming up to launch the Science School in Quantitative Ecology. This program is tailored for both Master’s and PhD students eager to advance their skills in data analysis and ecological research.\n🌱You’ve found the official hub for all things related to the school. Here, you’ll get early access to preliminary information, registration details, and later on, the complete event schedule and educational materials. Stay tuned and get ready to transform your understanding of ecology with us!"
   },
   {
     "objectID": "index.html#page-navigation",
