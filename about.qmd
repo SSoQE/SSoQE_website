@@ -1,5 +1,5 @@
 ---
-title: "About the Workshop: Science School of Quantitative Ecology"
+title: "About the Workshop🎓"
 format: html
 editor: 
   markdown: 
@@ -13,25 +13,33 @@ Get ready to dive deep into the fascinating world of ecology! Our [diverse team 
 * **Hands-On Practice**🤝: Sharpen your skills with practical exercises in R, tailored to help you tackle real-world data challenges.
 * **Social Events**😊: From barbecues to informal gatherings, you'll have plenty of opportunities to relax, network, and forge new friendships with fellow participants. 
 
-<br>
-
-::: {.callout-tip}
 ## Course Content 🎯
-
+::: {.callout-tip}
+## What to expect
 Dive into a diverse range of exciting subjects designed to empower you with advanced ecological analysis skills and a deep understanding of the environment. By the end of this course, you'll be equipped to tackle pressing ecological questions such as:
 
 * 🌐 **Quantitative Ecology Fundamentals**: Understand why we use quantitative analysis in ecology, exploring the differences between data exploration, inference, and prediction.
 * 🛠️ **Mastering Project Management**: Gain proficiency in managing large, reproducible ecological projects with tools like Git/GitHub, and learn the art of clean coding and effective project planning.
 * 🌿 **Plant Taxonomy Deep Dive**: Gain a comprehensive overview of resources regarding plant taxonomy, occurrences, and traits, essential for accurate ecological research.
 * 🌱 **From Past to Present**: Seamlessly integrate paleoecological data with current plant species data to uncover ecological trends. Learn to address macro-ecological questions using paleontological data, connecting ancient life with today's plant species.
-* 🌍 **Evolution on a Grand Scale**: Delve into macroevolution to study the processes that shape life on Earth over millions of years.
+* 🌍 **Evolution on a Grand Scale**: Delve into ecological patterns of macroevolution to study the processes that shape life on Earth over millions of years.
 :::
 
 Additional Topics We Might Cover:
 
 * 💻 Coding for Ecologists: Enhance your coding skills in R for a variety of applications from functional programming to developing R packages.
-* 🎲 Statistical Sophistication: Get to grips with Bayesian basics, causal inference, multivariate analysis, and advanced modeling techniques like hiearchical models.
-* 🤖 Tech Meets Ecology: Explore the intersection of machine learning, deep learning, AI, and remote sensing in ecological research.
+* 🎲 Statistical Sophistication: Get to grips with Bayesian basics, causal inference, multivariate analysis, and advanced modeling techniques like hierarchical models.
+* 🤖 Tech Meets (Paleo)Ecology: Explore the intersection of machine learning, deep learning, AI, and remote sensing in (paleo)ecological research.
 
 ## Costs 💰
-The science school is free of charge, and it includes accommodation, lectures, meals, and materials. Costs for travelling and other meals need to be covered by the applicant. However, the organiser may cover travel expenses up to *-to-be-specified-* €.
+::: {.callout-important}
+The science school is free of charge, and it includes accommodation, lectures, main meals, and materials. Costs for travelling need to be covered by the applicant. However, the organisers may be able to reimburse some travel expenses. See details about the [logistics](logistics.qmd).
+:::
+
+## Credits and Certificates 📜
+After the course, each participant will be eligible for:
+
+1. **Certificate of Attendance** validated by the University of Bayreuth and Charles University
+2. **Credits**: If you are a student of either of the two hosting universities, you should sign up the appropriate course to receive credits
+   + Unversity of Bayreuth: [Fak220605: Paleoecology and paleobiology](https://my.uni-bayreuth.de/cmlife/s/modules/Ly91YnRAY21jby9hcGkvbm9kZXMvNzAzNDU1)
+   + Charles University: [MB120C28: Science School on Quantitative Ecology](https://is.cuni.cz/studium/predmety/index.php?id=d05883cb77201986e76bb53ceefb99e1&tid=&do=predmet&kod=MB120C28) !!! NOTE that, sadly, this course will NOT be credited this run; only starting from academic year 2024/2025 !!!
