@@ -22,7 +22,7 @@ Dive into a diverse range of exciting subjects designed to empower you with adva
 * 🛠️ **Mastering Project Management**: Gain proficiency in managing large, reproducible ecological projects with tools like Git/GitHub, and learn the art of clean coding and effective project planning.
 * 🌿 **Plant Taxonomy Deep Dive**: Gain a comprehensive overview of resources regarding plant taxonomy, occurrences, and traits, essential for accurate (paleo)ecological research.
 * 🌱 **From Past to Present**: Seamlessly integrate paleoecological data with current plant species data to uncover ecological trends. Learn to address macro-ecological questions using paleontological data, connecting ancient life with today's plant species.
-* 🌍 **Evolution of Ecological Processes and Patterns**: Delve into ecological patterns of evolution on grand scales to study the processes that have shaped life on Earth over millions of years with the help of phylogenies.
+* 🌍 **Evolution of Ecological Patterns**: Delve into (paleo)ecological patterns on grand scales to study the processes that have shaped life on Earth over millions of years with the help of phylogenies.
 :::
 
 Additional Topics We Might Cover:
