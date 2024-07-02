@@ -25,14 +25,14 @@
     "href": "logistics.html",
     "title": "Logistics🏕️🗺️",
     "section": "",
-    "text": "The school will take place at Seminar House of the University of Bayreuth in Wallenfels, Germany. Wallenfels is a small village in the middle of the Franconian Forest, a region in the north of Bavaria, Germany. The village is located in a valley surrounded by hills and forests.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe participants will be accommodated in shared rooms at the Seminar House of the University of Bayreuth. The rooms are equipped with bunk beds, a desk, and a wardrobe. The bathrooms are shared. The participants are expected to bring their own towels and toiletries."
+    "text": "The school will take place at Seminar House of the University of Bayreuth in Wallenfels, Germany. Wallenfels is a small village in the middle of the Franconian Forest, a region in the north of Bavaria, Germany. The village is located in a valley surrounded by hills and forests.\n\n\n\n\n\n\n\n\n\n\n\nThe participants will be accommodated in shared rooms at the Seminar House of the University of Bayreuth. The rooms are equipped with bunk beds, a desk, and a wardrobe. The bathrooms are shared. The participants are expected to bring their own towels and toiletries."
   },
   {
     "objectID": "logistics.html#venue-and-accommodation",
     "href": "logistics.html#venue-and-accommodation",
     "title": "Logistics🏕️🗺️",
     "section": "",
-    "text": "The school will take place at Seminar House of the University of Bayreuth in Wallenfels, Germany. Wallenfels is a small village in the middle of the Franconian Forest, a region in the north of Bavaria, Germany. The village is located in a valley surrounded by hills and forests.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe participants will be accommodated in shared rooms at the Seminar House of the University of Bayreuth. The rooms are equipped with bunk beds, a desk, and a wardrobe. The bathrooms are shared. The participants are expected to bring their own towels and toiletries."
+    "text": "The school will take place at Seminar House of the University of Bayreuth in Wallenfels, Germany. Wallenfels is a small village in the middle of the Franconian Forest, a region in the north of Bavaria, Germany. The village is located in a valley surrounded by hills and forests.\n\n\n\n\n\n\n\n\n\n\n\nThe participants will be accommodated in shared rooms at the Seminar House of the University of Bayreuth. The rooms are equipped with bunk beds, a desk, and a wardrobe. The bathrooms are shared. The participants are expected to bring their own towels and toiletries."
   },
   {
     "objectID": "logistics.html#food",
@@ -102,7 +102,7 @@
     "href": "index.html#welcome",
     "title": "Science School on Quantitative Ecology",
     "section": "Welcome!👋",
-    "text": "Welcome!👋\n\n\n\n\n\n\n\n\n\n🌍In today’s world, the ability to navigate and analyze large, open-access datasets is not just an advantage—it’s essential. Whether you’re aiming to excel in your academic journey or carve out a successful career in ecology, mastery of quantitative methods is key.\n🎓Excitingly, in 2024, Charles University in Prague (CZ) and the University of Bayreuth (GER) are teaming up to launch the Science School in Quantitative Ecology. This program is tailored for both Master’s and PhD students eager to advance their skills in data analysis and ecological research.\n🌱You’ve found the official hub for all things related to the school. Here, you’ll get early access to preliminary information, registration details, and later on, the complete event schedule and educational materials. Stay tuned and get ready to transform your understanding of ecology with us!"
+    "text": "Welcome!👋\n\n\n\n\n\n\n🌍In today’s world, the ability to navigate and analyze large, open-access datasets is not just an advantage—it’s essential. Whether you’re aiming to excel in your academic journey or carve out a successful career in ecology, mastery of quantitative methods is key.\n🎓Excitingly, in 2024, Charles University in Prague (CZ) and the University of Bayreuth (GER) are teaming up to launch the Science School in Quantitative Ecology. This program is tailored for both Master’s and PhD students eager to advance their skills in data analysis and ecological research.\n🌱You’ve found the official hub for all things related to the school. Here, you’ll get early access to preliminary information, registration details, and later on, the complete event schedule and educational materials. Stay tuned and get ready to transform your understanding of ecology with us!"
   },
   {
     "objectID": "index.html#page-navigation",
@@ -116,6 +116,27 @@
     "href": "registration.html",
     "title": "Registration📝",
     "section": "",
-    "text": "Course Requirements 📝\n\n\n\nTo make sure you get the most out of this program, you’ll need:\n\n🎓 To be a Master’s or PhD student in Ecology or a closely related field.\n🖥️ Basic proficiency in R programming language. Don’t worry, you don’t need to be an expert!\n🗣️ Good command of English to comfortably follow the lectures and engage actively in group discussions and activities.\n\n\n\nWe accept applications from Master’s and PhD students in environmental sciences, geography, geo-ecology, and ecology or any related field. The number of participants is limited to 25 students.\nAfter sending the application, applicants can expect a response within 10 working days. In case of acceptance to the science school, we expect a binding confirmation of participation by the end of July. If no longer interested, we kindly ask you to inform us promptly as a spontaneous cancellation leads to the forfeiture of the place and other students no longer have the opportunity to participate in the Science School. Furthermore, additional costs and administrative work arise for us in case of spontaneous cancellation.\n\n\n\n\n\n\nImportant\n\n\n\nApplications are open until full capacity or until the end of July 2024\nSend an email📬 to ssoqe@natur.cuni.cz with:\n\na certificate of enrolment (i.e., a verification that you are a student of Charles University/University of Bayreuth)\nmotivation letter (max. 1 page) in one PDF"
+    "text": "Course Requirements 📝\n\n\n\nTo make sure you get the most out of this program, you’ll need:\n\n🎓 To be a Master’s or PhD student in Ecology or a closely related field.\n🖥️ Basic proficiency in R programming language. Don’t worry, you don’t need to be an expert!\n🗣️ Good command of English to comfortably follow the lectures and engage actively in group discussions and activities.\nWe accept applications from Master’s and PhD students in environmental sciences, geography, geo-ecology, and ecology or any related field. The number of participants is limited to 25 students.\nThere are 2 categories of participants:"
+  },
+  {
+    "objectID": "registration.html#students-from-charles-university-or-university-of-bayreuth",
+    "href": "registration.html#students-from-charles-university-or-university-of-bayreuth",
+    "title": "Registration📝",
+    "section": "1. Students from Charles University or University of Bayreuth (🇨🇿/🇩🇪)",
+    "text": "1. Students from Charles University or University of Bayreuth (🇨🇿/🇩🇪)\nSend an email📬 to ssoqe@natur.cuni.cz with:\n\na certificate of university enrolment (i.e., a verification that you are a student of Charles University/University of Bayreuth)\nmotivation letter (max. 1 page) in one PDF\n\nAfter sending the application, applicants can expect a response within 10 working days."
+  },
+  {
+    "objectID": "registration.html#students-from-other-universities",
+    "href": "registration.html#students-from-other-universities",
+    "title": "Registration📝",
+    "section": "2. Students from other universities (🌍)",
+    "text": "2. Students from other universities (🌍)\nSend an email📬 to ssoqe@natur.cuni.cz with:\n\na certificate of university enrolment (i.e., a verification that you are a university student)\nmotivation letter (max. 1 page) in one PDF\n\nThere is a limited number of places for students from other universities. The selection of participants will be based on the motivation letter and the order of applications. There will be a committee that will evaluate the applications and select the participants no later than end of July."
+  },
+  {
+    "objectID": "registration.html#cancelation-policy",
+    "href": "registration.html#cancelation-policy",
+    "title": "Registration📝",
+    "section": "Cancelation Policy ❌",
+    "text": "Cancelation Policy ❌\nIn case of acceptance to the science school, we expect a binding confirmation of participation by the end of July. If no longer interested, we kindly ask you to inform us promptly as a spontaneous cancellation leads to the forfeiture of the place and other students no longer have the opportunity to participate in the Science School. Furthermore, additional costs and administrative work arise for us in case of spontaneous cancellation."
   }
 ]
