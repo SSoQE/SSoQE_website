@@ -6,6 +6,13 @@ editor:
     wrap: sentence
 ---
 
+:::{.callout-important}
+**Applications are closed for the 2024 School**   
+
+All applicants should have received an email about the status of their application already Please reach out if you have not.
+
+:::
+
 :::{.callout-note}
 ## Course Requirements 📝
 To make sure you get the most out of this program, you'll need:
@@ -16,33 +23,6 @@ To make sure you get the most out of this program, you'll need:
 :::
 
 We accept applications from Master's and PhD students in environmental sciences, geography, geo-ecology, and ecology or any related field. The number of participants is limited to 25 students.
-
-:::{.callout-important}
-**Applications are open until full capacity or until the end of July 2024**   
-:::
-
-There are 2 categories of participants:
-
-1. Students from Charles University or University of Bayreuth (🇨🇿/🇩🇪)
-2. Students from other universities (🌍)
-
-## 1. Students from Charles University or University of Bayreuth (🇨🇿/🇩🇪)
-
-Send an email📬 to *ssoqe@natur.cuni.cz* with:
-
-   * a certificate of university enrolment (i.e., a verification that you are a student of **Charles University**/**University of Bayreuth**)
-   * motivation letter (max. 1 page) in one PDF
-
-After sending the application, applicants can expect a response within 10 working days. 
-
-## 2. Students from other universities (🌍)
-
-Send an email📬 to *ssoqe@natur.cuni.cz* with:
-
-  * a certificate of university enrolment (i.e., a verification that you are a university student)
-  * motivation letter (max. 1 page) in one PDF
-
-There is a limited number of places for students from other universities. The selection of participants will be based on the motivation letter and the order of applications. There will be a committee that will evaluate the applications and select the participants no later than end of July.
 
 ## Cancelation Policy ❌
 
