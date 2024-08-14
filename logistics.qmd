@@ -46,9 +46,31 @@ Your arrival date is Monday, 23rd September 2024. Ideally, plan to arrive in Bay
 
 We will depart from Wallenfels in the afternoon on Saturday, 28th September 2024. We should be able to leave at the latest at 2:00 PM in Wallenfels and thus, be back in Bayreuth around 3:00 PM. A shuttle service will be available again. Please plan your travels and book your tickets accordingly. 
 
-## Reimbursement of travel costs 💸: 
+### Travelling from the Czech Republic 🇨🇿➡️🇩🇪:
 
-Please keep all invoices for your travel expenses. We can reimburse them at least partially - the exact amount depends on the overall costs. 
+If you are traveling from the Czech Republic by public transport, we find out that the only feasible option is by train. To make it cheaper, you need to buy tickets from [České Dráhy](https://www.cd.cz/en/default.htm) and [Deutsche Bahn](https://int.bahn.de/en) separately. 
+
+Recommended train connections for arrival **23.09.**:
+
+* České Dráhy:
+  * **08:23 - 11:27** from Prague main train station to Cheb by [IC 564 Západní expres](https://www.cd.cz/en/vlak/564/23.9.2024/5457076/8.23/5475035/11.27/)
+* [Deutsche Bahn](https://int.bahn.de/en/buchung/fahrplan/suche#sts=true&so=Cheb&zo=Bayreuth%20Hbf&kl=2&r=13:16:KLASSENLOS:1&soid=A%3D1%40O%3DCheb%40X%3D12380699%40Y%3D50073494%40U%3D80%40L%3D5400004%40B%3D1%40p%3D1723490478%40i%3DU%C3%97005475035%40&zoid=A%3D1%40O%3DBayreuth%20Hbf%40X%3D11579985%40Y%3D49949613%40U%3D80%40L%3D8000028%40B%3D1%40p%3D1723056913%40i%3DU%C3%97008022249%40&sot=ST&zot=ST&soei=5400004&zoei=8000028&hd=2024-09-23T11:30:24&hza=D&hz=%5B%5D&ar=false&s=true&d=false&vm=00,01,02,03,04,05,06,07,08,09&fm=false&bp=false)
+  * **11:34 - 11:57** from Cheb to Marktredwitz by RE 33
+  * **12:07 - 12:24** from Marktredwitz to Kirchenlaibach by RE 31
+  * **12:42 - 12:58**from Kirchenlaibach to Bayreuth by ag RB34
+
+Recommended train connections for departure **28.09.**:
+
+* [Deutsche Bahn](https://int.bahn.de/en/buchung/fahrplan/suche#sts=true&so=Bayreuth%20Hbf&zo=Cheb&kl=2&r=13:16:KLASSENLOS:1&soid=A%3D1%40O%3DBayreuth%20Hbf%40X%3D11579985%40Y%3D49949613%40U%3D80%40L%3D8000028%40B%3D1%40p%3D1723056913%40i%3DU%C3%97008022249%40&zoid=A%3D1%40O%3DCheb%40X%3D12380699%40Y%3D50073494%40U%3D80%40L%3D5400004%40B%3D1%40p%3D1723490478%40i%3DU%C3%97005475035%40&sot=ST&zot=ST&soei=8000028&zoei=5400004&hd=2024-09-28T15:00:24&hza=D&hz=%5B%5D&ar=false&s=true&d=false&vm=00,01,02,03,04,05,06,07,08,09&fm=false&bp=false)
+  * **15:01 - 15:15** from Bayreuth to Kirchenlaibach by ag RB34
+  * **15:34 - 15:51** from Kirchenlaibach to Marktredwitz by RE 31
+  * **16:03 - 16:24**from Marktredwitz to Cheb by RE 33
+* České Dráhy
+  * **16:33 - 19:23** from Cheb to Prague main train station by [IC 563 Západní expres](https://www.cd.cz/en/vlak/563/28.9.2024/5475035/16.33/5457076/19.23/)
+
+### Reimbursement of travel costs 💸: 
+
+Please keep all invoices for your travel expenses. We can reimburse them at least partially - the exact amount depends on the overall costs. The cost of the train for CZ participants should be around 80 EUR in total (50 EUR + 748 CZK). We expect that we will be able to cover a minimum of 60 EUR of the costs.
 
 ## What to bring🎒
 ::: {.callout-tip}
