@@ -33,12 +33,26 @@ The participants will be accommodated in shared rooms at the Seminar House of th
 The organisers will provide main meals (breakfast, lunch and dinner) for free as part of the Science School.
 
 ::: {.callout-warning}
+
+### Dietary preferences
+
  If you have any dietary preferences and/or restrictions (vegetarian/vegan/...), please let us know in advance.
 :::
 
 ## Travel🚗
 
 **The participants are expected to organize their travel**. The nearest train station to Wallenfels is in Kronach, which is 20 km away, and the nearest airport is in Nuremberg. The is a possibility to park a car at the Seminar House. If you want to drive a car and want to share the ride with other participants, please let us know in advance. 
+
+::: {.callout-note}
+
+### Forum for car-sharing and travel tips
+
+Hop over to the [Travel channel on our GitHub forum](https://github.com/SSoQE/SSoQE-Forum/discussions/categories/travel) to self-organise car-sharing and/od ask about travel options.
+
+To join in the fun, you'll need a GitHub account. No worries if you don't have one yet-check out this [easy tutorial to get started](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github). Hot tip: Use your university or scientific institution email to get some cool student perks!
+
+Inside the forum, you'll also find different channels to keep things organised: Questions, Travel, and Offtopic (because we all need a place for memes, right?). Just a heads up: the forum is public, so be sure to follow the [GitHub community guidelines](https://docs.github.com/en/site-policy/github-terms/github-community-guidelines).
+:::
 
 ### Arrival and Departure 🚆🚍: 
 
@@ -48,7 +62,13 @@ We will depart from Wallenfels in the afternoon on Saturday, 28th September 2024
 
 ### Travelling from the Czech Republic 🇨🇿➡️🇩🇪:
 
-If you are traveling from the Czech Republic by public transport, we find out that the only feasible option is by train. To make it cheaper, you need to buy tickets from [České Dráhy](https://www.cd.cz/en/default.htm) and [Deutsche Bahn](https://int.bahn.de/en) separately. 
+If you are traveling from the Czech Republic by public transport, we find out that the only feasible option is by train. 
+
+::: {.callout-important}
+In order to buy the cheapest train ticket you should get [ErgoNet ticket](https://www.cd.cz/en/typy-jizdenek/mezinarodni-jizdenky/-28285/), which can be only bought at the ticket office. Please do that in advance.
+:::
+
+Alternatively, you need to buy tickets from [České Dráhy](https://www.cd.cz/en/default.htm) and [Deutsche Bahn](https://int.bahn.de/en) separately. 
 
 Recommended train connections for arrival **23.09.**:
 
@@ -70,7 +90,7 @@ Recommended train connections for departure **28.09.**:
 
 ### Reimbursement of travel costs 💸: 
 
-Please keep all invoices for your travel expenses. We can reimburse them at least partially - the exact amount depends on the overall costs. The cost of the train for CZ participants should be around 80 EUR in total (50 EUR + 748 CZK). We expect that we will be able to cover a minimum of 60 EUR of the costs.
+Please keep all invoices for your travel expenses. We can reimburse them at least partially - the exact amount depends on the overall costs. The cost of the train for CZ participants should be around ~1200 CZK in total (748 CZK for CZ train and 400 CZK for Ergoticket). We expect that we will be able to cover a minimum of 1500 CZK of the costs.
 
 ## What to bring🎒
 ::: {.callout-tip}
