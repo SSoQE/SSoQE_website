@@ -16,6 +16,8 @@ editor:
 
 📝*Registration*: **Closed for 2024 School**!
 
+📔*Program details for 2024*: [**Available here**](about.qmd#program-overview).
+
 :::
 
 ## Welcome!👋
