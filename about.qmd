@@ -14,8 +14,9 @@ Get ready to dive deep into the fascinating world of ecology! Our [diverse team 
 * **Social Events**😊: From barbecues to informal gatherings, you'll have plenty of opportunities to relax, network, and forge new friendships with fellow participants. 
 
 ## Course Content 🎯
+
 ::: {.callout-tip}
-## What to expect
+### What to expect
 Dive into a diverse range of exciting subjects designed to empower you with advanced ecological analysis skills and a deep understanding of the environment. By the end of this course, you'll be equipped to tackle pressing ecological questions such as:
 
 * 🌐 **Quantitative Ecology Fundamentals**: Understand why we use quantitative analysis in ecology, exploring the differences between data exploration, inference, and prediction.
@@ -30,6 +31,24 @@ Additional Topics We Might Cover:
 * 💻 Coding for Ecologists: Enhance your coding skills in R for a variety of applications from functional programming to developing R packages.
 * 🎲 Statistical Sophistication: Get to grips with Bayesian basics, causal inference, multivariate analysis, and advanced modeling techniques like hierarchical models.
 * 🤖 Tech Meets (Paleo)Ecology: Explore the intersection of machine learning, deep learning, AI, and remote sensing in (paleo)ecological research.
+
+### Program Overview
+
+| Time | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday |
+|:--------:|:--------:|:---------:|:--------:|:--------:|:--------:|:--------:|
+| 8:00 - 9:00 | Arrival | Breakfast | Breakfast | Breakfast | Breakfast | Breakfast |
+| 9:00 - 10:30 | Arrival | Species Distribution Modelling I  | Sample Standardisation and Resampling  | Analysing Community Data I | Phylogenetic Data in Ecology | Wrap-up & Feedback |
+| 10:30 - 10:45 | Arrival | Coffee Break | Coffee Break | Coffee Break | Coffee Break | Coffee Break |
+| 10:45 - 12:00 | Arrival | Species Distribution Modelling II | Introduction to Large Databases | Analysing Community Data II | Phylogenies in Community Ecology | Cleaning |
+| 12:00 - 13:00 | Lunch | Lunch | Lunch | Lunch | Lunch | Lunch |
+| 13:00 - 15:00 | Welcome and Introduction | Biases in Ecological and Paleoecological Data I | Exploring Past Vegetation Using Fossil Pollen | Reproducibility in science | Ecology of Speciation, Extinction, and Macroevolution  Departure |
+| 15:00 - 15:30 | Welcome and Introduction | Coffee Break | Coffee Break | Coffee Break | Coffee Break | - |
+| 15:30 - 17:00 | Quantitative Ecology: Unveiling Patterns in Nature | Biases in Ecological and Paleoecological Data II | Functional Programming (with fossil pollen data) | Project Management and Collaboration (using GitHub) | Deep Learning meets (Palaeo) Ecology | - |
+| 17:00 - 18:00 | Technical support | Free time | Free time | Free time | Free time | - |
+| 18:00 - 19:30 | Dinner | Dinner | Dinner | Dinner | Dinner | - |
+| 19:30 - 00:00 | Social | Social | Social | Social | Social | - |
+
+: Preliminary Program 2024 {.striped}
 
 ## Costs 💰
 ::: {.callout-important}
