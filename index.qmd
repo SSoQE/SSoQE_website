@@ -29,7 +29,7 @@ There have been some changes in the train connections between the Czech Republic
 :::: {layout="[ 30, 70 ]"}
 ::: {#first-column}
 
-![](photos/AI_BiodivAnthropocene.jpg)
+![](photos/logo_v2.png)
 :::
 
 ::: {#second-column}
