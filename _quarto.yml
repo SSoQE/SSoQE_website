@@ -8,6 +8,8 @@ website:
     left:
       - href: about.qmd
         text: About the Workshop🎓
+      - href: pre_workshop.qmd
+        text: Technical Setup🖥️
       - href: team.qmd
         text: Meet the Team👥
       - href: logistics.qmd

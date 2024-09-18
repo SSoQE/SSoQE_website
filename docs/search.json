@@ -21,39 +21,53 @@
     "text": "Guest instructors 🧙\n\nGregor Mathes \n\nPostdoctoral Fellow in Analytical Paleontology\n🏦University of Zurich, Zurich, Switzerland\n\n\n\n\nAnna Walentowitz \n\nPostdoctoral Fellow in Biogeography\n🏦University of Bayreuth, Bayreuth, Germany"
   },
   {
-    "objectID": "logistics.html",
-    "href": "logistics.html",
-    "title": "Logistics🏕️🗺️",
+    "objectID": "pre_workshop.html",
+    "href": "pre_workshop.html",
+    "title": "Technical Setup🖥️",
     "section": "",
-    "text": "The school will take place at Seminar House of the University of Bayreuth in Wallenfels, Germany. Wallenfels is a small village in the middle of the Franconian Forest, a region in the north of Bavaria, Germany. The village is located in a valley surrounded by hills and forests.\nWe are providing accommodation for free as part of the Science School.\n\n\n\n\n\n\n\n\n\n\n\nThe participants will be accommodated in shared rooms at the Seminar House of the University of Bayreuth. The rooms are equipped with bunk beds, a desk, and a wardrobe. The bathrooms are shared. The participants are expected to bring their own towels and toiletries."
+    "text": "Pre-workshop technical instructions for participants. Let’s get ready to rock! 🚀"
   },
   {
-    "objectID": "logistics.html#venue-and-accommodation",
-    "href": "logistics.html#venue-and-accommodation",
-    "title": "Logistics🏕️🗺️",
+    "objectID": "pre_workshop.html#r-and-rstudio",
+    "href": "pre_workshop.html#r-and-rstudio",
+    "title": "Technical Setup🖥️",
+    "section": "R and RStudio 💻",
+    "text": "R and RStudio 💻\nR is a fantastic software for statistical analyses. 📊 RStudio is your trusty sidekick, helping you navigate the R universe with ease. It’s like a cozy integrated development environment (IDE) for R. 🌟\nThere are plenty of guides available to help you obtain or update R and RStudio. Here are a couple of them to get you started:\n\nR Basics for Paleoecologists by C.A. Kiahtipes, a previous part of the APD series of workshops.\nInstall or Update R tutorial by Jennifer Huck."
+  },
+  {
+    "objectID": "pre_workshop.html#git-and-github",
+    "href": "pre_workshop.html#git-and-github",
+    "title": "Technical Setup🖥️",
+    "section": "Git and GitHub 🌐",
+    "text": "Git and GitHub 🌐\nPlease follow the tutorial here to install Git and set up a GitHub account.\nSpecifically, we will be using Git, GitHub, and RStudio for version control and collaboration during the workshop. 🤝"
+  },
+  {
+    "objectID": "pre_workshop.html#packages",
+    "href": "pre_workshop.html#packages",
+    "title": "Technical Setup🖥️",
+    "section": "Packages 📦",
+    "text": "Packages 📦\nPackages are like magic toolboxes 🧰 that contain a collection of functions for specific needs. We want to make sure that everyone has the necessary packages installed for this workshop.\n\nInstall packages\nLet’s create a list of packages that we’ll need from CRAN. Here they are:\n\npackage_list &lt;-\n  c(\n    \"ape\",\n    \"fs\",\n    \"geiger\",\n    \"geojsonsf\",\n    \"here\",\n    \"httpgd\",\n    \"janitor\",\n    \"jsonlite\",\n    \"knitr\",\n    \"languageserver\",\n    \"neotoma2\",\n    \"palmerpenguins\",\n    \"phytools\",\n    \"picante\",\n    \"quarto\",\n    \"renv\",\n    \"remotes\",\n    \"rlang\",\n    \"sdm\",\n    \"targets\",\n    \"terra\",\n    \"tidyverse\",\n    \"tinytable\",\n    \"usethis\",\n    \"utils\",\n    \"visNetwork\",\n    \"torch\",\n    \"cito\",\n    \"vegan\"\n  )\n\nNow, let’s install all these amazing packages from CRAN:\n\nlapply(\n  package_list, utils::install.packages\n)\n\n\n\nTest if all packages are ready ✅\nLet’s do a quick test to make sure everything is in order. Running the following code should produce \"Everything is good to go\" instead of an error message saying \"All required packages are not installed\".\n\nif (\n  isTRUE(\n    all(\n      package_list %in%\n        as.data.frame(\n          utils::installed.packages()\n        )[, 1]\n    )\n  )\n) {\n  cat(\"Everything is good to go\")\n} else {\n  warning(\"All required packages are not installed\")\n  warning(\n    paste(\n      \"Please install the following packages:\",\n      paste(\n        setdiff(\n          package_list,\n          as.data.frame(\n            utils::installed.packages()\n          )[, 1]\n        ),\n        collapse = \", \"\n      )\n    )\n  )\n}"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Science School on Quantitative Ecology",
     "section": "",
-    "text": "The school will take place at Seminar House of the University of Bayreuth in Wallenfels, Germany. Wallenfels is a small village in the middle of the Franconian Forest, a region in the north of Bavaria, Germany. The village is located in a valley surrounded by hills and forests.\nWe are providing accommodation for free as part of the Science School.\n\n\n\n\n\n\n\n\n\n\n\nThe participants will be accommodated in shared rooms at the Seminar House of the University of Bayreuth. The rooms are equipped with bunk beds, a desk, and a wardrobe. The bathrooms are shared. The participants are expected to bring their own towels and toiletries."
+    "text": "Gerenal Information for 2024 School\n\n\n\n📅Date: 23.09.2024 - 28.09.2024 (Monday to Saturday)\n🗺️Location: Seminar House of the University of Bayreuth in Wallenfels, Germany\n👥Who can apply: Master and PhD students of ecology or a field closely related to ecology\n📝Registration: Closed for 2024 School!\n📔Program details for 2024: Available here."
   },
   {
-    "objectID": "logistics.html#food",
-    "href": "logistics.html#food",
-    "title": "Logistics🏕️🗺️",
-    "section": "Food🍱",
-    "text": "Food🍱\nThe organisers will provide main meals (breakfast, lunch and dinner) for free as part of the Science School.\n\n\n\n\n\n\nDietary preferences\n\n\n\nIf you have any dietary preferences and/or restrictions (vegetarian/vegan/…), please let us know in advance."
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Science School on Quantitative Ecology",
+    "section": "Welcome!👋",
+    "text": "Welcome!👋\n\n\n\n\n\n\n\n\n\n🌍In today’s world, the ability to navigate and analyze large, open-access datasets is not just an advantage—it’s essential. Whether you’re aiming to excel in your academic journey or carve out a successful career in ecology, mastery of quantitative methods is key.\n🎓Excitingly, in 2024, Charles University in Prague (CZ) and the University of Bayreuth (GER) are teaming up to launch the Science School in Quantitative Ecology. This program is tailored for both Master’s and PhD students eager to advance their skills in data analysis and ecological research.\n🌱You’ve found the official hub for all things related to the school. Here, you’ll get early access to preliminary information, registration details, and later on, the complete event schedule and educational materials. Stay tuned and get ready to transform your understanding of ecology with us!"
   },
   {
-    "objectID": "logistics.html#travel",
-    "href": "logistics.html#travel",
-    "title": "Logistics🏕️🗺️",
-    "section": "Travel🚗",
-    "text": "Travel🚗\nThe participants are expected to organize their travel. The nearest train station to Wallenfels is in Kronach, which is 20 km away, and the nearest airport is in Nuremberg. The is a possibility to park a car at the Seminar House. If you want to drive a car and want to share the ride with other participants, please let us know in advance.\n\n\n\n\n\n\nForum for car-sharing and travel tips\n\n\n\nHop over to the Travel channel on our GitHub forum to self-organise car-sharing and/od ask about travel options.\nTo join in the fun, you’ll need a GitHub account. No worries if you don’t have one yet-check out this easy tutorial to get started. Hot tip: Use your university or scientific institution email to get some cool student perks!\nInside the forum, you’ll also find different channels to keep things organised: Questions, Travel, and Offtopic (because we all need a place for memes, right?). Just a heads up: the forum is public, so be sure to follow the GitHub community guidelines.\n\n\n\nArrival and Departure 🚆🚍:\nYour arrival date is Monday, 23rd September 2024. Ideally, plan to arrive in Bayreuth by train at 13:00 PM. We have arranged a shuttle service that will take you from Bayreuth to Wallenfels at 13:15. Still, you can also come directly to Wallenfells (Universität Bayreuth Ökologische Außenstelle, Am Allerswald 1, 96346 Wallenfels).\nWe will depart from Wallenfels in the afternoon on Saturday, 28th September 2024. We should be able to leave at the latest at 13:30 in Wallenfels and thus, be back in Bayreuth around 14:30. A shuttle service will be available again. Please plan your travels and book your tickets accordingly.\n\n\nTravelling from the Czech Republic 🇨🇿➡️🇩🇪:\nIf you are traveling from the Czech Republic by public transport, we find out that the only feasible option is by train.\n\n\n\n\n\n\nImportant\n\n\n\nIn order to buy the cheapest train ticket you should get ErgoNet ticket, which can be only bought at the ticket office. Please do that in advance.\n\n\nAlternatively, you need to buy tickets from České Dráhy and Deutsche Bahn separately.\nRecommended train connections for arrival 23.09.:\n\nČeské Dráhy:\n\n08:23 - 11:27 from Prague main train station to Cheb by IC 564 Západní expres\n\nDeutsche Bahn\n\n11:34 - 11:57 from Cheb to Marktredwitz by RE 33\n12:07 - 12:24 from Marktredwitz to Kirchenlaibach by RE 31\n12:42 - 12:58from Kirchenlaibach to Bayreuth by ag RB34\n\n\nRecommended train connections for departure 28.09.:\n\nDeutsche Bahn\n\n15:01 - 15:15 from Bayreuth to Kirchenlaibach by ag RB34\n15:34 - 15:51 from Kirchenlaibach to Marktredwitz by RE 31\n16:03 - 16:24from Marktredwitz to Cheb by RE 33\n\nČeské Dráhy\n\n16:33 - 19:23 from Cheb to Prague main train station by IC 563 Západní expres\n\n\n\n\nReimbursement of travel costs 💸:\nPlease keep all invoices for your travel expenses. We can reimburse them at least partially - the exact amount depends on the overall costs. The cost of the train for CZ participants should be around ~1200 CZK in total (748 CZK for CZ train and 400 CZK for Ergoticket). We expect that we will be able to cover a minimum of 1500 CZK of the costs."
-  },
-  {
-    "objectID": "logistics.html#what-to-bring",
-    "href": "logistics.html#what-to-bring",
-    "title": "Logistics🏕️🗺️",
-    "section": "What to bring🎒",
-    "text": "What to bring🎒\n\n\n\n\n\n\nWe recommend to pack\n\n\n\n\nLaptop + charger\nTowels\nToiletries\nWarm clothes\nHiking shoes/Raincoat (we might go hiking in the forest)\nSnacks\nWater bottle\nMusic instrument\nGood mood"
+    "objectID": "index.html#page-navigation",
+    "href": "index.html#page-navigation",
+    "title": "Science School on Quantitative Ecology",
+    "section": "Page Navigation",
+    "text": "Page Navigation\n🔍Explore the following sections to learn more about the school:\n\nAbout the School🎓\nTechnical Setup🖥️\nMeet the Team👥\nLogistics🏕️\nRegistration📝"
   },
   {
     "objectID": "about.html",
@@ -98,25 +112,39 @@
     "text": "Funding\nThe Science School of Qunatitive Ecology is funded by the The Bavarian-Czech Academic Agency (TBHA) and POINT programm by Charles University."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Science School on Quantitative Ecology",
+    "objectID": "logistics.html",
+    "href": "logistics.html",
+    "title": "Logistics🏕️🗺️",
     "section": "",
-    "text": "Gerenal Information for 2024 School\n\n\n\n📅Date: 23.09.2024 - 28.09.2024 (Monday to Saturday)\n🗺️Location: Seminar House of the University of Bayreuth in Wallenfels, Germany\n👥Who can apply: Master and PhD students of ecology or a field closely related to ecology\n📝Registration: Closed for 2024 School!\n📔Program details for 2024: Available here."
+    "text": "The school will take place at Seminar House of the University of Bayreuth in Wallenfels, Germany. Wallenfels is a small village in the middle of the Franconian Forest, a region in the north of Bavaria, Germany. The village is located in a valley surrounded by hills and forests.\nWe are providing accommodation for free as part of the Science School.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe participants will be accommodated in shared rooms at the Seminar House of the University of Bayreuth. The rooms are equipped with bunk beds, a desk, and a wardrobe. The bathrooms are shared. The participants are expected to bring their own towels and toiletries."
   },
   {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
-    "title": "Science School on Quantitative Ecology",
-    "section": "Welcome!👋",
-    "text": "Welcome!👋\n\n\n\n\n\n\n🌍In today’s world, the ability to navigate and analyze large, open-access datasets is not just an advantage—it’s essential. Whether you’re aiming to excel in your academic journey or carve out a successful career in ecology, mastery of quantitative methods is key.\n🎓Excitingly, in 2024, Charles University in Prague (CZ) and the University of Bayreuth (GER) are teaming up to launch the Science School in Quantitative Ecology. This program is tailored for both Master’s and PhD students eager to advance their skills in data analysis and ecological research.\n🌱You’ve found the official hub for all things related to the school. Here, you’ll get early access to preliminary information, registration details, and later on, the complete event schedule and educational materials. Stay tuned and get ready to transform your understanding of ecology with us!"
+    "objectID": "logistics.html#venue-and-accommodation",
+    "href": "logistics.html#venue-and-accommodation",
+    "title": "Logistics🏕️🗺️",
+    "section": "",
+    "text": "The school will take place at Seminar House of the University of Bayreuth in Wallenfels, Germany. Wallenfels is a small village in the middle of the Franconian Forest, a region in the north of Bavaria, Germany. The village is located in a valley surrounded by hills and forests.\nWe are providing accommodation for free as part of the Science School.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe participants will be accommodated in shared rooms at the Seminar House of the University of Bayreuth. The rooms are equipped with bunk beds, a desk, and a wardrobe. The bathrooms are shared. The participants are expected to bring their own towels and toiletries."
   },
   {
-    "objectID": "index.html#page-navigation",
-    "href": "index.html#page-navigation",
-    "title": "Science School on Quantitative Ecology",
-    "section": "Page Navigation",
-    "text": "Page Navigation\n🔍Explore the following sections to learn more about the school:\n\nAbout the School🎓\nMeet the Team👥\nLogistics🏕️\nRegistration📝"
+    "objectID": "logistics.html#food",
+    "href": "logistics.html#food",
+    "title": "Logistics🏕️🗺️",
+    "section": "Food🍱",
+    "text": "Food🍱\nThe organisers will provide main meals (breakfast, lunch and dinner) for free as part of the Science School.\n\n\n\n\n\n\nDietary preferences\n\n\n\nIf you have any dietary preferences and/or restrictions (vegetarian/vegan/…), please let us know in advance."
+  },
+  {
+    "objectID": "logistics.html#travel",
+    "href": "logistics.html#travel",
+    "title": "Logistics🏕️🗺️",
+    "section": "Travel🚗",
+    "text": "Travel🚗\nThe participants are expected to organize their travel. The nearest train station to Wallenfels is in Kronach, which is 20 km away, and the nearest airport is in Nuremberg. The is a possibility to park a car at the Seminar House. If you want to drive a car and want to share the ride with other participants, please let us know in advance.\n\n\n\n\n\n\nForum for car-sharing and travel tips\n\n\n\nHop over to the Travel channel on our GitHub forum to self-organise car-sharing and/od ask about travel options.\nTo join in the fun, you’ll need a GitHub account. No worries if you don’t have one yet-check out this easy tutorial to get started. Hot tip: Use your university or scientific institution email to get some cool student perks!\nInside the forum, you’ll also find different channels to keep things organised: Questions, Travel, and Offtopic (because we all need a place for memes, right?). Just a heads up: the forum is public, so be sure to follow the GitHub community guidelines.\n\n\n\nArrival and Departure 🚆🚍:\nYour arrival date is Monday, 23rd September 2024. Ideally, plan to arrive in Bayreuth by train at 13:00 PM. We have arranged a shuttle service that will take you from Bayreuth to Wallenfels at 13:15. Still, you can also come directly to Wallenfells (Universität Bayreuth Ökologische Außenstelle, Am Allerswald 1, 96346 Wallenfels).\nWe will depart from Wallenfels in the afternoon on Saturday, 28th September 2024. We should be able to leave at the latest at 13:30 in Wallenfels and thus, be back in Bayreuth around 14:30. A shuttle service will be available again. Please plan your travels and book your tickets accordingly.\n\n\nTravelling from the Czech Republic 🇨🇿➡️🇩🇪:\nIf you are traveling from the Czech Republic by public transport, we find out that the only feasible option is by train.\n\n\n\n\n\n\nImportant\n\n\n\nIn order to buy the cheapest train ticket you should get ErgoNet ticket, which can be only bought at the ticket office. Please do that in advance.\n\n\nAlternatively, you need to buy tickets from České Dráhy and Deutsche Bahn separately.\nRecommended train connections for arrival 23.09.:\n\nČeské Dráhy:\n\n08:23 - 11:27 from Prague main train station to Cheb by IC 564 Západní expres\n\nDeutsche Bahn\n\n11:34 - 11:57 from Cheb to Marktredwitz by RE 33\n12:07 - 12:24 from Marktredwitz to Kirchenlaibach by RE 31\n12:42 - 12:58from Kirchenlaibach to Bayreuth by ag RB34\n\n\nRecommended train connections for departure 28.09.:\n\nDeutsche Bahn\n\n15:01 - 15:15 from Bayreuth to Kirchenlaibach by ag RB34\n15:34 - 15:51 from Kirchenlaibach to Marktredwitz by RE 31\n16:03 - 16:24from Marktredwitz to Cheb by RE 33\n\nČeské Dráhy\n\n16:33 - 19:23 from Cheb to Prague main train station by IC 563 Západní expres\n\n\n\n\nReimbursement of travel costs 💸:\nPlease keep all invoices for your travel expenses. We can reimburse them at least partially - the exact amount depends on the overall costs. The cost of the train for CZ participants should be around ~1200 CZK in total (748 CZK for CZ train and 400 CZK for Ergoticket). We expect that we will be able to cover a minimum of 1500 CZK of the costs."
+  },
+  {
+    "objectID": "logistics.html#what-to-bring",
+    "href": "logistics.html#what-to-bring",
+    "title": "Logistics🏕️🗺️",
+    "section": "What to bring🎒",
+    "text": "What to bring🎒\n\n\n\n\n\n\nWe recommend to pack\n\n\n\n\nLaptop + charger\nTowels\nToiletries\nWarm clothes\nHiking shoes/Raincoat (we might go hiking in the forest)\nSnacks\nWater bottle\nMusic instrument\nGood mood"
   },
   {
     "objectID": "registration.html",

@@ -44,6 +44,7 @@ editor:
 🔍Explore the following sections to learn more about the school:
 
  * [About the School🎓](about.qmd)
+ * [Technical Setup🖥️](pre_workshop.qmd)
  * [Meet the Team👥](team.qmd)
  * [Logistics🏕️](logistics.qmd)
  * [Registration📝](registration.qmd)
