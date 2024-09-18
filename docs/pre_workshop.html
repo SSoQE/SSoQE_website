@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Science School of Quantitative Ecology - Logistics🏕️🗺️</title>
+<title>Science School of Quantitative Ecology - Technical Setup🖥️</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -93,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About the Workshop🎓</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./pre_workshop.html"> 
+    <a class="nav-link active" href="./pre_workshop.html" aria-current="page"> 
 <span class="menu-text">Technical Setup🖥️</span></a>
   </li>  
   <li class="nav-item">
@@ -101,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Meet the Team👥</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./logistics.html" aria-current="page"> 
+    <a class="nav-link" href="./logistics.html"> 
 <span class="menu-text">Logistics🏕️</span></a>
   </li>  
   <li class="nav-item">
@@ -125,10 +159,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#venue-and-accommodation" id="toc-venue-and-accommodation" class="nav-link active" data-scroll-target="#venue-and-accommodation">Venue🏡 and Accommodation🛌</a></li>
-  <li><a href="#food" id="toc-food" class="nav-link" data-scroll-target="#food">Food🍱</a></li>
-  <li><a href="#travel" id="toc-travel" class="nav-link" data-scroll-target="#travel">Travel🚗</a></li>
-  <li><a href="#what-to-bring" id="toc-what-to-bring" class="nav-link" data-scroll-target="#what-to-bring">What to bring🎒</a></li>
+  <li><a href="#r-and-rstudio" id="toc-r-and-rstudio" class="nav-link active" data-scroll-target="#r-and-rstudio">R and RStudio 💻</a></li>
+  <li><a href="#git-and-github" id="toc-git-and-github" class="nav-link" data-scroll-target="#git-and-github">Git and GitHub 🌐</a></li>
+  <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages">Packages 📦</a></li>
   </ul>
 </nav>
     </div>
@@ -137,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Logistics🏕️🗺️</h1>
+<h1 class="title">Technical Setup🖥️</h1>
 </div>
 
 
@@ -154,142 +187,104 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="venue-and-accommodation" class="level2">
-<h2 class="anchored" data-anchor-id="venue-and-accommodation">Venue🏡 and Accommodation🛌</h2>
-<p>The school will take place at <a href="https://maps.app.goo.gl/AJsRbag7ddPvdwrz6">Seminar House of the University of Bayreuth in Wallenfels</a>, Germany. Wallenfels is a small village in the middle of the Franconian Forest, a region in the north of Bavaria, Germany. The village is located in a valley surrounded by hills and forests.</p>
-<p>We are providing accommodation for free as part of the Science School.</p>
-<p><img src="photos/Wallenfels_Stadt.JPG" class="img-fluid"></p>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout="[ 50, 50]">
-<div class="quarto-layout-row">
-<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="photos/Wallenfes_Tagungsraum.JPG" class="img-fluid"></p>
-</div>
-<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="photos/Wallenfels_bedroom.jpg" class="img-fluid"></p>
-</div>
-</div>
-</div>
-<p>The participants will be accommodated in shared rooms at the Seminar House of the University of Bayreuth. The rooms are equipped with bunk beds, a desk, and a wardrobe. The bathrooms are shared. The participants are expected to bring their own towels and toiletries.</p>
-</section>
-<section id="food" class="level2">
-<h2 class="anchored" data-anchor-id="food">Food🍱</h2>
-<p>The organisers will provide main meals (breakfast, lunch and dinner) for free as part of the Science School.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Dietary preferences
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If you have any dietary preferences and/or restrictions (vegetarian/vegan/…), please let us know in advance.</p>
-</div>
-</div>
-</section>
-<section id="travel" class="level2">
-<h2 class="anchored" data-anchor-id="travel">Travel🚗</h2>
-<p><strong>The participants are expected to organize their travel</strong>. The nearest train station to Wallenfels is in Kronach, which is 20 km away, and the nearest airport is in Nuremberg. The is a possibility to park a car at the Seminar House. If you want to drive a car and want to share the ride with other participants, please let us know in advance.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Forum for car-sharing and travel tips
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Hop over to the <a href="https://github.com/SSoQE/SSoQE-Forum/discussions/categories/travel">Travel channel on our GitHub forum</a> to self-organise car-sharing and/od ask about travel options.</p>
-<p>To join in the fun, you’ll need a GitHub account. No worries if you don’t have one yet-check out this <a href="https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github">easy tutorial to get started</a>. Hot tip: Use your university or scientific institution email to get some cool student perks!</p>
-<p>Inside the forum, you’ll also find different channels to keep things organised: Questions, Travel, and Offtopic (because we all need a place for memes, right?). Just a heads up: the forum is public, so be sure to follow the <a href="https://docs.github.com/en/site-policy/github-terms/github-community-guidelines">GitHub community guidelines</a>.</p>
-</div>
-</div>
-<section id="arrival-and-departure" class="level3">
-<h3 class="anchored" data-anchor-id="arrival-and-departure">Arrival and Departure 🚆🚍:</h3>
-<p>Your arrival date is Monday, 23rd September 2024. Ideally, plan to arrive in Bayreuth by train at 13:00 PM. We have arranged a shuttle service that will take you from Bayreuth to Wallenfels at 13:15. Still, you can also come directly to Wallenfells (Universität Bayreuth Ökologische Außenstelle, Am Allerswald 1, 96346 Wallenfels).</p>
-<p>We will depart from Wallenfels in the afternoon on Saturday, 28th September 2024. We should be able to leave at the latest at 13:30 in Wallenfels and thus, be back in Bayreuth around 14:30. A shuttle service will be available again. Please plan your travels and book your tickets accordingly.</p>
-</section>
-<section id="travelling-from-the-czech-republic" class="level3">
-<h3 class="anchored" data-anchor-id="travelling-from-the-czech-republic">Travelling from the Czech Republic 🇨🇿➡️🇩🇪:</h3>
-<p>If you are traveling from the Czech Republic by public transport, we find out that the only feasible option is by train.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>In order to buy the cheapest train ticket you should get <a href="https://www.cd.cz/en/typy-jizdenek/mezinarodni-jizdenky/-28285/">ErgoNet ticket</a>, which can be only bought at the ticket office. Please do that in advance.</p>
-</div>
-</div>
-<p>Alternatively, you need to buy tickets from <a href="https://www.cd.cz/en/default.htm">České Dráhy</a> and <a href="https://int.bahn.de/en">Deutsche Bahn</a> separately.</p>
-<p>Recommended train connections for arrival <strong>23.09.</strong>:</p>
+<p>Pre-workshop technical instructions for participants. Let’s get ready to rock! 🚀</p>
+<section id="r-and-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="r-and-rstudio">R and RStudio 💻</h2>
+<p><a href="https://en.wikipedia.org/wiki/R_(programming_language)">R</a> is a fantastic software for statistical analyses. 📊 <a href="https://posit.co/products/open-source/rstudio/">RStudio</a> is your trusty sidekick, helping you navigate the R universe with ease. It’s like a cozy integrated development environment (IDE) for R. 🌟</p>
+<p>There are plenty of guides available to help you obtain or update R and RStudio. Here are a couple of them to get you started:</p>
 <ul>
-<li>České Dráhy:
-<ul>
-<li><strong>08:23 - 11:27</strong> from Prague main train station to Cheb by <a href="https://www.cd.cz/en/vlak/564/23.9.2024/5457076/8.23/5475035/11.27/">IC 564 Západní expres</a></li>
-</ul></li>
-<li><a href="https://int.bahn.de/en/buchung/fahrplan/suche#sts=true&amp;so=Cheb&amp;zo=Bayreuth%20Hbf&amp;kl=2&amp;r=13:16:KLASSENLOS:1&amp;soid=A%3D1%40O%3DCheb%40X%3D12380699%40Y%3D50073494%40U%3D80%40L%3D5400004%40B%3D1%40p%3D1723490478%40i%3DU%C3%97005475035%40&amp;zoid=A%3D1%40O%3DBayreuth%20Hbf%40X%3D11579985%40Y%3D49949613%40U%3D80%40L%3D8000028%40B%3D1%40p%3D1723056913%40i%3DU%C3%97008022249%40&amp;sot=ST&amp;zot=ST&amp;soei=5400004&amp;zoei=8000028&amp;hd=2024-09-23T11:30:24&amp;hza=D&amp;hz=%5B%5D&amp;ar=false&amp;s=true&amp;d=false&amp;vm=00,01,02,03,04,05,06,07,08,09&amp;fm=false&amp;bp=false">Deutsche Bahn</a>
-<ul>
-<li><strong>11:34 - 11:57</strong> from Cheb to Marktredwitz by RE 33</li>
-<li><strong>12:07 - 12:24</strong> from Marktredwitz to Kirchenlaibach by RE 31</li>
-<li><strong>12:42 - 12:58</strong>from Kirchenlaibach to Bayreuth by ag RB34</li>
-</ul></li>
-</ul>
-<p>Recommended train connections for departure <strong>28.09.</strong>:</p>
-<ul>
-<li><a href="https://int.bahn.de/en/buchung/fahrplan/suche#sts=true&amp;so=Bayreuth%20Hbf&amp;zo=Cheb&amp;kl=2&amp;r=13:16:KLASSENLOS:1&amp;soid=A%3D1%40O%3DBayreuth%20Hbf%40X%3D11579985%40Y%3D49949613%40U%3D80%40L%3D8000028%40B%3D1%40p%3D1723056913%40i%3DU%C3%97008022249%40&amp;zoid=A%3D1%40O%3DCheb%40X%3D12380699%40Y%3D50073494%40U%3D80%40L%3D5400004%40B%3D1%40p%3D1723490478%40i%3DU%C3%97005475035%40&amp;sot=ST&amp;zot=ST&amp;soei=8000028&amp;zoei=5400004&amp;hd=2024-09-28T15:00:24&amp;hza=D&amp;hz=%5B%5D&amp;ar=false&amp;s=true&amp;d=false&amp;vm=00,01,02,03,04,05,06,07,08,09&amp;fm=false&amp;bp=false">Deutsche Bahn</a>
-<ul>
-<li><strong>15:01 - 15:15</strong> from Bayreuth to Kirchenlaibach by ag RB34</li>
-<li><strong>15:34 - 15:51</strong> from Kirchenlaibach to Marktredwitz by RE 31</li>
-<li><strong>16:03 - 16:24</strong>from Marktredwitz to Cheb by RE 33</li>
-</ul></li>
-<li>České Dráhy
-<ul>
-<li><strong>16:33 - 19:23</strong> from Cheb to Prague main train station by <a href="https://www.cd.cz/en/vlak/563/28.9.2024/5475035/16.33/5457076/19.23/">IC 563 Západní expres</a></li>
-</ul></li>
+<li><a href="https://ckiahtipes.github.io/">R Basics for Paleoecologists</a> by C.A. Kiahtipes, a previous part of the APD series of workshops.</li>
+<li><a href="https://jennhuck.github.io/workshops/install_update_R.html">Install or Update R tutorial</a> by Jennifer Huck.</li>
 </ul>
 </section>
-<section id="reimbursement-of-travel-costs" class="level3">
-<h3 class="anchored" data-anchor-id="reimbursement-of-travel-costs">Reimbursement of travel costs 💸:</h3>
-<p>Please keep all invoices for your travel expenses. We can reimburse them at least partially - the exact amount depends on the overall costs. The cost of the train for CZ participants should be around ~1200 CZK in total (748 CZK for CZ train and 400 CZK for Ergoticket). We expect that we will be able to cover a minimum of 1500 CZK of the costs.</p>
+<section id="git-and-github" class="level2">
+<h2 class="anchored" data-anchor-id="git-and-github">Git and GitHub 🌐</h2>
+<p>Please follow the tutorial <a href="https://ondrejmottl.github.io/VersionControl_gitHell/">here</a> to install Git and set up a GitHub account.</p>
+<p>Specifically, we will be using Git, GitHub, and RStudio for version control and collaboration during the workshop. 🤝</p>
 </section>
+<section id="packages" class="level2">
+<h2 class="anchored" data-anchor-id="packages">Packages 📦</h2>
+<p>Packages are like magic toolboxes 🧰 that contain a collection of functions for specific needs. We want to make sure that everyone has the necessary packages installed for this workshop.</p>
+<section id="install-packages" class="level3">
+<h3 class="anchored" data-anchor-id="install-packages">Install packages</h3>
+<p>Let’s create a list of packages that we’ll need from CRAN. Here they are:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>package_list <span class="ot">&lt;-</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"ape"</span>,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"fs"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"geiger"</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"geojsonsf"</span>,</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"here"</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"httpgd"</span>,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"janitor"</span>,</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"jsonlite"</span>,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"knitr"</span>,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">"languageserver"</span>,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">"neotoma2"</span>,</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">"palmerpenguins"</span>,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">"phytools"</span>,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">"picante"</span>,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">"quarto"</span>,</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">"renv"</span>,</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">"remotes"</span>,</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">"rlang"</span>,</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">"sdm"</span>,</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">"targets"</span>,</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">"terra"</span>,</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">"tidyverse"</span>,</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="st">"tinytable"</span>,</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    <span class="st">"usethis"</span>,</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="st">"utils"</span>,</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="st">"visNetwork"</span>,</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="st">"torch"</span>,</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="st">"cito"</span>,</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="st">"vegan"</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now, let’s install all these amazing packages from CRAN:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  package_list, utils<span class="sc">::</span>install.packages</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section id="what-to-bring" class="level2">
-<h2 class="anchored" data-anchor-id="what-to-bring">What to bring🎒</h2>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-We recommend to pack
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Laptop + charger</li>
-<li>Towels</li>
-<li>Toiletries</li>
-<li>Warm clothes</li>
-<li>Hiking shoes/Raincoat (we might go hiking in the forest)</li>
-<li>Snacks</li>
-<li>Water bottle</li>
-<li>Music instrument</li>
-<li>Good mood</li>
-</ul>
-</div>
+<section id="test-if-all-packages-are-ready" class="level3">
+<h3 class="anchored" data-anchor-id="test-if-all-packages-are-ready">Test if all packages are ready ✅</h3>
+<p>Let’s do a quick test to make sure everything is in order. Running the following code should produce <code>"Everything is good to go"</code> instead of an error message saying <code>"All required packages are not installed"</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">isTRUE</span>(</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">all</span>(</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>      package_list <span class="sc">%in%</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        <span class="fu">as.data.frame</span>(</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>          utils<span class="sc">::</span><span class="fu">installed.packages</span>()</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        )[, <span class="dv">1</span>]</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>) {</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Everything is good to go"</span>)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">warning</span>(<span class="st">"All required packages are not installed"</span>)</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">warning</span>(</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">paste</span>(</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Please install the following packages:"</span>,</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>      <span class="fu">paste</span>(</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>        <span class="fu">setdiff</span>(</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>          package_list,</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>          <span class="fu">as.data.frame</span>(</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>            utils<span class="sc">::</span><span class="fu">installed.packages</span>()</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>          )[, <span class="dv">1</span>]</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>        <span class="at">collapse =</span> <span class="st">", "</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
