@@ -20,6 +20,10 @@ editor:
 
 :::
 
+::: {.callout-important}
+There have been some changes in the train connections between the Czech Republic and Germany (posible due to recent floods). You need to take earlier train from Prague to Cheb! Please make sure to [check the details](logistics.qmd#travelling-from-the-czech-republic).
+:::
+
 ## Welcome!👋
 
 :::: {layout="[ 30, 70 ]"}
