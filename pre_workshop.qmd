@@ -128,3 +128,18 @@ if (
 }
 ```
 
+## Getting the workshop materials 📚
+
+You can download the workshop materials from the [GitHub repositoris](https://github.com/orgs/SSoQE/repositories).
+
+Just find wanted repository and then on the right side, should be `Releases`, where you will be able to download the ZIP file📦.
+
+### Private repositories
+
+Some of the materials might be not be made for general public (and therefore publically available). In that case, you will need to have access to the repository, which we can grant you.
+
+1. Go to the [this Discussion thread](https://github.com/orgs/SSoQE/discussions/9) and comment with your GitHub username.
+2. Await for the organizors to grant you access to the repository.
+3. Check your email. You should receive an email with the invitation to the SSoQE.
+4. You will now be able to access private repositories and download the materials.
+
