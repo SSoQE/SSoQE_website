@@ -33,6 +33,10 @@ Please follow the tutorial [here](https://ondrejmottl.github.io/VersionControl_g
 
 Specifically, we will be using Git, GitHub, and RStudio for version control and collaboration during the workshop. 🤝
 
+### "a branch problem"
+
+Some of the participants might have encountered the error of RStudio now being able to detech GIT branch. We have figure out the issue and can be fixed by [following the steps here](https://github.com/orgs/SSoQE/discussions/10)
+
 ## Packages 📦
 
 Packages are like magic toolboxes 🧰 that contain a collection of functions for specific needs. We want to make sure that everyone has the necessary packages installed for this workshop.

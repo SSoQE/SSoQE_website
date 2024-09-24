@@ -39,7 +39,7 @@
     "href": "pre_workshop.html#git-and-github",
     "title": "Technical Setup🖥️",
     "section": "Git and GitHub 🌐",
-    "text": "Git and GitHub 🌐\nPlease follow the tutorial here to install Git and set up a GitHub account.\nSpecifically, we will be using Git, GitHub, and RStudio for version control and collaboration during the workshop. 🤝"
+    "text": "Git and GitHub 🌐\nPlease follow the tutorial here to install Git and set up a GitHub account.\nSpecifically, we will be using Git, GitHub, and RStudio for version control and collaboration during the workshop. 🤝\n\n“a branch problem”\nSome of the participants might have encountered the error of RStudio now being able to detech GIT branch. We have figure out the issue and can be fixed by following the steps here"
   },
   {
     "objectID": "pre_workshop.html#packages",
