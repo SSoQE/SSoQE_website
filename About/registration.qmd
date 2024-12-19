@@ -1,0 +1,61 @@
+---
+title: "Registration📝"
+format: html
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+::: callout-note
+## Course Requirements 📝
+
+To make sure you get the most out of this program, you'll need:
+
+-   🎓 To be a Master's or PhD student in Ecology or a closely related field.
+-   🖥️ Proficiency in [R programming language](https://en.wikipedia.org/wiki/R_(programming_language)).
+-   🗣️ Good command of English to comfortably follow the lectures and engage actively in group discussions and activities.
+:::
+
+We accept applications from Master's and PhD students in environmental sciences, geography, geo-ecology, and ecology or any related field.
+The number of participants is limited to 25 students.
+
+:::{.callout-important}
+**Applications are open until full capacity or until the end of February 2025**   
+:::
+
+There are 2 categories of participants:
+
+1. Students from Charles University or University of Bayreuth (🇨🇿/🇩🇪)
+2. Students from other universities (🌍)
+
+## 1. Students from Charles University or University of Bayreuth (🇨🇿/🇩🇪)
+
+If you are a student of either of the two hosting universities, you should sign up the appropriate course:
+    -   Unversity of Bayreuth: [Fak220605: Paleoecology and paleobiology](https://my.uni-bayreuth.de/cmlife/s/modules/Ly91YnRAY21jby9hcGkvbm9kZXMvNzAzNDU1)
+    -   Charles University: [MB120C28: Science School on Quantitative Ecology](https://is.cuni.cz/studium/predmety/index.php?id=d05883cb77201986e76bb53ceefb99e1&tid=&do=predmet&kod=MB120C28)
+
+:::{.callout-note}
+If the capacity of the course is full, you can still apply as a student from another university (see below). 
+:::
+
+## 2. Students from other universities (🌍)
+
+Send an email📬 to *ssoqe@natur.cuni.cz* with:
+
+  * a certificate of university enrolment (i.e., a verification that you are a university student)
+  * motivation letter (max. 1 page) in one PDF
+
+There is a limited number of places for students from other universities. The selection of participants will be based on the motivation letter and the order of applications. There will be a committee that will evaluate the applications.
+
+## Credits and Certificates 📜
+
+After the course, each participant will be eligible for:
+
+1.  **Certificate of Attendance** validated by the University of Bayreuth and Charles University
+2.  **Credits**: If you are a student of either of the two hosting universities, you will receive credits for the course. The number of credits will be determined by your home university.
+
+## Cancelation Policy ❌
+
+In case of acceptance to the science school, we expect a binding confirmation of participation.
+If no longer interested, we kindly ask you to inform us promptly as a spontaneous cancellation leads to the forfeiture of the place and other students no longer have the opportunity to participate in the Science School.
+Furthermore, additional costs and administrative work arise for us in case of spontaneous cancellation.

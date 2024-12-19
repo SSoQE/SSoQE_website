@@ -1,0 +1,25 @@
+---
+title: "Program📅"
+format: html
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+## Preliminary Program 2025
+
+| Time | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday |
+|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+| 8:00 - 9:00 | Arrival | Breakfast | Breakfast | Breakfast | Breakfast | Breakfast |
+| 9:00 - 10:30 | Arrival | Species Distribution Modelling I | Sample Standardisation and Resampling | Analysing Community Data I | Phylogenetic Data in Ecology | Wrap-up & Feedback |
+| 10:30 - 10:45 | Arrival | Coffee Break | Coffee Break | Coffee Break | Coffee Break | Coffee Break |
+| 10:45 - 12:00 | Arrival | Species Distribution Modelling II | Introduction to Large Databases | Analysing Community Data II | Phylogenies in Community Ecology | Cleaning |
+| 12:00 - 13:00 | Lunch | Lunch | Lunch | Lunch | Lunch | Lunch |
+| 13:00 - 15:00 | Welcome and Introduction | Biases in Ecological and Paleoecological Data I | Exploring Past Vegetation Using Fossil Pollen | Reproducibility in science | Ecology of Speciation, Extinction, and Macroevolution Departure |  |
+| 15:00 - 15:30 | Welcome and Introduction | Coffee Break | Coffee Break | Coffee Break | Coffee Break | \- |
+| 15:30 - 17:00 | Quantitative Ecology: Unveiling Patterns in Nature | Biases in Ecological and Paleoecological Data II | Functional Programming (with fossil pollen data) | Project Management and Collaboration (using GitHub) | Deep Learning meets (Palaeo) Ecology | \- |
+| 17:00 - 18:00 | Technical support | Free time | Free time | Free time | Free time | \- |
+| 18:00 - 19:30 | Dinner | Dinner | Dinner | Dinner | Dinner | \- |
+| 19:30 - 00:00 | Social | Social | Social | Social | Social | \- |
+
+: {.striped}

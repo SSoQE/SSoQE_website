@@ -4,51 +4,35 @@ editor:
   markdown: 
     wrap: sentence
 ---
- 
-:::{.callout-warning}
-## Gerenal Information for 2024 School
 
-📅*Date:* **23.09.2024 - 28.09.2024** (Monday to Saturday)
+::: callout-warning
+## Gerenal Information for 2025 School
 
-🗺️*Location:* **Seminar House of the University of Bayreuth in Wallenfels, Germany**
+📅*Date:* **15.09.2024 - 20.09.2025** (Monday to Saturday)
+
+🗺️*Location:* **Czech Republic** (exact location will be specified)
 
 👥*Who can apply:* **Master and PhD students** of ecology or a field closely related to ecology
 
-📝*Registration*: **Closed for 2024 School**!
-
-📔*Program details for 2024*: [**Available here**](about.qmd#program-overview).
-
-:::
-
-::: {.callout-important}
-There have been some changes in the train connections between the Czech Republic and Germany (posible due to recent floods). You need to take earlier train from Prague to Cheb! Please make sure to [check the details](logistics.qmd#travelling-from-the-czech-republic).
+📝*Registration*: **end of February 2025** (or full capacity!)
 :::
 
 ## Welcome!👋
 
-:::: {layout="[ 30, 70 ]"}
+::::: {layout="[ 30, 70 ]"}
 ::: {#first-column}
-
 ![](photos/logo_v2.png)
 :::
 
 ::: {#second-column}
+🌍In today's world, the ability to navigate and analyze large, open-access datasets is not just an advantage—it's essential.
+Whether you're aiming to excel in your academic journey or carve out a successful career in ecology, mastery of quantitative methods is key.
 
-🌍In today's world, the ability to navigate and analyze large, open-access datasets is not just an advantage—it's essential. Whether you're aiming to excel in your academic journey or carve out a successful career in ecology, mastery of quantitative methods is key.
+🎓Excitingly, in 2024, [Charles University in Prague](https://cuni.cz/UKEN-1.html) (CZ) and the [University of Bayreuth](https://www.uni-bayreuth.de/en) (GER) are teaming up to launch the **Science School in Quantitative Ecology**.
+This program is tailored for both Master’s and PhD students eager to advance their skills in data analysis and ecological research.
 
-🎓Excitingly, in 2024, [Charles University in Prague](https://cuni.cz/UKEN-1.html) (CZ) and the [University of Bayreuth](https://www.uni-bayreuth.de/en) (GER) are teaming up to launch the **Science School in Quantitative Ecology**. This program is tailored for both Master’s and PhD students eager to advance their skills in data analysis and ecological research.
-
-🌱You’ve found the official hub for all things related to the school. Here, you’ll get early access to preliminary information, registration details, and later on, the complete event schedule and educational materials. Stay tuned and get ready to transform your understanding of ecology with us!
-
+🌱You’ve found the official hub for all things related to the school.
+Here, you’ll get early access to preliminary information, registration details, and later on, the complete event schedule and educational materials.
+Stay tuned and get ready to transform your understanding of ecology with us!
 :::
-::::
-
-## Page Navigation
-
-🔍Explore the following sections to learn more about the school:
-
- * [About the School🎓](about.qmd)
- * [Technical Setup🖥️](pre_workshop.qmd)
- * [Meet the Team👥](team.qmd)
- * [Logistics🏕️](logistics.qmd)
- * [Registration📝](registration.qmd)
+:::::

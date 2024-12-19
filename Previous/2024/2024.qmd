@@ -1,0 +1,60 @@
+---
+title: "Germany - Wallenfels - 2024"
+format: html
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+On Monday, 23.09.2024, a group of enthusiastic young ecological researchers from Charles University (Czech Republic), the University of Bayreuth (Germany) and other European research institutions travelled to Wallenfels, Germany.
+For one week, they participated together in the Science School on Quantitative Ecology (bit.ly/SSoQE) - a course organised jointly by researchers from Charles University, the Czech Academy of Sciences and the University of Bayreuth to equip participants with advanced quantitative skills vital for modern ecological research and to foster Czech-German collaboration.
+
+![class photo](/Previous/2024/FOTO-II.jpg)
+
+Over the course of 5 days, the young scientists delved into a wide range of topics, including species distribution modelling, multidimensional methods, community ecology, biogeography, paleoecology, and macroevolution.
+The practical sessions on R programming, GitHub, and open science practices made the heads of the participants smoke, but also ignited their enthusiasm for collaborative sciences.
+After all this hard work, sociable dinner and passionate board game nights offered just the right rest.
+
+At the end of the week, the group said goodbye with a laughing and a crying eye: Sad, that the inspiring week had already come to an end, but happy to have met like-minded people whom they eventually will meet again.
+
+We would like to say thank you to all participants for their simply amazing engagement and to our funders - the Bavarian-Czech Academic Agency (BTHA) and the Support for the Internationalization of Charles University (POINT) - without their support, the event wouldn't have been possible.
+
+![group photo](/Previous/2024/FOTO-I.jpg)
+
+## Funding
+
+The Science School of Qunatitive Ecology 2024 was funded by the The [Bavarian-Czech Academic Agency (TBHA)](https://www.btha.cz/en/) and [POINT programm by Charles University](https://cuni.cz/UKEN-924.html).
+
+```{r}
+#| label: R-setup
+#| include: false
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width = 7,
+  fig.height = 5,
+  fig.align = "center",
+  out.width = "100%"
+)
+```
+
+```{r}
+#| label: logo-BTHA
+#| echo: FALSE
+knitr::include_graphics("https://www.btha.cz/images/logo/logo-full-583x100px-01.png")
+```
+
+:::::: columns
+::: {.column width="30%"}
+:::
+
+::: {.column width="30%"}
+```{r}
+#| label: logo-CUNI
+#| echo: FALSE
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/4/49/Charles-University-symbol-4.png")
+```
+:::
+
+::: {.column width="30%"}
+:::
+::::::

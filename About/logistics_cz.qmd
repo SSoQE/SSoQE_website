@@ -1,0 +1,56 @@
+---
+title: "Logistics🏕️🗺️"
+format: html
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+## Venue🏡 and Accommodation🛌
+
+The school will take place in somwhere in Czech Republic. The exact location will be announced soon.
+
+## Food🍱
+
+The organisers will provide main meals (breakfast, lunch and dinner) for free as part of the Science School.
+
+::: callout-warning
+### Dietary preferences
+
+If you have any dietary preferences and/or restrictions (vegetarian/vegan/...), please let us know in advance.
+:::
+
+## Travel🚗
+
+**The participants are expected to organize their travel**.
+
+We will provide you with detailed information on how to get to the venue by public transport or by car.
+
+### Arrival and Departure 🚆🚍:
+
+Your arrival date is Monday, 15th September 2025.
+The Science School will end on Saturday, 20st September 2025.
+
+### Reimbursement of travel costs 💸:
+
+Please keep all invoices for your travel expenses.
+We can reimburse them at least partially - the exact amount depends on the overall costs.
+
+## What to bring🎒
+
+::: callout-tip
+## We recommend to pack
+
+-   **Laptop** + **charger**
+-   **Towels**
+-   **Slippers** or warm socks (it's not allowed to wear street shoes inside the venue)
+-   **Toiletries**
+-   **Warm clothes**
+-   **Hiking shoes**/**Raincoat** (we might go hiking in the forest)
+-   You can bring your own **snacks** and **drinks**
+-   **Water bottle**
+-   **Games** or **music instrument** for social activities
+-   **Money in cash** (Euros; There is an option to buy some drinks at the venue)
+-   **reimbursement of travel costs** (Invoices of your travel tickets to and from the Science School, if possible already printed, and your bank account details)
+-   **Good mood**
+:::

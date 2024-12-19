@@ -1,0 +1,158 @@
+---
+title: Pre-workshop technical Setup🖥️
+format: html
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+Pre-workshop technical instructions for participants.
+Let's get ready to rock!
+🚀
+
+## R and RStudio 💻
+
+[R](https://en.wikipedia.org/wiki/R_(programming_language)) is a fantastic software for statistical analyses.
+📊 [RStudio](https://posit.co/products/open-source/rstudio/) is your trusty sidekick, helping you navigate the R universe with ease.
+It's like a cozy integrated development environment (IDE) for R.
+🌟
+
+There are plenty of guides available to help you obtain or update R and RStudio.
+Here are a couple of them to get you started:
+
+-   [R Basics for Paleoecologists](https://ckiahtipes.github.io/) by C.A. Kiahtipes, a previous part of the APD series of workshops.
+-   [Install or Update R tutorial](https://jennhuck.github.io/workshops/install_update_R.html) by Jennifer Huck.
+
+```{r}
+#| label: chunk-setup
+#| include: false
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Git and GitHub 🌐
+
+Please follow the tutorial [here](https://ondrejmottl.github.io/VersionControl_gitHell/) to install Git and set up a GitHub account.
+
+Specifically, we will be using Git, GitHub, and RStudio for version control and collaboration during the workshop.
+🤝
+
+### "a branch problem"
+
+Some of the participants might have encountered the error of RStudio now being able to detech GIT branch.
+We have figure out the issue and can be fixed by [following the steps here](https://github.com/orgs/SSoQE/discussions/10)
+
+## Packages 📦
+
+Packages are like magic toolboxes 🧰 that contain a collection of functions for specific needs.
+We want to make sure that everyone has the necessary packages installed for this workshop.
+
+### Install packages
+
+Let's create a list of packages that we'll need from CRAN.
+Here they are:
+
+```{r}
+#| label: chunk-pkg-list
+#| output: false 
+#| warning: false
+#| message: false
+package_list <-
+  c(
+    "ape",
+    "fs",
+    "geiger",
+    "geojsonsf",
+    "here",
+    "httpgd",
+    "janitor",
+    "jsonlite",
+    "knitr",
+    "languageserver",
+    "neotoma2",
+    "palmerpenguins",
+    "phytools",
+    "picante",
+    "quarto",
+    "renv",
+    "remotes",
+    "rlang",
+    "sdm",
+    "targets",
+    "terra",
+    "tidyverse",
+    "tinytable",
+    "usethis",
+    "utils",
+    "visNetwork",
+    "torch",
+    "cito",
+    "vegan"
+  )
+```
+
+Now, let's install all these amazing packages from CRAN:
+
+```{r}
+#| label: chunk-pkg-install
+#| eval: false
+lapply(
+  package_list, utils::install.packages
+)
+```
+
+### Test if all packages are ready ✅
+
+Let's do a quick test to make sure everything is in order.
+Running the following code should produce `"Everything is good to go"` instead of an error message saying `"All required packages are not installed"`.
+
+```{r}
+#| label: chunk-pkg-test
+#| eval: false
+if (
+  isTRUE(
+    all(
+      package_list %in%
+        as.data.frame(
+          utils::installed.packages()
+        )[, 1]
+    )
+  )
+) {
+  cat("Everything is good to go")
+} else {
+  warning("All required packages are not installed")
+  warning(
+    paste(
+      "Please install the following packages:",
+      paste(
+        setdiff(
+          package_list,
+          as.data.frame(
+            utils::installed.packages()
+          )[, 1]
+        ),
+        collapse = ", "
+      )
+    )
+  )
+}
+```
+
+## Getting the workshop materials 📚
+
+You can download the workshop materials from the [GitHub repositoris](https://github.com/orgs/SSoQE/repositories).
+
+Just find wanted repository and then on the right side, should be `Releases`, where you will be able to download the ZIP file📦.
+
+### Private repositories
+
+Some of the materials might be not be made for general public (and therefore publically available).
+In that case, you will need to have access to the repository, which we can grant you.
+
+1.  Go to the [this Discussion thread](https://github.com/orgs/SSoQE/discussions/9) and comment with your GitHub username.
+2.  Await for the organizors to grant you access to the repository.
+3.  Check your email. You should receive an email with the invitation to the SSoQE.
+4.  You will now be able to access private repositories and download the materials.
