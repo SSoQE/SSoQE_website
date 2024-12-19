@@ -1,0 +1,46 @@
+---
+title: "General Information📄"
+format: html
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+## General information 📚
+
+Get ready to dive deep into the fascinating world of ecology!
+Our [diverse team of instructors](/team.qmd), who are active researchers in various ecological subdisciplines, will guide you through both theoretical and practical aspects of the course.
+Here's what you can expect:
+
+-   **Engaging Lectures**🔬: Drawn directly from the instructors' current research projects, ensuring you learn the most up-to-date information.
+-   **Hands-On Practice**🤝: Sharpen your skills with practical exercises in R, tailored to help you tackle real-world data challenges.
+-   **Social Events**😊: From barbecues to informal gatherings, you'll have plenty of opportunities to relax, network, and forge new friendships with fellow participants.
+
+## Course Content 🎯
+
+::: callout-tip
+### What to expect
+
+Dive into a diverse range of exciting subjects designed to empower you with advanced ecological analysis skills and a deep understanding of the environment.
+By the end of this course, you'll be equipped to tackle pressing ecological questions such as:
+
+-   🌐 **Quantitative Ecology Fundamentals**: Understand why we use quantitative analysis in ecology, exploring the differences between data exploration, inference, and prediction.
+-   🛠️ **Mastering Project Management**: Gain proficiency in managing large, reproducible ecological projects with tools like Git/GitHub, and learn the art of clean coding and effective project planning.
+-   🌿 **Plant Taxonomy Deep Dive**: Gain a comprehensive overview of resources regarding plant taxonomy, occurrences, and traits, essential for accurate (paleo)ecological research.
+-   🌱 **From Past to Present**: Seamlessly integrate paleoecological data with current plant species data to uncover ecological trends. Learn to address macro-ecological questions using paleontological data, connecting ancient life with today's plant species.
+-   🌍 **Evolution of Ecological Patterns**: Delve into (paleo)ecological patterns on grand scales to study the processes that have shaped life on Earth over millions of years with the help of phylogenies.
+:::
+
+Additional Topics We Might Cover:
+
+-   💻 Coding for Ecologists: Enhance your coding skills in R for a variety of applications from functional programming to developing R packages.
+-   🎲 Statistical Sophistication: Get to grips with Bayesian basics, causal inference, multivariate analysis, and advanced modeling techniques like hierarchical models.
+-   🤖 Tech Meets (Paleo)Ecology: Explore the intersection of machine learning, deep learning, AI, and remote sensing in (paleo)ecological research.
+
+## Costs 💰
+
+::: callout-important
+The participation in science school is free of charge. In addtion, the organisers expect that we should be able to partly/fully cover expences for accommodation, lectures, main meals, and materials.
+Costs for travelling need to be covered by the applicant.
+However, the organisers may be able to reimburse some travel expenses.
+:::

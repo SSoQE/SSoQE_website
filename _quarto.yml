@@ -5,17 +5,28 @@ project:
 website:
   title: "Science School of Quantitative Ecology"
   navbar:
+    search: true
     left:
-      - href: about.qmd
-        text: About the Workshop🎓
-      - href: pre_workshop.qmd
-        text: Technical Setup🖥️
-      - href: team.qmd
-        text: Meet the Team👥
-      - href: logistics.qmd
-        text: Logistics🏕️
-      - href: registration.qmd
-        text: Registration📝
+      - text: Home🏠
+        href: index.qmd
+      - text: "About the Workshop 2025🎓"
+        menu:
+          - text: General Information📄
+            href: About/general_info.qmd
+          - text: Program📅
+            href: About/program.qmd
+          - text: Logistics🏕️
+            href: About/logistics_cz.qmd
+          - text: Registration📝
+            href: About/registration.qmd
+          - text: Pre-workshop technical Setup🖥️
+            href: About/pre_workshop.qmd
+      - text: Meet the Team👥
+        href: team.qmd
+      - text: "Previous runs🏃‍♂️"
+        menu:
+        - text: "2024"
+          href: Previous/2024/2024.qmd
     tools:
       - icon: github
         href: https://github.com/OndrejMottl/SSoQE_website

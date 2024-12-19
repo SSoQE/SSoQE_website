@@ -21,46 +21,11 @@
     "text": "Guest instructors 🧙\n\nGregor Mathes \n\nPostdoctoral Fellow in Analytical Paleontology\n🏦University of Zurich, Zurich, Switzerland\n\n\n\n\nAnna Walentowitz \n\nPostdoctoral Fellow in Biogeography\n🏦University of Bayreuth, Bayreuth, Germany"
   },
   {
-    "objectID": "pre_workshop.html",
-    "href": "pre_workshop.html",
-    "title": "Technical Setup🖥️",
-    "section": "",
-    "text": "Pre-workshop technical instructions for participants. Let’s get ready to rock! 🚀"
-  },
-  {
-    "objectID": "pre_workshop.html#r-and-rstudio",
-    "href": "pre_workshop.html#r-and-rstudio",
-    "title": "Technical Setup🖥️",
-    "section": "R and RStudio 💻",
-    "text": "R and RStudio 💻\nR is a fantastic software for statistical analyses. 📊 RStudio is your trusty sidekick, helping you navigate the R universe with ease. It’s like a cozy integrated development environment (IDE) for R. 🌟\nThere are plenty of guides available to help you obtain or update R and RStudio. Here are a couple of them to get you started:\n\nR Basics for Paleoecologists by C.A. Kiahtipes, a previous part of the APD series of workshops.\nInstall or Update R tutorial by Jennifer Huck."
-  },
-  {
-    "objectID": "pre_workshop.html#git-and-github",
-    "href": "pre_workshop.html#git-and-github",
-    "title": "Technical Setup🖥️",
-    "section": "Git and GitHub 🌐",
-    "text": "Git and GitHub 🌐\nPlease follow the tutorial here to install Git and set up a GitHub account.\nSpecifically, we will be using Git, GitHub, and RStudio for version control and collaboration during the workshop. 🤝\n\n“a branch problem”\nSome of the participants might have encountered the error of RStudio now being able to detech GIT branch. We have figure out the issue and can be fixed by following the steps here"
-  },
-  {
-    "objectID": "pre_workshop.html#packages",
-    "href": "pre_workshop.html#packages",
-    "title": "Technical Setup🖥️",
-    "section": "Packages 📦",
-    "text": "Packages 📦\nPackages are like magic toolboxes 🧰 that contain a collection of functions for specific needs. We want to make sure that everyone has the necessary packages installed for this workshop.\n\nInstall packages\nLet’s create a list of packages that we’ll need from CRAN. Here they are:\n\npackage_list &lt;-\n  c(\n    \"ape\",\n    \"fs\",\n    \"geiger\",\n    \"geojsonsf\",\n    \"here\",\n    \"httpgd\",\n    \"janitor\",\n    \"jsonlite\",\n    \"knitr\",\n    \"languageserver\",\n    \"neotoma2\",\n    \"palmerpenguins\",\n    \"phytools\",\n    \"picante\",\n    \"quarto\",\n    \"renv\",\n    \"remotes\",\n    \"rlang\",\n    \"sdm\",\n    \"targets\",\n    \"terra\",\n    \"tidyverse\",\n    \"tinytable\",\n    \"usethis\",\n    \"utils\",\n    \"visNetwork\",\n    \"torch\",\n    \"cito\",\n    \"vegan\"\n  )\n\nNow, let’s install all these amazing packages from CRAN:\n\nlapply(\n  package_list, utils::install.packages\n)\n\n\n\nTest if all packages are ready ✅\nLet’s do a quick test to make sure everything is in order. Running the following code should produce \"Everything is good to go\" instead of an error message saying \"All required packages are not installed\".\n\nif (\n  isTRUE(\n    all(\n      package_list %in%\n        as.data.frame(\n          utils::installed.packages()\n        )[, 1]\n    )\n  )\n) {\n  cat(\"Everything is good to go\")\n} else {\n  warning(\"All required packages are not installed\")\n  warning(\n    paste(\n      \"Please install the following packages:\",\n      paste(\n        setdiff(\n          package_list,\n          as.data.frame(\n            utils::installed.packages()\n          )[, 1]\n        ),\n        collapse = \", \"\n      )\n    )\n  )\n}"
-  },
-  {
-    "objectID": "pre_workshop.html#getting-the-workshop-materials",
-    "href": "pre_workshop.html#getting-the-workshop-materials",
-    "title": "Technical Setup🖥️",
-    "section": "Getting the workshop materials 📚",
-    "text": "Getting the workshop materials 📚\nYou can download the workshop materials from the GitHub repositoris.\nJust find wanted repository and then on the right side, should be Releases, where you will be able to download the ZIP file📦.\n\nPrivate repositories\nSome of the materials might be not be made for general public (and therefore publically available). In that case, you will need to have access to the repository, which we can grant you.\n\nGo to the this Discussion thread and comment with your GitHub username.\nAwait for the organizors to grant you access to the repository.\nCheck your email. You should receive an email with the invitation to the SSoQE.\nYou will now be able to access private repositories and download the materials."
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Science School on Quantitative Ecology",
     "section": "",
-    "text": "Gerenal Information for 2024 School\n\n\n\n📅Date: 23.09.2024 - 28.09.2024 (Monday to Saturday)\n🗺️Location: Seminar House of the University of Bayreuth in Wallenfels, Germany\n👥Who can apply: Master and PhD students of ecology or a field closely related to ecology\n📝Registration: Closed for 2024 School!\n📔Program details for 2024: Available here."
+    "text": "Gerenal Information for 2025 School\n\n\n\n📅Date: 15.09.2024 - 20.09.2025 (Monday to Saturday)\n🗺️Location: Czech Republic (exact location will be specified)\n👥Who can apply: Master and PhD students of ecology or a field closely related to ecology\n📝Registration: end of February 2025 (or full capacity!)"
   },
   {
     "objectID": "index.html#welcome",
@@ -70,101 +35,199 @@
     "text": "Welcome!👋\n\n\n\n\n\n\n\n\n\n🌍In today’s world, the ability to navigate and analyze large, open-access datasets is not just an advantage—it’s essential. Whether you’re aiming to excel in your academic journey or carve out a successful career in ecology, mastery of quantitative methods is key.\n🎓Excitingly, in 2024, Charles University in Prague (CZ) and the University of Bayreuth (GER) are teaming up to launch the Science School in Quantitative Ecology. This program is tailored for both Master’s and PhD students eager to advance their skills in data analysis and ecological research.\n🌱You’ve found the official hub for all things related to the school. Here, you’ll get early access to preliminary information, registration details, and later on, the complete event schedule and educational materials. Stay tuned and get ready to transform your understanding of ecology with us!"
   },
   {
-    "objectID": "index.html#page-navigation",
-    "href": "index.html#page-navigation",
-    "title": "Science School on Quantitative Ecology",
-    "section": "Page Navigation",
-    "text": "Page Navigation\n🔍Explore the following sections to learn more about the school:\n\nAbout the School🎓\nTechnical Setup🖥️\nMeet the Team👥\nLogistics🏕️\nRegistration📝"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About the Workshop🎓",
+    "objectID": "About/program.html",
+    "href": "About/program.html",
+    "title": "Program📅",
     "section": "",
-    "text": "Get ready to dive deep into the fascinating world of ecology! Our diverse team of instructors, who are active researchers in various ecological subdisciplines, will guide you through both theoretical and practical aspects of the course. Here’s what you can expect:\n\nEngaging Lectures🔬: Drawn directly from the instructors’ current research projects, ensuring you learn the most up-to-date information.\nHands-On Practice🤝: Sharpen your skills with practical exercises in R, tailored to help you tackle real-world data challenges.\nSocial Events😊: From barbecues to informal gatherings, you’ll have plenty of opportunities to relax, network, and forge new friendships with fellow participants."
+    "text": "Time\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\n\n\n\n\n8:00 - 9:00\nArrival\nBreakfast\nBreakfast\nBreakfast\nBreakfast\nBreakfast\n\n\n9:00 - 10:30\nArrival\nSpecies Distribution Modelling I\nSample Standardisation and Resampling\nAnalysing Community Data I\nPhylogenetic Data in Ecology\nWrap-up & Feedback\n\n\n10:30 - 10:45\nArrival\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\n\n\n10:45 - 12:00\nArrival\nSpecies Distribution Modelling II\nIntroduction to Large Databases\nAnalysing Community Data II\nPhylogenies in Community Ecology\nCleaning\n\n\n12:00 - 13:00\nLunch\nLunch\nLunch\nLunch\nLunch\nLunch\n\n\n13:00 - 15:00\nWelcome and Introduction\nBiases in Ecological and Paleoecological Data I\nExploring Past Vegetation Using Fossil Pollen\nReproducibility in science\nEcology of Speciation, Extinction, and Macroevolution Departure\n\n\n\n15:00 - 15:30\nWelcome and Introduction\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\n-\n\n\n15:30 - 17:00\nQuantitative Ecology: Unveiling Patterns in Nature\nBiases in Ecological and Paleoecological Data II\nFunctional Programming (with fossil pollen data)\nProject Management and Collaboration (using GitHub)\nDeep Learning meets (Palaeo) Ecology\n-\n\n\n17:00 - 18:00\nTechnical support\nFree time\nFree time\nFree time\nFree time\n-\n\n\n18:00 - 19:30\nDinner\nDinner\nDinner\nDinner\nDinner\n-\n\n\n19:30 - 00:00\nSocial\nSocial\nSocial\nSocial\nSocial\n-"
   },
   {
-    "objectID": "about.html#general-information",
-    "href": "about.html#general-information",
-    "title": "About the Workshop🎓",
+    "objectID": "About/program.html#preliminary-program-2025",
+    "href": "About/program.html#preliminary-program-2025",
+    "title": "Program📅",
     "section": "",
-    "text": "Get ready to dive deep into the fascinating world of ecology! Our diverse team of instructors, who are active researchers in various ecological subdisciplines, will guide you through both theoretical and practical aspects of the course. Here’s what you can expect:\n\nEngaging Lectures🔬: Drawn directly from the instructors’ current research projects, ensuring you learn the most up-to-date information.\nHands-On Practice🤝: Sharpen your skills with practical exercises in R, tailored to help you tackle real-world data challenges.\nSocial Events😊: From barbecues to informal gatherings, you’ll have plenty of opportunities to relax, network, and forge new friendships with fellow participants."
+    "text": "Time\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\n\n\n\n\n8:00 - 9:00\nArrival\nBreakfast\nBreakfast\nBreakfast\nBreakfast\nBreakfast\n\n\n9:00 - 10:30\nArrival\nSpecies Distribution Modelling I\nSample Standardisation and Resampling\nAnalysing Community Data I\nPhylogenetic Data in Ecology\nWrap-up & Feedback\n\n\n10:30 - 10:45\nArrival\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\n\n\n10:45 - 12:00\nArrival\nSpecies Distribution Modelling II\nIntroduction to Large Databases\nAnalysing Community Data II\nPhylogenies in Community Ecology\nCleaning\n\n\n12:00 - 13:00\nLunch\nLunch\nLunch\nLunch\nLunch\nLunch\n\n\n13:00 - 15:00\nWelcome and Introduction\nBiases in Ecological and Paleoecological Data I\nExploring Past Vegetation Using Fossil Pollen\nReproducibility in science\nEcology of Speciation, Extinction, and Macroevolution Departure\n\n\n\n15:00 - 15:30\nWelcome and Introduction\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\n-\n\n\n15:30 - 17:00\nQuantitative Ecology: Unveiling Patterns in Nature\nBiases in Ecological and Paleoecological Data II\nFunctional Programming (with fossil pollen data)\nProject Management and Collaboration (using GitHub)\nDeep Learning meets (Palaeo) Ecology\n-\n\n\n17:00 - 18:00\nTechnical support\nFree time\nFree time\nFree time\nFree time\n-\n\n\n18:00 - 19:30\nDinner\nDinner\nDinner\nDinner\nDinner\n-\n\n\n19:30 - 00:00\nSocial\nSocial\nSocial\nSocial\nSocial\n-"
   },
   {
-    "objectID": "about.html#course-content",
-    "href": "about.html#course-content",
-    "title": "About the Workshop🎓",
-    "section": "Course Content 🎯",
-    "text": "Course Content 🎯\n\n\n\n\n\n\nWhat to expect\n\n\n\nDive into a diverse range of exciting subjects designed to empower you with advanced ecological analysis skills and a deep understanding of the environment. By the end of this course, you’ll be equipped to tackle pressing ecological questions such as:\n\n🌐 Quantitative Ecology Fundamentals: Understand why we use quantitative analysis in ecology, exploring the differences between data exploration, inference, and prediction.\n🛠️ Mastering Project Management: Gain proficiency in managing large, reproducible ecological projects with tools like Git/GitHub, and learn the art of clean coding and effective project planning.\n🌿 Plant Taxonomy Deep Dive: Gain a comprehensive overview of resources regarding plant taxonomy, occurrences, and traits, essential for accurate (paleo)ecological research.\n🌱 From Past to Present: Seamlessly integrate paleoecological data with current plant species data to uncover ecological trends. Learn to address macro-ecological questions using paleontological data, connecting ancient life with today’s plant species.\n🌍 Evolution of Ecological Patterns: Delve into (paleo)ecological patterns on grand scales to study the processes that have shaped life on Earth over millions of years with the help of phylogenies.\n\n\n\nAdditional Topics We Might Cover:\n\n💻 Coding for Ecologists: Enhance your coding skills in R for a variety of applications from functional programming to developing R packages.\n🎲 Statistical Sophistication: Get to grips with Bayesian basics, causal inference, multivariate analysis, and advanced modeling techniques like hierarchical models.\n🤖 Tech Meets (Paleo)Ecology: Explore the intersection of machine learning, deep learning, AI, and remote sensing in (paleo)ecological research.\n\n\nProgram Overview\n\nPreliminary Program 2024\n\n\n\n\n\n\n\n\n\n\n\nTime\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\n\n\n\n\n8:00 - 9:00\nArrival\nBreakfast\nBreakfast\nBreakfast\nBreakfast\nBreakfast\n\n\n9:00 - 10:30\nArrival\nSpecies Distribution Modelling I\nSample Standardisation and Resampling\nAnalysing Community Data I\nPhylogenetic Data in Ecology\nWrap-up & Feedback\n\n\n10:30 - 10:45\nArrival\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\n\n\n10:45 - 12:00\nArrival\nSpecies Distribution Modelling II\nIntroduction to Large Databases\nAnalysing Community Data II\nPhylogenies in Community Ecology\nCleaning\n\n\n12:00 - 13:00\nLunch\nLunch\nLunch\nLunch\nLunch\nLunch\n\n\n13:00 - 15:00\nWelcome and Introduction\nBiases in Ecological and Paleoecological Data I\nExploring Past Vegetation Using Fossil Pollen\nReproducibility in science\nEcology of Speciation, Extinction, and Macroevolution Departure\n\n\n\n15:00 - 15:30\nWelcome and Introduction\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\n-\n\n\n15:30 - 17:00\nQuantitative Ecology: Unveiling Patterns in Nature\nBiases in Ecological and Paleoecological Data II\nFunctional Programming (with fossil pollen data)\nProject Management and Collaboration (using GitHub)\nDeep Learning meets (Palaeo) Ecology\n-\n\n\n17:00 - 18:00\nTechnical support\nFree time\nFree time\nFree time\nFree time\n-\n\n\n18:00 - 19:30\nDinner\nDinner\nDinner\nDinner\nDinner\n-\n\n\n19:30 - 00:00\nSocial\nSocial\nSocial\nSocial\nSocial\n-"
-  },
-  {
-    "objectID": "about.html#costs",
-    "href": "about.html#costs",
-    "title": "About the Workshop🎓",
-    "section": "Costs 💰",
-    "text": "Costs 💰\n\n\n\n\n\n\nImportant\n\n\n\nThe science school is free of charge, and it includes accommodation, lectures, main meals, and materials. Costs for travelling need to be covered by the applicant. However, the organisers may be able to reimburse some travel expenses. See details about the logistics."
-  },
-  {
-    "objectID": "about.html#credits-and-certificates",
-    "href": "about.html#credits-and-certificates",
-    "title": "About the Workshop🎓",
-    "section": "Credits and Certificates 📜",
-    "text": "Credits and Certificates 📜\nAfter the course, each participant will be eligible for:\n\nCertificate of Attendance validated by the University of Bayreuth and Charles University\nCredits: If you are a student of either of the two hosting universities, you should sign up the appropriate course to receive credits\n\nUnversity of Bayreuth: Fak220605: Paleoecology and paleobiology\nCharles University: MB120C28: Science School on Quantitative Ecology !!! NOTE that, sadly, this course will NOT be credited this run; only starting from academic year 2024/2025 !!!"
-  },
-  {
-    "objectID": "about.html#funding",
-    "href": "about.html#funding",
-    "title": "About the Workshop🎓",
-    "section": "Funding",
-    "text": "Funding\nThe Science School of Qunatitive Ecology is funded by the The Bavarian-Czech Academic Agency (TBHA) and POINT programm by Charles University."
-  },
-  {
-    "objectID": "logistics.html",
-    "href": "logistics.html",
+    "objectID": "About/logistics_de.html",
+    "href": "About/logistics_de.html",
     "title": "Logistics🏕️🗺️",
     "section": "",
     "text": "The school will take place at Seminar House of the University of Bayreuth in Wallenfels, Germany. Wallenfels is a small village in the middle of the Franconian Forest, a region in the north of Bavaria, Germany. The village is located in a valley surrounded by hills and forests.\nWe are providing accommodation for free as part of the Science School.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe participants will be accommodated in shared rooms at the Seminar House of the University of Bayreuth. The rooms are equipped with bunk beds, a desk, and a wardrobe. The bathrooms are shared. The participants are expected to bring their own towels and toiletries."
   },
   {
-    "objectID": "logistics.html#venue-and-accommodation",
-    "href": "logistics.html#venue-and-accommodation",
+    "objectID": "About/logistics_de.html#venue-and-accommodation",
+    "href": "About/logistics_de.html#venue-and-accommodation",
     "title": "Logistics🏕️🗺️",
     "section": "",
     "text": "The school will take place at Seminar House of the University of Bayreuth in Wallenfels, Germany. Wallenfels is a small village in the middle of the Franconian Forest, a region in the north of Bavaria, Germany. The village is located in a valley surrounded by hills and forests.\nWe are providing accommodation for free as part of the Science School.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe participants will be accommodated in shared rooms at the Seminar House of the University of Bayreuth. The rooms are equipped with bunk beds, a desk, and a wardrobe. The bathrooms are shared. The participants are expected to bring their own towels and toiletries."
   },
   {
-    "objectID": "logistics.html#food",
-    "href": "logistics.html#food",
+    "objectID": "About/logistics_de.html#food",
+    "href": "About/logistics_de.html#food",
     "title": "Logistics🏕️🗺️",
     "section": "Food🍱",
     "text": "Food🍱\nThe organisers will provide main meals (breakfast, lunch and dinner) for free as part of the Science School.\n\n\n\n\n\n\nDietary preferences\n\n\n\nIf you have any dietary preferences and/or restrictions (vegetarian/vegan/…), please let us know in advance."
   },
   {
-    "objectID": "logistics.html#travel",
-    "href": "logistics.html#travel",
+    "objectID": "About/logistics_de.html#travel",
+    "href": "About/logistics_de.html#travel",
     "title": "Logistics🏕️🗺️",
     "section": "Travel🚗",
     "text": "Travel🚗\nThe participants are expected to organize their travel. The nearest train station to Wallenfels is in Kronach, which is 20 km away, and the nearest airport is in Nuremberg. The is a possibility to park a car at the Seminar House. If you want to drive a car and want to share the ride with other participants, please let us know in advance.\n\n\n\n\n\n\nForum for car-sharing and travel tips\n\n\n\nHop over to the Travel channel on our GitHub forum to self-organise car-sharing and/od ask about travel options.\nTo join in the fun, you’ll need a GitHub account. No worries if you don’t have one yet-check out this easy tutorial to get started. Hot tip: Use your university or scientific institution email to get some cool student perks!\nInside the forum, you’ll also find different channels to keep things organised: Questions, Travel, and Offtopic (because we all need a place for memes, right?). Just a heads up: the forum is public, so be sure to follow the GitHub community guidelines.\n\n\n\nArrival and Departure 🚆🚍:\nYour arrival date is Monday, 23rd September 2024. Ideally, plan to arrive in Bayreuth by train at 13:00 PM. We have arranged a shuttle service that will take you from Bayreuth to Wallenfels at 13:15. Still, you can also come directly to Wallenfells (Universität Bayreuth Ökologische Außenstelle, Am Allerswald 1, 96346 Wallenfels).\nWe will depart from Wallenfels in the afternoon on Saturday, 28th September 2024. We should be able to leave at the latest at 13:30 in Wallenfels and thus, be back in Bayreuth around 14:30. A shuttle service will be available again. Please plan your travels and book your tickets accordingly.\n\n\nTravelling from the Czech Republic 🇨🇿➡️🇩🇪:\n\n\n\n\n\n\nImportant\n\n\n\nThere have been some changes in the train connections between the Czech Republic and Germany (posible due to recent floods). You need to take earlier train from Prague to Cheb! Please make sure to check the train connections. If oyu have already purchased the tickets, please return it and buy a new one.\n\n\nIf you are traveling from the Czech Republic by public transport, we find out that the only feasible option is by train.\n\nErgoNet ticket 🎫:\nIn order to buy the cheapest train ticket you should get ErgoNet ticket, which can be only bought at the ticket office only the day you are travelling.\nTherfore, you need to buy tickets from České Dráhy and ErgoNet ticket separately.\nRecommended train connections for arrival 23.09.:\n\nČeské Dráhy:\n\n06:23 - 09:27 from Prague main train station to Cheb by IC 566 Západní expres\n\nDeutsche Bahn\n\n10:31 - 10:58 from Cheb to Marktredwitz by ag RB95 (20875)\n11:09 - 11:25 from Marktredwitz to Kirchenlaibach by RE 31 (4886)\n11:42 - 11:57 from Kirchenlaibach to Bayreuth by ag RB34 (84648)\n\n\nRecommended train connections for departure 28.09.:\n\nDeutsche Bahn\n\n14:18 - 15:24 from Bayreuth to Neusorg by ag RB97 (56225)\n15:02 - 15:27 from Neusorg to Marktredwitz by bus (a train replacement)\n16:20 - 16:59 from Marktredwitz to Cheb by bus (a train replacement)\n\nČeské Dráhy\n\n17:19 - 18:49 from Cheb to Plzeň by Sp 1691\n19:00 - 20:22 from Plzeň to Prague main train station by EC 361 Bavorský expres\n\n\n\n\n\nReimbursement of travel costs 💸:\nPlease keep all invoices for your travel expenses. We can reimburse them at least partially - the exact amount depends on the overall costs. The cost of the train for CZ participants should be around ~1200 CZK in total (748 CZK for CZ train and 400 CZK for Ergoticket). We expect that we will be able to cover a minimum of 1500 CZK of the costs."
   },
   {
-    "objectID": "logistics.html#what-to-bring",
-    "href": "logistics.html#what-to-bring",
+    "objectID": "About/logistics_de.html#what-to-bring",
+    "href": "About/logistics_de.html#what-to-bring",
     "title": "Logistics🏕️🗺️",
     "section": "What to bring🎒",
     "text": "What to bring🎒\n\n\n\n\n\n\nWe recommend to pack\n\n\n\n\nLaptop + charger\nTowels\nSlippers or warm socks (it’s not allowed to wear street shoes inside the venue)\nToiletries\nWarm clothes\nHiking shoes/Raincoat (we might go hiking in the forest)\nYou can bring your own snacks and drinks\nWater bottle\nGames or music instrument for social activities\nMoney in cash (Euros; There is an option to buy some drinks at the venue)\nreimbursement of travel costs (Invoices of your travel tickets to and from the Science School, if possible already printed, and your bank account details)\nGood mood"
   },
   {
-    "objectID": "registration.html",
-    "href": "registration.html",
-    "title": "Registration📝",
+    "objectID": "About/general_info.html",
+    "href": "About/general_info.html",
+    "title": "General Information📄",
     "section": "",
-    "text": "Important\n\n\n\nApplications are closed for the 2024 School\nAll applicants should have received an email about the status of their application already Please reach out if you have not.\nWe accept applications from Master’s and PhD students in environmental sciences, geography, geo-ecology, and ecology or any related field. The number of participants is limited to 25 students."
+    "text": "Get ready to dive deep into the fascinating world of ecology! Our diverse team of instructors, who are active researchers in various ecological subdisciplines, will guide you through both theoretical and practical aspects of the course. Here’s what you can expect:\n\nEngaging Lectures🔬: Drawn directly from the instructors’ current research projects, ensuring you learn the most up-to-date information.\nHands-On Practice🤝: Sharpen your skills with practical exercises in R, tailored to help you tackle real-world data challenges.\nSocial Events😊: From barbecues to informal gatherings, you’ll have plenty of opportunities to relax, network, and forge new friendships with fellow participants."
   },
   {
-    "objectID": "registration.html#cancelation-policy",
-    "href": "registration.html#cancelation-policy",
+    "objectID": "About/general_info.html#general-information",
+    "href": "About/general_info.html#general-information",
+    "title": "General Information📄",
+    "section": "",
+    "text": "Get ready to dive deep into the fascinating world of ecology! Our diverse team of instructors, who are active researchers in various ecological subdisciplines, will guide you through both theoretical and practical aspects of the course. Here’s what you can expect:\n\nEngaging Lectures🔬: Drawn directly from the instructors’ current research projects, ensuring you learn the most up-to-date information.\nHands-On Practice🤝: Sharpen your skills with practical exercises in R, tailored to help you tackle real-world data challenges.\nSocial Events😊: From barbecues to informal gatherings, you’ll have plenty of opportunities to relax, network, and forge new friendships with fellow participants."
+  },
+  {
+    "objectID": "About/general_info.html#course-content",
+    "href": "About/general_info.html#course-content",
+    "title": "General Information📄",
+    "section": "Course Content 🎯",
+    "text": "Course Content 🎯\n\n\n\n\n\n\nWhat to expect\n\n\n\nDive into a diverse range of exciting subjects designed to empower you with advanced ecological analysis skills and a deep understanding of the environment. By the end of this course, you’ll be equipped to tackle pressing ecological questions such as:\n\n🌐 Quantitative Ecology Fundamentals: Understand why we use quantitative analysis in ecology, exploring the differences between data exploration, inference, and prediction.\n🛠️ Mastering Project Management: Gain proficiency in managing large, reproducible ecological projects with tools like Git/GitHub, and learn the art of clean coding and effective project planning.\n🌿 Plant Taxonomy Deep Dive: Gain a comprehensive overview of resources regarding plant taxonomy, occurrences, and traits, essential for accurate (paleo)ecological research.\n🌱 From Past to Present: Seamlessly integrate paleoecological data with current plant species data to uncover ecological trends. Learn to address macro-ecological questions using paleontological data, connecting ancient life with today’s plant species.\n🌍 Evolution of Ecological Patterns: Delve into (paleo)ecological patterns on grand scales to study the processes that have shaped life on Earth over millions of years with the help of phylogenies.\n\n\n\nAdditional Topics We Might Cover:\n\n💻 Coding for Ecologists: Enhance your coding skills in R for a variety of applications from functional programming to developing R packages.\n🎲 Statistical Sophistication: Get to grips with Bayesian basics, causal inference, multivariate analysis, and advanced modeling techniques like hierarchical models.\n🤖 Tech Meets (Paleo)Ecology: Explore the intersection of machine learning, deep learning, AI, and remote sensing in (paleo)ecological research."
+  },
+  {
+    "objectID": "About/general_info.html#costs",
+    "href": "About/general_info.html#costs",
+    "title": "General Information📄",
+    "section": "Costs 💰",
+    "text": "Costs 💰\n\n\n\n\n\n\nImportant\n\n\n\nThe participation in science school is free of charge. In addtion, the organisers expect that we should be able to partly/fully cover expences for accommodation, lectures, main meals, and materials. Costs for travelling need to be covered by the applicant. However, the organisers may be able to reimburse some travel expenses."
+  },
+  {
+    "objectID": "About/logistics_cz.html",
+    "href": "About/logistics_cz.html",
+    "title": "Logistics🏕️🗺️",
+    "section": "",
+    "text": "The school will take place in somwhere in Czech Republic. The exact location will be announced soon."
+  },
+  {
+    "objectID": "About/logistics_cz.html#venue-and-accommodation",
+    "href": "About/logistics_cz.html#venue-and-accommodation",
+    "title": "Logistics🏕️🗺️",
+    "section": "",
+    "text": "The school will take place in somwhere in Czech Republic. The exact location will be announced soon."
+  },
+  {
+    "objectID": "About/logistics_cz.html#food",
+    "href": "About/logistics_cz.html#food",
+    "title": "Logistics🏕️🗺️",
+    "section": "Food🍱",
+    "text": "Food🍱\nThe organisers will provide main meals (breakfast, lunch and dinner) for free as part of the Science School.\n\n\n\n\n\n\nDietary preferences\n\n\n\nIf you have any dietary preferences and/or restrictions (vegetarian/vegan/…), please let us know in advance."
+  },
+  {
+    "objectID": "About/logistics_cz.html#travel",
+    "href": "About/logistics_cz.html#travel",
+    "title": "Logistics🏕️🗺️",
+    "section": "Travel🚗",
+    "text": "Travel🚗\nThe participants are expected to organize their travel.\nWe will provide you with detailed information on how to get to the venue by public transport or by car.\n\nArrival and Departure 🚆🚍:\nYour arrival date is Monday, 15th September 2025. The Science School will end on Saturday, 20st September 2025.\n\n\nReimbursement of travel costs 💸:\nPlease keep all invoices for your travel expenses. We can reimburse them at least partially - the exact amount depends on the overall costs."
+  },
+  {
+    "objectID": "About/logistics_cz.html#what-to-bring",
+    "href": "About/logistics_cz.html#what-to-bring",
+    "title": "Logistics🏕️🗺️",
+    "section": "What to bring🎒",
+    "text": "What to bring🎒\n\n\n\n\n\n\nWe recommend to pack\n\n\n\n\nLaptop + charger\nTowels\nSlippers or warm socks (it’s not allowed to wear street shoes inside the venue)\nToiletries\nWarm clothes\nHiking shoes/Raincoat (we might go hiking in the forest)\nYou can bring your own snacks and drinks\nWater bottle\nGames or music instrument for social activities\nMoney in cash (Euros; There is an option to buy some drinks at the venue)\nreimbursement of travel costs (Invoices of your travel tickets to and from the Science School, if possible already printed, and your bank account details)\nGood mood"
+  },
+  {
+    "objectID": "About/pre_workshop.html",
+    "href": "About/pre_workshop.html",
+    "title": "Pre-workshop technical Setup🖥️",
+    "section": "",
+    "text": "Pre-workshop technical instructions for participants. Let’s get ready to rock! 🚀"
+  },
+  {
+    "objectID": "About/pre_workshop.html#r-and-rstudio",
+    "href": "About/pre_workshop.html#r-and-rstudio",
+    "title": "Pre-workshop technical Setup🖥️",
+    "section": "R and RStudio 💻",
+    "text": "R and RStudio 💻\nR is a fantastic software for statistical analyses. 📊 RStudio is your trusty sidekick, helping you navigate the R universe with ease. It’s like a cozy integrated development environment (IDE) for R. 🌟\nThere are plenty of guides available to help you obtain or update R and RStudio. Here are a couple of them to get you started:\n\nR Basics for Paleoecologists by C.A. Kiahtipes, a previous part of the APD series of workshops.\nInstall or Update R tutorial by Jennifer Huck."
+  },
+  {
+    "objectID": "About/pre_workshop.html#git-and-github",
+    "href": "About/pre_workshop.html#git-and-github",
+    "title": "Pre-workshop technical Setup🖥️",
+    "section": "Git and GitHub 🌐",
+    "text": "Git and GitHub 🌐\nPlease follow the tutorial here to install Git and set up a GitHub account.\nSpecifically, we will be using Git, GitHub, and RStudio for version control and collaboration during the workshop. 🤝\n\n“a branch problem”\nSome of the participants might have encountered the error of RStudio now being able to detech GIT branch. We have figure out the issue and can be fixed by following the steps here"
+  },
+  {
+    "objectID": "About/pre_workshop.html#packages",
+    "href": "About/pre_workshop.html#packages",
+    "title": "Pre-workshop technical Setup🖥️",
+    "section": "Packages 📦",
+    "text": "Packages 📦\nPackages are like magic toolboxes 🧰 that contain a collection of functions for specific needs. We want to make sure that everyone has the necessary packages installed for this workshop.\n\nInstall packages\nLet’s create a list of packages that we’ll need from CRAN. Here they are:\n\npackage_list &lt;-\n  c(\n    \"ape\",\n    \"fs\",\n    \"geiger\",\n    \"geojsonsf\",\n    \"here\",\n    \"httpgd\",\n    \"janitor\",\n    \"jsonlite\",\n    \"knitr\",\n    \"languageserver\",\n    \"neotoma2\",\n    \"palmerpenguins\",\n    \"phytools\",\n    \"picante\",\n    \"quarto\",\n    \"renv\",\n    \"remotes\",\n    \"rlang\",\n    \"sdm\",\n    \"targets\",\n    \"terra\",\n    \"tidyverse\",\n    \"tinytable\",\n    \"usethis\",\n    \"utils\",\n    \"visNetwork\",\n    \"torch\",\n    \"cito\",\n    \"vegan\"\n  )\n\nNow, let’s install all these amazing packages from CRAN:\n\nlapply(\n  package_list, utils::install.packages\n)\n\n\n\nTest if all packages are ready ✅\nLet’s do a quick test to make sure everything is in order. Running the following code should produce \"Everything is good to go\" instead of an error message saying \"All required packages are not installed\".\n\nif (\n  isTRUE(\n    all(\n      package_list %in%\n        as.data.frame(\n          utils::installed.packages()\n        )[, 1]\n    )\n  )\n) {\n  cat(\"Everything is good to go\")\n} else {\n  warning(\"All required packages are not installed\")\n  warning(\n    paste(\n      \"Please install the following packages:\",\n      paste(\n        setdiff(\n          package_list,\n          as.data.frame(\n            utils::installed.packages()\n          )[, 1]\n        ),\n        collapse = \", \"\n      )\n    )\n  )\n}"
+  },
+  {
+    "objectID": "About/pre_workshop.html#getting-the-workshop-materials",
+    "href": "About/pre_workshop.html#getting-the-workshop-materials",
+    "title": "Pre-workshop technical Setup🖥️",
+    "section": "Getting the workshop materials 📚",
+    "text": "Getting the workshop materials 📚\nYou can download the workshop materials from the GitHub repositoris.\nJust find wanted repository and then on the right side, should be Releases, where you will be able to download the ZIP file📦.\n\nPrivate repositories\nSome of the materials might be not be made for general public (and therefore publically available). In that case, you will need to have access to the repository, which we can grant you.\n\nGo to the this Discussion thread and comment with your GitHub username.\nAwait for the organizors to grant you access to the repository.\nCheck your email. You should receive an email with the invitation to the SSoQE.\nYou will now be able to access private repositories and download the materials."
+  },
+  {
+    "objectID": "About/registration.html",
+    "href": "About/registration.html",
+    "title": "Registration📝",
+    "section": "",
+    "text": "Course Requirements 📝\n\n\n\nTo make sure you get the most out of this program, you’ll need:\n\n🎓 To be a Master’s or PhD student in Ecology or a closely related field.\n🖥️ Proficiency in R programming language.\n🗣️ Good command of English to comfortably follow the lectures and engage actively in group discussions and activities.\nWe accept applications from Master’s and PhD students in environmental sciences, geography, geo-ecology, and ecology or any related field. The number of participants is limited to 25 students.\nThere are 2 categories of participants:"
+  },
+  {
+    "objectID": "About/registration.html#students-from-charles-university-or-university-of-bayreuth",
+    "href": "About/registration.html#students-from-charles-university-or-university-of-bayreuth",
+    "title": "Registration📝",
+    "section": "1. Students from Charles University or University of Bayreuth (🇨🇿/🇩🇪)",
+    "text": "1. Students from Charles University or University of Bayreuth (🇨🇿/🇩🇪)\nIf you are a student of either of the two hosting universities, you should sign up the appropriate course: - Unversity of Bayreuth: Fak220605: Paleoecology and paleobiology - Charles University: MB120C28: Science School on Quantitative Ecology\n\n\n\n\n\n\nNote\n\n\n\nIf the capacity of the course is full, you can still apply as a student from another university (see below)."
+  },
+  {
+    "objectID": "About/registration.html#students-from-other-universities",
+    "href": "About/registration.html#students-from-other-universities",
+    "title": "Registration📝",
+    "section": "2. Students from other universities (🌍)",
+    "text": "2. Students from other universities (🌍)\nSend an email📬 to ssoqe@natur.cuni.cz with:\n\na certificate of university enrolment (i.e., a verification that you are a university student)\nmotivation letter (max. 1 page) in one PDF\n\nThere is a limited number of places for students from other universities. The selection of participants will be based on the motivation letter and the order of applications. There will be a committee that will evaluate the applications."
+  },
+  {
+    "objectID": "About/registration.html#credits-and-certificates",
+    "href": "About/registration.html#credits-and-certificates",
+    "title": "Registration📝",
+    "section": "Credits and Certificates 📜",
+    "text": "Credits and Certificates 📜\nAfter the course, each participant will be eligible for:\n\nCertificate of Attendance validated by the University of Bayreuth and Charles University\nCredits: If you are a student of either of the two hosting universities, you will receive credits for the course. The number of credits will be determined by your home university."
+  },
+  {
+    "objectID": "About/registration.html#cancelation-policy",
+    "href": "About/registration.html#cancelation-policy",
     "title": "Registration📝",
     "section": "Cancelation Policy ❌",
-    "text": "Cancelation Policy ❌\nIn case of acceptance to the science school, we expect a binding confirmation of participation by the end of July. If no longer interested, we kindly ask you to inform us promptly as a spontaneous cancellation leads to the forfeiture of the place and other students no longer have the opportunity to participate in the Science School. Furthermore, additional costs and administrative work arise for us in case of spontaneous cancellation."
+    "text": "Cancelation Policy ❌\nIn case of acceptance to the science school, we expect a binding confirmation of participation. If no longer interested, we kindly ask you to inform us promptly as a spontaneous cancellation leads to the forfeiture of the place and other students no longer have the opportunity to participate in the Science School. Furthermore, additional costs and administrative work arise for us in case of spontaneous cancellation."
+  },
+  {
+    "objectID": "Previous/2024/2024.html",
+    "href": "Previous/2024/2024.html",
+    "title": "Germany - Wallenfels - 2024",
+    "section": "",
+    "text": "On Monday, 23.09.2024, a group of enthusiastic young ecological researchers from Charles University (Czech Republic), the University of Bayreuth (Germany) and other European research institutions travelled to Wallenfels, Germany. For one week, they participated together in the Science School on Quantitative Ecology (bit.ly/SSoQE) - a course organised jointly by researchers from Charles University, the Czech Academy of Sciences and the University of Bayreuth to equip participants with advanced quantitative skills vital for modern ecological research and to foster Czech-German collaboration.\nOver the course of 5 days, the young scientists delved into a wide range of topics, including species distribution modelling, multidimensional methods, community ecology, biogeography, paleoecology, and macroevolution. The practical sessions on R programming, GitHub, and open science practices made the heads of the participants smoke, but also ignited their enthusiasm for collaborative sciences. After all this hard work, sociable dinner and passionate board game nights offered just the right rest.\nAt the end of the week, the group said goodbye with a laughing and a crying eye: Sad, that the inspiring week had already come to an end, but happy to have met like-minded people whom they eventually will meet again.\nWe would like to say thank you to all participants for their simply amazing engagement and to our funders - the Bavarian-Czech Academic Agency (BTHA) and the Support for the Internationalization of Charles University (POINT) - without their support, the event wouldn’t have been possible."
+  },
+  {
+    "objectID": "Previous/2024/2024.html#funding",
+    "href": "Previous/2024/2024.html#funding",
+    "title": "Germany - Wallenfels - 2024",
+    "section": "Funding",
+    "text": "Funding\nThe Science School of Qunatitive Ecology 2024 was funded by the The Bavarian-Czech Academic Agency (TBHA) and POINT programm by Charles University."
   }
 ]
