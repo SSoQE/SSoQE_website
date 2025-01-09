@@ -8,6 +8,10 @@ editor:
 
 ## General information 📚
 
+::: callout-warning
+📅*Date:* **15.09.2024 - 20.09.2025** (Monday to Saturday)
+:::
+
 Get ready to dive deep into the fascinating world of ecology!
 Our [diverse team of instructors](/team.qmd), who are active researchers in various ecological subdisciplines, will guide you through both theoretical and practical aspects of the course.
 Here's what you can expect:
@@ -40,7 +44,8 @@ Additional Topics We Might Cover:
 ## Costs 💰
 
 ::: callout-important
-The participation in science school is free of charge. In addtion, the organisers expect that we should be able to partly/fully cover expences for accommodation, lectures, main meals, and materials.
+The participation in science school is free of charge.
+In addtion, the organisers expect that we should be able to partly/fully cover expences for accommodation, lectures, main meals, and materials.
 Costs for travelling need to be covered by the applicant.
 However, the organisers may be able to reimburse some travel expenses.
 :::
