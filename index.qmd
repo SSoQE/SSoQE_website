@@ -10,11 +10,9 @@ editor:
 
 📅*Date:* **15.09.2024 - 20.09.2025** (Monday to Saturday)
 
-🗺️*Location:* **Czech Republic** (exact location will be specified)
+🗺️*Location:* Mariánské Lázně, **Czech Republic**
 
 👥*Who can apply:* **Master and PhD students** of ecology or a field closely related to ecology
-
-📝*Registration*: **end of February 2025** (or full capacity!)
 :::
 
 ## Welcome!👋
@@ -28,7 +26,7 @@ editor:
 🌍In today's world, the ability to navigate and analyze large, open-access datasets is not just an advantage—it's essential.
 Whether you're aiming to excel in your academic journey or carve out a successful career in ecology, mastery of quantitative methods is key.
 
-🎓Excitingly, in 2024, [Charles University in Prague](https://cuni.cz/UKEN-1.html) (CZ) and the [University of Bayreuth](https://www.uni-bayreuth.de/en) (GER) are teaming up to launch the **Science School in Quantitative Ecology**.
+🎓Since 2024, [Charles University in Prague](https://cuni.cz/UKEN-1.html) (CZ) and the [University of Bayreuth](https://www.uni-bayreuth.de/en) (GER) have been teaming up to run the **Science School in Quantitative Ecology**.
 This program is tailored for both Master’s and PhD students eager to advance their skills in data analysis and ecological research.
 
 🌱You’ve found the official hub for all things related to the school.
