@@ -4,6 +4,17 @@ project:
 
 website:
   title: "Science School of Quantitative Ecology"
+  
+  page-footer:
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+  
+  site-url: https://ondrejmottl.github.io/SSoQE_website/
+  repo-url: https://github.com/OndrejMottl/SSoQE_website
+  
+  image: photos/logo_v2.png
+  favicon: photos/logo_v2.png
+  back-to-top-navigation: true
+  
   navbar:
     search: true
     left:
@@ -37,6 +48,4 @@ format:
     css: styles.css
     toc: true
     toc-depth: 2
-
-editor: visual
 
