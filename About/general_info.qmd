@@ -49,3 +49,25 @@ In addtion, the organisers expect that we should be able to partly/fully cover e
 Costs for travelling need to be covered by the applicant.
 However, the organisers may be able to reimburse some travel expenses.
 :::
+
+## Funding
+
+The Science School of Qunatitive Ecology 2024 was funded by the The [Bavarian-Czech Academic Agency (TBHA)](https://www.btha.cz/en/)
+
+```{r}
+#| label: R-setup
+#| include: false
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width = 7,
+  fig.height = 5,
+  fig.align = "center",
+  out.width = "100%"
+)
+```
+
+```{r}
+#| label: logo-BTHA
+#| echo: FALSE
+knitr::include_graphics("https://www.btha.cz/images/logo/logo-full-583x100px-01.png")
+```
