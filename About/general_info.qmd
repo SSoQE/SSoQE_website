@@ -54,7 +54,7 @@ However, the organisers may be able to reimburse some travel expenses.
 
 ## Funding
 
-The Science School of Qunatitive Ecology 2024 was funded by the The [Bavarian-Czech Academic Agency (TBHA)](https://www.btha.cz/en/)
+The Science School of Quantitative Ecology 2025 was funded by the The [Bavarian-Czech Academic Agency (TBHA)](https://www.btha.cz/en/)
 
 ```{r}
 #| label: R-setup

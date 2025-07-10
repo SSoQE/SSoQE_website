@@ -6,20 +6,20 @@ website:
   title: "Science School of Quantitative Ecology"
   
   page-footer:
-    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    right: "This page is built by Ondřej Mottl with ❤️ and [Quarto](https://quarto.org/)."
   
-  site-url: https://ondrejmottl.github.io/SSoQE_website/
-  repo-url: https://github.com/OndrejMottl/SSoQE_website
+  site-url: https://ssoqe.github.io/SSoQE_website/
+  repo-url: https://github.com/SSoQE/SSoQE_website
+  repo-actions: source
   
   image: photos/logo_v2.png
   favicon: photos/logo_v2.png
   back-to-top-navigation: true
   
   navbar:
+    title: SSoQE
     search: true
     left:
-      - text: Home🏠
-        href: index.qmd
       - text: "About the Workshop 2025🎓"
         menu:
           - text: General Information📄
@@ -40,7 +40,7 @@ website:
           href: Previous/2024/2024.qmd
     tools:
       - icon: github
-        href: https://github.com/OndrejMottl/SSoQE_website
+        href: https://github.com/SSoQE/SSoQE_website
 
 format:
   html:
