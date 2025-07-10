@@ -1,1 +1,1 @@
-Sitemap: https://ondrejmottl.github.io/SSoQE_website/sitemap.xml
+Sitemap: https://ssoqe.github.io/SSoQE_website/sitemap.xml
