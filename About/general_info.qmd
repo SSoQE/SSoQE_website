@@ -1,6 +1,9 @@
 ---
 title: "General Information📄"
 format: html
+date: 2024/04/10
+date-format: long
+date-modified: last-modified
 editor: 
   markdown: 
     wrap: sentence
