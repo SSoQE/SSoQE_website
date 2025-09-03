@@ -22,7 +22,7 @@ editor:
 
 ::::: {layout="[ 30, 70 ]"}
 ::: {#first-column}
-![](photos/logo_v2.png)
+![](photos/SSOQE_logo3.png)
 :::
 
 ::: {#second-column}
