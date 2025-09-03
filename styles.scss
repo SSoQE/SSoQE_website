@@ -1,0 +1,273 @@
+/*-- scss:defaults --*/
+
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+// SSoQE Brand Colors - System colors
+$black: #1F2937;      // default black
+$white: #F2F4F2;      // default white
+
+// Base colors
+$midnight-green: #155560;
+$persian-green: #509A8E;
+$cambridge-blue: #A1C3B3;
+
+// Accent colors
+$satin-sheen-gold: #C2A337;
+
+// Semantic mappings
+$body-color: $black !default;
+$body-bg: $white !default;
+$heading-color: $midnight-green !default;
+$link-color: $persian-green !default;
+$accent-color: $satin-sheen-gold !default;
+
+// Font family variables
+$font-family-sans-serif: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif !default;
+$headings-font-family: "Space Grotesk", "Plus Jakarta Sans", sans-serif !default;
+$font-family-monospace: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace !default;
+
+// Font weights
+$headings-font-weight: 600 !default;
+$font-weight-base: 400 !default;
+$font-weight-bold: 700 !default;
+
+// Font sizes and line heights
+$font-size-base: 1rem !default; // 16px
+$line-height-base: 1.5 !default;
+$headings-line-height: 1.2 !default;
+
+// Letter spacing
+$headings-letter-spacing: -0.02em !default;
+
+/*-- scss:rules --*/
+
+// Base body styles
+body {
+  font-family: $font-family-sans-serif;
+  color: $body-color;
+  background-color: $body-bg;
+  line-height: $line-height-base;
+}
+
+// Heading styles
+h1, .h1 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  font-size: 2.5rem; // 40px
+  line-height: $headings-line-height;
+  color: $heading-color;
+  letter-spacing: $headings-letter-spacing;
+}
+
+h2, .h2 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  font-size: 1.875rem; // 30px
+  line-height: 1.25;
+  color: $heading-color;
+  letter-spacing: $headings-letter-spacing;
+}
+
+h3, .h3 {
+  font-family: $font-family-sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem; // 24px
+  line-height: 1.3;
+  color: $body-color;
+}
+
+h4, .h4 {
+  font-family: $font-family-sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem; // 18px
+  line-height: 1.4;
+  color: $body-color;
+}
+
+h5, .h5, h6, .h6 {
+  font-family: $font-family-sans-serif;
+  font-weight: 500;
+  font-size: 1rem; // 16px
+  line-height: 1.4;
+  color: $body-color;
+}
+
+// Link styles
+a {
+  color: darken($link-color, 10%);
+  text-decoration: none;
+  text-shadow: 0 1px 3px rgba($black, 0.2);
+  
+  &:hover {
+    color: lighten($link-color, 10%);
+    text-decoration: underline;
+    text-shadow: 0 1px 3px rgba($black, 0.2);
+  }
+}
+
+// Code styles
+code, .code {
+  font-family: $font-family-monospace !important;
+  background-color: #D4E6DE !important; // Light Cambridge Blue
+  padding: 0.125rem 0.25rem !important;
+  border-radius: 0.25rem !important;
+  color: $accent-color !important;
+}
+
+pre {
+  font-family: $font-family-monospace !important;
+  background-color: #D4E6DE !important; // Same light Cambridge Blue
+  padding: 1rem !important;
+  border-radius: 0.375rem !important;
+  overflow-x: auto;
+  
+  code {
+    color: $body-color !important; // Black text for code blocks
+    background-color: transparent !important; // No background for code inside pre
+  }
+}
+
+// Quarto-specific code elements
+.sourceCode code {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+// Button styles
+.btn-primary {
+  background-color: $midnight-green;
+  border-color: $midnight-green;
+  color: $white;
+  
+  &:hover {
+    background-color: $persian-green;
+    border-color: $persian-green;
+  }
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid $midnight-green;
+  color: $midnight-green;
+  
+  &:hover {
+    background-color: rgba($cambridge-blue, 0.15);
+    border-color: $midnight-green;
+    color: $midnight-green;
+  }
+}
+
+// Accent elements
+.accent, .highlight {
+  color: $satin-sheen-gold;
+}
+
+.bg-accent {
+  background-color: $satin-sheen-gold;
+  color: $white;
+}
+
+// Dividers and borders
+hr, .divider {
+  border-color: rgba($black, 0.2);
+}
+
+// Navbar styling
+.navbar {
+  background-color: $midnight-green;
+  border-bottom: 1px solid rgba($black, 0.1);
+  
+  .navbar-brand {
+    color: $white;
+    font-family: $headings-font-family;
+    font-weight: 700;
+    font-size: 1.75rem; // 28px - appropriate for navbar brand
+  }
+  
+  .nav-link {
+    color: $white;
+    font-weight: 600;
+    font-size: 1.125rem; // 18px - good readability for nav links
+    
+    &:hover, &:focus {
+      color: $white;
+    }
+  }
+  
+  // Specific styling for collapsed navbar
+  .navbar-collapse {
+    .nav-link {
+      color: $white;
+      
+      &:hover, &:focus, &:active {
+        color: $white;
+        background-color: $midnight-green;
+      }
+    }
+  }
+  
+  // Ensure dropdown items also have proper styling
+  .dropdown-menu {
+    background-color: $white;
+    
+    .dropdown-item {
+      color: $black;
+      
+      &:hover, &:focus {
+        color: $white;
+        background-color: $midnight-green;
+      }
+    }
+  }
+}
+
+// Card styling
+.card {
+  background-color: $white;
+  border: 1px solid rgba($black, 0.1);
+  border-radius: 0.5rem;
+}
+
+// Blockquote styling
+blockquote {
+  border-left: 4px solid $persian-green;
+  background-color: rgba($cambridge-blue, 0.1);
+  padding: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+// Table styling
+table {
+  border-collapse: collapse;
+  
+  th {
+    background-color: $midnight-green !important;
+    color: $white !important;
+    font-weight: 600;
+  }
+  
+  td, th {
+    border: 1px solid rgba($black, 0.2);
+    padding: 0.75rem;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: rgba($cambridge-blue, 0.5) !important; // Very light Cambridge Blue
+  }
+}
+
+// Figure styling
+figure, .figure {
+  img {
+    border-radius: 0.5rem; // 8px curved corners
+  }
+}
+
+// General image styling
+img {
+  border-radius: 0.375rem; // 6px curved corners for all images
+  max-width: 100%;
+  height: auto;
+}

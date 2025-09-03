@@ -12,8 +12,8 @@ website:
   repo-url: https://github.com/SSoQE/SSoQE_website
   repo-actions: source
   
-  image: photos/logo_v2.png
-  favicon: photos/logo_v2.png
+  image: photos/SSOQE_logo3.png
+  favicon: photos/SSOQE_logo3.png
   back-to-top-navigation: true
   
   navbar:
@@ -44,8 +44,9 @@ website:
 
 format:
   html:
-    theme: flatly
-    css: styles.css
+    theme: 
+      - flatly
+      - styles.scss
     toc: true
     toc-depth: 2
 
