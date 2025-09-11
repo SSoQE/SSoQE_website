@@ -203,32 +203,67 @@
     "text": "Pre-workshop technical instructions for participants. Let’s get ready to rock! 🚀"
   },
   {
+    "objectID": "About/pre_workshop.html#required-software-checklist",
+    "href": "About/pre_workshop.html#required-software-checklist",
+    "title": "Pre-workshop technical Setup🖥️",
+    "section": "Required Software Checklist ✅",
+    "text": "Required Software Checklist ✅\nBefore attending SSoQE 2025, please ensure you have the following software installed:\n\nR (version 4.5+ recommended)\nRStudio (latest version)\nRtools (Windows only)\nGit (for version control)\nGitHub account (free)"
+  },
+  {
     "objectID": "About/pre_workshop.html#r-and-rstudio",
     "href": "About/pre_workshop.html#r-and-rstudio",
     "title": "Pre-workshop technical Setup🖥️",
     "section": "R and RStudio 💻",
-    "text": "R and RStudio 💻\nR is a fantastic software for statistical analyses. 📊 RStudio is your trusty sidekick, helping you navigate the R universe with ease. It’s like a cozy integrated development environment (IDE) for R. 🌟\nThere are plenty of guides available to help you obtain or update R and RStudio. Here are a couple of them to get you started:\n\nR Basics for Paleoecologists by C.A. Kiahtipes, a previous part of the APD series of workshops.\nInstall or Update R tutorial by Jennifer Huck."
+    "text": "R and RStudio 💻\n\nR is a fantastic software for statistical analyses.\n📊 RStudio is your trusty sidekick, helping you navigate the R universe with ease.\n\n\nInstall/Update R\nMake sure you have R version 4.5 or later installed. You can:\n\nDownload the latest version from CRAN\nCheck your current version by running R.version.string in R Console\n\nR.version.string\n# [1] \"R version 4.5.1 (2025-06-13 ucrt)\"\n\n\nInstall/Update RStudio\nDownload and install the latest version of RStudio from the RStudio website.\nYou can check your RStudio version by running:\nrstudioapi::versionInfo()$version\n# [1] ‘2025.5.1.513’\n\n\nRtools (Windows Users Only) 🪟\nIf you’re using Windows, you’ll need Rtools for building R packages. Download the version compatible with your R version from the CRAN Rtools page.\nFor R 4.5+, use Rtools 4.5 etc.\n\n\nAdditional Resources\nThere are plenty of additional guides available to help you:\n\nR Basics for Paleoecologists by C.A. Kiahtipes\nInstall or Update R tutorial by Jennifer Huck"
   },
   {
     "objectID": "About/pre_workshop.html#git-and-github",
     "href": "About/pre_workshop.html#git-and-github",
     "title": "Pre-workshop technical Setup🖥️",
     "section": "Git and GitHub 🌐",
-    "text": "Git and GitHub 🌐\nPlease follow the tutorial here to install Git and set up a GitHub account.\nSpecifically, we will be using Git, GitHub, and RStudio for version control and collaboration during the workshop. 🤝"
+    "text": "Git and GitHub 🌐\nPlease follow the tutorial here to install Git and set up a GitHub account.\nSpecifically, we will be using Git, GitHub, and RStudio for version control and collaboration during the workshop. 🤝\n\nQuick setup checklist\n\nInstall Git - Download from git-scm.com\nCreate GitHub account - Sign up at github.com\nConfigure Git with your name and email:\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"your.email@example.com\"\nSet up authentication - We’ll help you with Personal Access Tokens (PAT) during the workshop"
   },
   {
     "objectID": "About/pre_workshop.html#packages",
     "href": "About/pre_workshop.html#packages",
     "title": "Pre-workshop technical Setup🖥️",
     "section": "Packages 📦",
-    "text": "Packages 📦\nPackages are like magic toolboxes 🧰 that contain a collection of functions for specific needs. We want to make sure that everyone has the necessary packages installed for this workshop.\n\nInstall packages\nLet’s create a list of packages that we’ll need from CRAN. Here they are:\n\npackage_list &lt;-\n  c(\n    \"ape\",\n    \"fs\",\n    \"geiger\",\n    \"geojsonsf\",\n    \"here\",\n    \"httpgd\",\n    \"janitor\",\n    \"jsonlite\",\n    \"knitr\",\n    \"languageserver\",\n    \"neotoma2\",\n    \"palmerpenguins\",\n    \"phytools\",\n    \"picante\",\n    \"quarto\",\n    \"renv\",\n    \"remotes\",\n    \"rlang\",\n    \"sdm\",\n    \"targets\",\n    \"terra\",\n    \"tidyverse\",\n    \"tinytable\",\n    \"usethis\",\n    \"utils\",\n    \"visNetwork\",\n    \"torch\",\n    \"cito\",\n    \"vegan\"\n  )\n\nNow, let’s install all these amazing packages from CRAN:\n\nlapply(\n  package_list, utils::install.packages\n)\n\n\n\nTest if all packages are ready ✅\nLet’s do a quick test to make sure everything is in order. Running the following code should produce \"Everything is good to go\" instead of an error message saying \"All required packages are not installed\".\n\nif (\n  isTRUE(\n    all(\n      package_list %in%\n        as.data.frame(\n          utils::installed.packages()\n        )[, 1]\n    )\n  )\n) {\n  cat(\"Everything is good to go\")\n} else {\n  warning(\"All required packages are not installed\")\n  warning(\n    paste(\n      \"Please install the following packages:\",\n      paste(\n        setdiff(\n          package_list,\n          as.data.frame(\n            utils::installed.packages()\n          )[, 1]\n        ),\n        collapse = \", \"\n      )\n    )\n  )\n}"
+    "text": "Packages 📦\nPackages are like magic toolboxes 🧰 that contain a collection of functions for specific needs. We want to make sure that everyone has the necessary packages installed for this workshop.\n\nEssential packages for SSoQE 2025\nLet’s create a list of the core packages we’ll need from CRAN:\n\n# Complete list of R packages used across SSoQE lectures\n# Generated on September 11, 2025\nssoqe_package_list &lt;-\n  c(\n    # Project management & Environment\n    \"here\",\n    \"remotes\",\n    \"renv\",\n    \"usethis\",\n\n    # Data manipulation & Analysis\n    \"janitor\",\n    \"rlang\",\n    \"tidyverse\",\n\n    # Visualization & Graphics\n    \"showtext\",\n    \"sysfonts\",\n\n    # File & Data management\n    \"fs\",\n    \"jsonlite\",\n    \"rjson\",\n\n    # Document generation & Reporting\n    \"knitr\",\n    \"pander\",\n    \"quarto\",\n    \"tinytable\",\n\n    # Regression & Statistical Modelling\n    \"lme4\",\n\n    # Spatial & Geographic analyses\n    \"geojsonsf\",\n    \"terra\",\n    \"sdm\",\n\n    # Paleoecological/Scientific packages\n    \"Bchron\",\n    \"neotoma2\",\n\n    # Diversity\n    \"iNEXT\",\n    \"vegan\",\n    \"picante\",\n\n    # Phylogenetic analyses,\n    \"ape\",\n    \"geiger\",\n    \"phytools\",\n\n    # Machine learning\n    \"torch\",\n    \"cito\",\n\n    # Datasets\n    \"palmerpenguins\",\n\n    # Development & Programming\n    \"languageserver\",\n\n    # UI & Interactive elements\n    \"countdown\",\n    \"qrcode\"\n  )\n\n\n\nTest if all packages are ready ✅\nLet’s do a quick test to make sure everything is in order. Running the following code should produce \"Everything is good to go!\" instead of an error message.\n\nmissing_packages &lt;-\n  installed.packages() |&gt;\n  rownames() |&gt;\n  setdiff(x = ssoqe_package_list)\n\nif (\n  length(missing_packages) == 0\n) {\n  cat(\"Everything is good to go!\")\n} else {\n  paste(\n    \"The following packages are not installed: \\n\\n\",\n    missing_packages |&gt;\n      paste(collapse = \", \"),\n    \"\\n\\nPlease install them before the workshop.\"\n  ) |&gt;\n    warning()\n}\n\nNow, let’s install all the missing packages:\n\n# Install packages one by one with error handling\nfor (pkg in missing_packages) {\n  if (!require(pkg, character.only = TRUE, quietly = TRUE)) {\n    install.packages(pkg)\n  }\n}"
   },
   {
     "objectID": "About/pre_workshop.html#getting-the-workshop-materials",
     "href": "About/pre_workshop.html#getting-the-workshop-materials",
     "title": "Pre-workshop technical Setup🖥️",
-    "section": "Getting the workshop materials 📚",
-    "text": "Getting the workshop materials 📚\nYou can download the workshop materials from the GitHub repositoris.\nJust find wanted repository and then on the right side, should be Releases, where you will be able to download the ZIP file📦.\n\nPrivate repositories\nSome of the materials might be not be made for general public (and therefore publically available). In that case, you will need to have access to the repository, which we can grant you.\n\nGo to the this Discussion thread and comment with your GitHub username.\nAwait for the organizors to grant you access to the repository.\nCheck your email. You should receive an email with the invitation to the SSoQE.\nYou will now be able to access private repositories and download the materials."
+    "section": "Getting the workshop materials ‼️",
+    "text": "Getting the workshop materials ‼️\nThe internet connection might be an issue at the venue. Therefore we STRONGLY recommend to download ALL workshop materials needed for SSoQE 2025."
+  },
+  {
+    "objectID": "About/pre_workshop.html#ssoqe-2025",
+    "href": "About/pre_workshop.html#ssoqe-2025",
+    "title": "Pre-workshop technical Setup🖥️",
+    "section": "SSoQE 2025",
+    "text": "SSoQE 2025\n\n\n\n\n\n\nImportant\n\n\n\nThe list of required repositories can be found here."
+  },
+  {
+    "objectID": "About/pre_workshop.html#how-to-download-materials",
+    "href": "About/pre_workshop.html#how-to-download-materials",
+    "title": "Pre-workshop technical Setup🖥️",
+    "section": "How to download materials?",
+    "text": "How to download materials?\nHere is a step-by-step guide to download the materials.\nSimple instructions:\n\nGo to the SSoQE GitHub repositories.\nclick the Code button on the right side of the repository page\nSelect Download ZIP\nUnzip the downloaded file to a folder on your computer\n\n\nPrivate repositories\nSome materials might not be publicly available and require repository access.\n\nGo to this Discussion thread and comment with your GitHub username\nWait for organizers to grant you access to the repository\nCheck your email for the invitation to SSoQE\nYou’ll then be able to access private repositories and download materials"
+  },
+  {
+    "objectID": "About/pre_workshop.html#final-checklist-before-ssoqe-2025",
+    "href": "About/pre_workshop.html#final-checklist-before-ssoqe-2025",
+    "title": "Pre-workshop technical Setup🖥️",
+    "section": "Final Checklist Before SSoQE 2025 🎯",
+    "text": "Final Checklist Before SSoQE 2025 🎯\nBefore arriving at the workshop, please verify:\n\nR version 4.5+ is installed and working\nRStudio latest version is installed\nRtools installed (Windows users)\nGit is installed and configured with your name/email\nGitHub account created\nAll essential packages install without errors\nDownloaded all required workshop materials"
+  },
+  {
+    "objectID": "About/pre_workshop.html#need-help",
+    "href": "About/pre_workshop.html#need-help",
+    "title": "Pre-workshop technical Setup🖥️",
+    "section": "Need Help? 🆘",
+    "text": "Need Help? 🆘\nIf you encounter any issues during setup:\n\nCheck the SSoQE Discussion forum\nAsk questions in the discussion thread\nWe’ll help troubleshoot during the workshop introduction\n\nSee you at SSoQE 2025! 🎉"
   },
   {
     "objectID": "About/registration.html",
