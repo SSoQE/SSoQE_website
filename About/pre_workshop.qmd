@@ -9,23 +9,6 @@ editor:
     wrap: sentence
 ---
 
-Pre-workshop technical instructions for participants.
-Let's get ready to rock!
-🚀
-
-## R and RStudio 💻
-
-[R](https://en.wikipedia.org/wiki/R_(programming_language)) is a fantastic software for statistical analyses.
-📊 [RStudio](https://posit.co/products/open-source/rstudio/) is your trusty sidekick, helping you navigate the R universe with ease.
-It's like a cozy integrated development environment (IDE) for R.
-🌟
-
-There are plenty of guides available to help you obtain or update R and RStudio.
-Here are a couple of them to get you started:
-
--   [R Basics for Paleoecologists](https://ckiahtipes.github.io/) by C.A. Kiahtipes, a previous part of the APD series of workshops.
--   [Install or Update R tutorial](https://jennhuck.github.io/workshops/install_update_R.html) by Jennifer Huck.
-
 ```{r}
 #| label: chunk-setup
 #| include: false
@@ -35,6 +18,63 @@ knitr::opts_chunk$set(
 )
 ```
 
+Pre-workshop technical instructions for participants.
+Let's get ready to rock!
+🚀  
+
+## Required Software Checklist ✅
+
+Before attending SSoQE 2025, please ensure you have the following software installed:
+
+- [ ] **R** (version 4.5+ recommended)
+- [ ] **RStudio** (latest version)
+- [ ] **Rtools** (Windows only)
+- [ ] **Git** (for version control)
+- [ ] **GitHub account** (free)
+
+## R and RStudio 💻
+
+- [R](https://en.wikipedia.org/wiki/R_(programming_language)) is a fantastic software for statistical analyses.
+- 📊 [RStudio](https://posit.co/products/open-source/rstudio/) is your trusty sidekick, helping you navigate the R universe with ease.
+
+### Install/Update R
+
+Make sure you have **R version 4.5 or later** installed. You can:
+
+- Download the latest version from [CRAN](https://cran.r-project.org/)
+- Check your current version by running `R.version.string` in R Console
+
+```r
+R.version.string
+# [1] "R version 4.5.1 (2025-06-13 ucrt)"
+```
+
+### Install/Update RStudio
+
+Download and install the **latest version** of RStudio from the [RStudio website](https://rstudio.com/products/rstudio/download/).
+
+You can check your RStudio version by running:
+
+```r
+rstudioapi::versionInfo()$version
+# [1] ‘2025.5.1.513’
+```
+
+### Rtools (Windows Users Only) 🪟
+
+If you're using Windows, you'll need **Rtools** for building R packages. Download the version compatible with your R version from the [CRAN Rtools page](https://cran.r-project.org/bin/windows/Rtools/).
+
+For R 4.5+, use Rtools 4.5 etc.
+
+### Additional Resources
+
+There are plenty of additional guides available to help you:
+
+-   [R Basics for Paleoecologists](https://ckiahtipes.github.io/) by C.A. Kiahtipes
+-   [Install or Update R tutorial](https://jennhuck.github.io/workshops/install_update_R.html) by Jennifer Huck
+
+
+
 ## Git and GitHub 🌐
 
 Please follow the tutorial [here](https://ondrejmottl.github.io/VersionControl_gitHell/) to install Git and set up a GitHub account.
@@ -42,115 +82,191 @@ Please follow the tutorial [here](https://ondrejmottl.github.io/VersionControl_g
 Specifically, we will be using Git, GitHub, and RStudio for version control and collaboration during the workshop.
 🤝
 
+### Quick setup checklist
+
+1. **Install Git** - Download from [git-scm.com](https://git-scm.com/)
+2. **Create GitHub account** - Sign up at [github.com](https://github.com/)
+3. **Configure Git** with your name and email:
+   ```bash
+   git config --global user.name "Your Name"
+   git config --global user.email "your.email@example.com"
+   ```
+4. **Set up authentication** - We'll help you with Personal Access Tokens (PAT) during the workshop
+
 ## Packages 📦
 
 Packages are like magic toolboxes 🧰 that contain a collection of functions for specific needs.
 We want to make sure that everyone has the necessary packages installed for this workshop.
 
-### Install packages
+### Essential packages for SSoQE 2025
 
-Let's create a list of packages that we'll need from CRAN.
-Here they are:
+Let's create a list of the core packages we'll need from CRAN:
 
 ```{r}
 #| label: chunk-pkg-list
-#| output: false 
+#| output: false
 #| warning: false
 #| message: false
-package_list <-
+# Complete list of R packages used across SSoQE lectures
+# Generated on September 11, 2025
+ssoqe_package_list <-
   c(
-    "ape",
-    "fs",
-    "geiger",
-    "geojsonsf",
+    # Project management & Environment
     "here",
-    "httpgd",
-    "janitor",
-    "jsonlite",
-    "knitr",
-    "languageserver",
-    "neotoma2",
-    "palmerpenguins",
-    "phytools",
-    "picante",
-    "quarto",
-    "renv",
     "remotes",
-    "rlang",
-    "sdm",
-    "targets",
-    "terra",
-    "tidyverse",
-    "tinytable",
+    "renv",
     "usethis",
-    "utils",
-    "visNetwork",
+
+    # Data manipulation & Analysis
+    "janitor",
+    "rlang",
+    "tidyverse",
+
+    # Visualization & Graphics
+    "showtext",
+    "sysfonts",
+
+    # File & Data management
+    "fs",
+    "jsonlite",
+    "rjson",
+
+    # Document generation & Reporting
+    "knitr",
+    "pander",
+    "quarto",
+    "tinytable",
+
+    # Regression & Statistical Modelling
+    "lme4",
+
+    # Spatial & Geographic analyses
+    "geojsonsf",
+    "terra",
+    "sdm",
+
+    # Paleoecological/Scientific packages
+    "Bchron",
+    "neotoma2",
+
+    # Diversity
+    "iNEXT",
+    "vegan",
+    "picante",
+
+    # Phylogenetic analyses,
+    "ape",
+    "geiger",
+    "phytools",
+
+    # Machine learning
     "torch",
     "cito",
-    "vegan"
+
+    # Datasets
+    "palmerpenguins",
+
+    # Development & Programming
+    "languageserver",
+
+    # UI & Interactive elements
+    "countdown",
+    "qrcode"
   )
-```
-
-Now, let's install all these amazing packages from CRAN:
-
-```{r}
-#| label: chunk-pkg-install
-#| eval: false
-lapply(
-  package_list, utils::install.packages
-)
 ```
 
 ### Test if all packages are ready ✅
 
 Let's do a quick test to make sure everything is in order.
-Running the following code should produce `"Everything is good to go"` instead of an error message saying `"All required packages are not installed"`.
+Running the following code should produce `"Everything is good to go!"` instead of an error message.
 
 ```{r}
 #| label: chunk-pkg-test
 #| eval: false
+missing_packages <-
+  installed.packages() |>
+  rownames() |>
+  setdiff(x = ssoqe_package_list)
+
 if (
-  isTRUE(
-    all(
-      package_list %in%
-        as.data.frame(
-          utils::installed.packages()
-        )[, 1]
-    )
-  )
+  length(missing_packages) == 0
 ) {
-  cat("Everything is good to go")
+  cat("Everything is good to go!")
 } else {
-  warning("All required packages are not installed")
-  warning(
-    paste(
-      "Please install the following packages:",
-      paste(
-        setdiff(
-          package_list,
-          as.data.frame(
-            utils::installed.packages()
-          )[, 1]
-        ),
-        collapse = ", "
-      )
-    )
-  )
+  paste(
+    "The following packages are not installed: \n\n",
+    missing_packages |>
+      paste(collapse = ", "),
+    "\n\nPlease install them before the workshop."
+  ) |>
+    warning()
 }
 ```
 
-## Getting the workshop materials 📚
+Now, let's install all the missing packages:
 
-You can download the workshop materials from the [GitHub repositoris](https://github.com/orgs/SSoQE/repositories).
+```{r}
+#| label: chunk-pkg-install
+#| eval: false
+# Install packages one by one with error handling
+for (pkg in missing_packages) {
+  if (!require(pkg, character.only = TRUE, quietly = TRUE)) {
+    install.packages(pkg)
+  }
+}
+```
 
-Just find wanted repository and then on the right side, should be `Releases`, where you will be able to download the ZIP file📦.
+
+## Getting the workshop materials ‼️
+
+The internet connection might be an issue at the venue. Therefore we [STRONGLY]{.text-bold} recommend to download ALL workshop materials needed for SSoQE 2025. 
+
+## SSoQE 2025
+
+::: {.callout-important}
+
+The list of required repositories can be found [here](https://github.com/orgs/SSoQE/discussions/16).
+
+:::
+
+## How to download materials?
+
+Here is a step-by-step [guide to download the materials](https://scribehow.com/viewer/Download_a_Reproducibility_in_Science_lecture_from_GitHib__nrjukbSHTpqNcEfliqzTRw). 
+
+Simple instructions:
+
+1. Go to the [SSoQE GitHub repositories](https://github.com/orgs/SSoQE/repositories).
+2. click the `Code` button on the right side of the repository page
+3. Select `Download ZIP`
+4. Unzip the downloaded file to a folder on your computer
 
 ### Private repositories
 
-Some of the materials might be not be made for general public (and therefore publically available).
-In that case, you will need to have access to the repository, which we can grant you.
+Some materials might not be publicly available and require repository access.
 
-1.  Go to the [this Discussion thread](https://github.com/orgs/SSoQE/discussions/9) and comment with your GitHub username.
-2.  Await for the organizors to grant you access to the repository.
-3.  Check your email. You should receive an email with the invitation to the SSoQE.
-4.  You will now be able to access private repositories and download the materials.
+1. Go to [this Discussion thread](https://github.com/orgs/SSoQE/discussions/9) and comment with your GitHub username
+2. Wait for organizers to grant you access to the repository
+3. Check your email for the invitation to SSoQE
+4. You'll then be able to access private repositories and download materials
+
+## Final Checklist Before SSoQE 2025 🎯
+
+Before arriving at the workshop, please verify:
+
+- [ ] R version 4.5+ is installed and working
+- [ ] RStudio latest version is installed
+- [ ] Rtools installed (Windows users)
+- [ ] Git is installed and configured with your name/email
+- [ ] GitHub account created
+- [ ] All essential packages install without errors
+- [ ] Downloaded all required workshop materials
+
+## Need Help? 🆘
+
+If you encounter any issues during setup:
+
+1. Check the [SSoQE Discussion forum](https://github.com/orgs/SSoQE/discussions/categories/questions)
+2. Ask questions in the discussion thread
+3. We'll help troubleshoot during the workshop introduction
+
+**See you at SSoQE 2025!** 🎉
