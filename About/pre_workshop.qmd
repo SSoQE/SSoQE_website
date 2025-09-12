@@ -31,6 +31,7 @@ Before attending SSoQE 2025, please ensure you have the following software insta
 - [ ] **Rtools** (Windows only)
 - [ ] **Git** (for version control)
 - [ ] **GitHub account** (free)
+- [ ] **Python** (version 3.12+ recommended)
 
 ## R and RStudio 💻
 
@@ -73,7 +74,20 @@ There are plenty of additional guides available to help you:
 -   [R Basics for Paleoecologists](https://ckiahtipes.github.io/) by C.A. Kiahtipes
 -   [Install or Update R tutorial](https://jennhuck.github.io/workshops/install_update_R.html) by Jennifer Huck
 
+### Install/Update Python and Python packages 🐍
+First, check if Python is installed on your computer by opening the **terminal** and running `python --version`. If nothing is displayed or the version is <3.12, download and install the **latest version** of Python from the [Python website](https://www.python.org/downloads/).
 
+Then, install the **required Python packages** using pip:
+1. Open python in the **terminal** of either RStudio or your computer by simply executing the command `python` in the terminal.
+2. Install **pytorch** for building deep learning models by running the following command `pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126`
+3. Install **torchvision** for visualising deep learning models by running the following command `pip3 install torchinfo`
+4. Install **matplotlib** for creating plots by running the following command `pip3 install matplotlib`
+5. Install **numpy** for mathematical operations by running the following command `pip3 install numpy`
+6. Install **pandas** for handling data frames by running the following command `pip3 install pandas`
+
+You can leave Pyhton by running `exit()`.  
+
+⚠️If pip wasn't installed with Python, follow the instructions on how to install pip [here](https://www.geeksforgeeks.org/installation-guide/how-to-install-pip-on-windows/).
 
 ## Git and GitHub 🌐
 
@@ -171,7 +185,12 @@ ssoqe_package_list <-
 
     # UI & Interactive elements
     "countdown",
-    "qrcode"
+    "qrcode",
+
+    # Python integration
+    "png",
+    "RcppTOML",
+    "reticulate"
   )
 ```
 
@@ -216,6 +235,23 @@ for (pkg in missing_packages) {
 }
 ```
 
+### Test if RStudio has successfully connected with Python ✅
+
+Run the following code chunk in R:
+
+```{r}
+    library(reticulate)
+```
+If you receive an error/warning message because **{reticulate} cannot find** your Python programme,
+
+1. Open the **terminal** and run the command `python -c "import sys; print(sys.version); print(sys.executable)"` to get the path of your current python version.
+
+2. Plug in the path to your python version in the following **R** code chunk and run it.
+
+```{r}
+reticulate::use_python(PATH/TO/PYTHON) #Enter the correct path to your python version
+```
+Now you should be ready to run Python and train deep learning models in RStudio using Markdown files! 🎉
 
 ## Getting the workshop materials ‼️
 
