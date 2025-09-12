@@ -78,14 +78,14 @@ There are plenty of additional guides available to help you:
 First, check if Python is installed on your computer by opening the **terminal** and running `python --version`. If nothing is displayed or the version is <3.12, download and install the **latest version** of Python from the [Python website](https://www.python.org/downloads/).
 
 Then, install the **required Python packages** using pip:  
-1. Open python in the **terminal** of either RStudio or your computer by simply executing the command `python` in the terminal.  
+1. Open the **terminal** of either RStudio or your computer.  
 2. Install **pytorch** for building deep learning models by running the following command `pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126`  
 3. Install **torchvision** for visualising deep learning models by running the following command `pip3 install torchinfo`  
 4. Install **matplotlib** for creating plots by running the following command `pip3 install matplotlib`  
 5. Install **numpy** for mathematical operations by running the following command `pip3 install numpy`  
 6. Install **pandas** for handling data frames by running the following command `pip3 install pandas`  
 
-You can leave Pyhton by running `exit()`.    
+You can leave Python by running `exit()`.    
 
 ⚠️If pip wasn't installed with Python, follow the instructions on how to install pip [here](https://www.geeksforgeeks.org/installation-guide/how-to-install-pip-on-windows/).  
 
