@@ -16,11 +16,11 @@ editor:
 | 8:00 - 9:00 | Arrival | Breakfast | Breakfast | Breakfast | Breakfast | Breakfast |
 | 9:00 - 10:30 | Arrival | Species Distribution Modelling I | Sample Standardisation and Resampling | Analysing Community Data I | Project Management and Collaboration (using GitHub) | Excursion |
 | 10:30 - 10:45 | Arrival | Coffee Break | Coffee Break | Coffee Break | Coffee Break | Excursion |
-| 10:45 - 12:00 | Arrival | Species Distribution Modelling II | Exploring Past Vegetation Using Fossil Pollen | Analysing Community Data II | Phylogenetic Data in Ecology | Excursion |
+| 10:45 - 12:00 | Arrival | Species Distribution Modelling II | Reproducibility and Data Science | Analysing Community Data II | Phylogenetic Data in Ecology | Excursion |
 | 12:00 - 13:00 | Lunch | Lunch | Lunch | Lunch | Lunch | Lunch |
 | 13:00 - 15:00 | Get to know us | Hypothesis testing and null models | Biases in ecological and paleoecological data | Deep learning | Phylogenies in Community Ecology | Excursion |
 | 15:00 - 15:30 | Coffee Break | Coffee Break | Coffee Break | Coffee Break | Coffee Break | \- |
-| 15:30 - 17:00 | Get to know each other | Biodiversity and richness | Reproducibility and Data Science | Version Control | Ecology of Speciation, Extinction, and Macroevolution | \- |
+| 15:30 - 17:00 | Get to know each other | Biodiversity and richness | Exploring Past Vegetation Using Fossil Pollen | Version Control | Ecology of Speciation, Extinction, and Macroevolution | \- |
 | 17:00 - 18:00 | Get to know our way of R | Free time | Free time | Free time | Free time | \- |
 | 18:00 - 19:30 | Dinner | Dinner | Dinner | Dinner | Dinner | \- |
 | 19:30 - 00:00 | Social | Social | Social | Social | Social | \- |
