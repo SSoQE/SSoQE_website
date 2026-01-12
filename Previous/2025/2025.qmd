@@ -1,0 +1,58 @@
+---
+title: "Czechia - Mariánské Lázně - 2025"
+format: html
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+The second edition of the Science School on Quantitative Ecology took place this year in Mariánské Lázně, Czechia. From Monday 15.09.2025 until Saturday 20.09.2025, an international group of 23 young researchers from Charles University (Czechia), University of Bayreuth (Germany) and other European universities gathered at the outstation of Charles University to participate in the workshop. The course was organised by scientists from Charles University, the Czech Academy of Sciences and the University of Bayreuth, aiming to equip participants with key skills for modern ecological research and to deepen Czech-German collaboration.
+
+
+![group photo](/Previous/2025/PHOTO_1.jpg)
+
+The programme covered once again a wide range of topics, including species distribution modelling, regression models,  phylogenetics, palynology and machine learning. Practical sessions on R Programming, version control with GitHub and open science practices allowed participants to put their newly gained knowledge to the test and get involved in collaborative learning. During the lectures, vivid discussions around ecological theories and scientific biases were sparked.
+
+After so much stimulating input, the evenings made for a perfect balance: delicious Czech food to fuel the smoking brains, explorations of the beautiful spa town of Mariánské Lázně, frisbee matches in the park, board games sessions or relaxed conversations. The schedule left enough space to socialise with other participants, form new friendships and create a community that will surely continue beyond the programme. 
+
+On Saturday, the excursion to Lázně Kynžvart and the restricted military area of Dolní Žandov
+completed the course with an educational stroll through the nature reserve. Two rangers from the Nature Conservation Agency of the Czech Republic (AOPK) offered us deeper insights into the historical and cultural development of the landscape, as well as nature conservation actions such as bat monitoring. 
+
+We experienced once again how a mix of focused learning, shared curiosity and passion, and open exchange can create a supportive scientific community. Saying goodbye left us all with a touch of melancholy, but also the comforting feeling that we will eventually meet again.
+
+![class photo](/Previous/2025/PHOTO_2.jpg)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![social activities](/Previous/2025/PHOTO_3.jpg)
+:::
+
+::: {.column width="50%"}
+![excursion](/Previous/2025/PHOTO_4.jpg)
+:::
+
+::::
+
+## Funding
+
+We would like to thank all participants for their amazing engagement and enthusiasm, and further thank our supporter, the  [Bavarian-Czech Academic Agency (BTHA)](https://www.btha.cz/en/). Without their contributions, the SSoQE 2205 wouldn’t have been possible.  
+
+```{r}
+#| label: R-setup
+#| include: false
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width = 7,
+  fig.height = 5,
+  fig.align = "center",
+  out.width = "100%"
+)
+```
+
+```{r}
+#| label: logo-BTHA
+#| echo: FALSE
+knitr::include_graphics("https://www.btha.cz/images/logo/logo-full-583x100px-01.png")
+```
+

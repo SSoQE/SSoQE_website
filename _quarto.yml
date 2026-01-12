@@ -20,24 +20,27 @@ website:
     title: SSoQE
     search: true
     left:
-      - text: "About the Workshop 2025🎓"
+      - text: "About the Workshop 2026🎓"
         menu:
           - text: General Information📄
             href: About/general_info.qmd
           - text: Program📅
             href: About/program.qmd
           - text: Logistics🏕️
-            href: About/logistics_cz.qmd
+            href: About/logistics_de.qmd
           - text: Registration📝
             href: About/registration.qmd
-          - text: Pre-workshop technical Setup🖥️
-            href: About/pre_workshop.qmd
+#          - text: Pre-workshop technical Setup🖥️
+#            href: About/pre_workshop.qmd
       - text: Meet the Team👥
         href: team.qmd
       - text: "Previous runs🏃‍♂️"
         menu:
+        - text: "2025"
+          href: Previous/2025/2025.qmd
         - text: "2024"
           href: Previous/2024/2024.qmd
+        
     tools:
       - icon: github
         href: https://github.com/SSoQE/SSoQE_website

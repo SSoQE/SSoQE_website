@@ -50,3 +50,5 @@ R/debug.R
 .Rproj.user
 
 /.quarto/
+
+**/*.quarto_ipynb
