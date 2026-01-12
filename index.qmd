@@ -9,11 +9,11 @@ editor:
 ---
 
 ::: callout-warning
-## Gerenal Information for 2025 School
+## Gerenal Information for 2026 School
 
-📅*Date:* **15.09.2025 - 20.09.2025** (Monday to Saturday)
+📅*Date:* **14.09.2026 - 19.09.2026** (Monday to Saturday)
 
-🗺️*Location:* Mariánské Lázně, **Czech Republic**
+🗺️*Location:* Wallenfels, **Germany**
 
 👥*Who can apply:* **Master and PhD students** of ecology or a field closely related to ecology
 :::

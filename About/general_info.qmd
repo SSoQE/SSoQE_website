@@ -12,9 +12,9 @@ editor:
 ## General information 📚
 
 ::: callout-warning
-📅*Date:* **15.09.2025 - 20.09.2025** (Monday to Saturday)
+📅*Date:* **14.09.2026 - 19.09.2026** (Monday to Saturday)
 
-🗺️Location: Mariánské Lázně, Czech Republic
+🗺️*Location:* Wallenfels, **Germany**
 :::
 
 Get ready to dive deep into the fascinating world of ecology!
@@ -49,15 +49,12 @@ Additional Topics We Might Cover:
 ## Costs 💰
 
 ::: callout-important
-The participation in science school is free of charge.
-In addtion, the organisers expect that we should be able to partly/fully cover expences for accommodation, lectures, main meals, and materials.
-Costs for travelling need to be covered by the applicant.
-However, the organisers may be able to reimburse some travel expenses.
+The participation in science school is free of charge. In addtion, the organisers expect that we should be able to partly/fully cover expences for accommodation, lectures, main meals, and materials. Costs for travelling need to be covered by the applicant. However, the organisers may be able to reimburse some travel expenses.
 :::
 
 ## Funding
 
-The Science School of Quantitative Ecology 2025 was funded by the The [Bavarian-Czech Academic Agency (TBHA)](https://www.btha.cz/en/)
+The Science School of Quantitative Ecology 2026 have applied for funding from the The [Bavarian-Czech Academic Agency (TBHA)](https://www.btha.cz/en/)
 
 ```{r}
 #| label: R-setup
