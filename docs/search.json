@@ -182,6 +182,41 @@
     "text": "What to bring🎒\n\n\n\n\n\n\nTipWe recommend to pack\n\n\n\n\nLaptop + charger\nToiletries\nPersonal medicine if needed\nWarm clothes\nHiking shoes/Raincoat (especially if you want to join us for the excursion)\nYou can bring your own snacks and drinks\nWater bottle\nGames or music instrument for social activities\nMoney in cash (CZK; There is an option to go to ATM in Mariánské Lázně, but it might not be available at the venue)\nreimbursement of travel costs (Invoices of your travel tickets to and from the Science School, if possible already printed, and your bank account details)\nGood mood🥳"
   },
   {
+    "objectID": "About/general_info.html",
+    "href": "About/general_info.html",
+    "title": "General Information📄",
+    "section": "",
+    "text": "Warning\n\n\n\n📅Date: 14.09.2026 - 19.09.2026 (Monday to Saturday)\n🗺️Location: Wallenfels, Germany\n\n\nGet ready to dive deep into the fascinating world of ecology! Our diverse team of instructors, who are active researchers in various ecological subdisciplines, will guide you through both theoretical and practical aspects of the course. Here’s what you can expect:\n\nEngaging Lectures🔬: Drawn directly from the instructors’ current research projects, ensuring you learn the most up-to-date information.\nHands-On Practice🤝: Sharpen your skills with practical exercises in R, tailored to help you tackle real-world data challenges.\nSocial Events😊: From barbecues to informal gatherings, you’ll have plenty of opportunities to relax, network, and forge new friendships with fellow participants."
+  },
+  {
+    "objectID": "About/general_info.html#general-information",
+    "href": "About/general_info.html#general-information",
+    "title": "General Information📄",
+    "section": "",
+    "text": "Warning\n\n\n\n📅Date: 14.09.2026 - 19.09.2026 (Monday to Saturday)\n🗺️Location: Wallenfels, Germany\n\n\nGet ready to dive deep into the fascinating world of ecology! Our diverse team of instructors, who are active researchers in various ecological subdisciplines, will guide you through both theoretical and practical aspects of the course. Here’s what you can expect:\n\nEngaging Lectures🔬: Drawn directly from the instructors’ current research projects, ensuring you learn the most up-to-date information.\nHands-On Practice🤝: Sharpen your skills with practical exercises in R, tailored to help you tackle real-world data challenges.\nSocial Events😊: From barbecues to informal gatherings, you’ll have plenty of opportunities to relax, network, and forge new friendships with fellow participants."
+  },
+  {
+    "objectID": "About/general_info.html#course-content",
+    "href": "About/general_info.html#course-content",
+    "title": "General Information📄",
+    "section": "Course Content 🎯",
+    "text": "Course Content 🎯\nFor a detailed list of skills you can expect to gain, see Learning outcomes 🎯.\n\n\n\n\n\n\nTipWhat to expect\n\n\n\nDive into a diverse range of exciting subjects designed to empower you with advanced ecological analysis skills and a deep understanding of the environment. By the end of this course, you’ll be equipped to tackle pressing ecological questions such as:\n\n🌐 Quantitative Ecology Fundamentals: Understand why we use quantitative analysis in ecology, exploring the differences between data exploration, inference, and prediction.\n🛠️ Mastering Project Management: Gain proficiency in managing large, reproducible ecological projects with tools like Git/GitHub, and learn the art of clean coding and effective project planning.\n🌿 Plant Taxonomy Deep Dive: Gain a comprehensive overview of resources regarding plant taxonomy, occurrences, and traits, essential for accurate (paleo)ecological research.\n🌱 From Past to Present: Seamlessly integrate paleoecological data with current plant species data to uncover ecological trends. Learn to address macro-ecological questions using paleontological data, connecting ancient life with today’s plant species.\n🌍 Evolution of Ecological Patterns: Delve into (paleo)ecological patterns on grand scales to study the processes that have shaped life on Earth over millions of years with the help of phylogenies.\n\n\n\nAdditional Topics We Might Cover:\n\n💻 Coding for Ecologists: Enhance your coding skills in R for a variety of applications from functional programming to developing R packages.\n🎲 Statistical Sophistication: Get to grips with Bayesian basics, causal inference, multivariate analysis, and advanced modeling techniques like hierarchical models.\n🤖 Tech Meets (Paleo)Ecology: Explore the intersection of machine learning, deep learning, AI, and remote sensing in (paleo)ecological research."
+  },
+  {
+    "objectID": "About/general_info.html#costs",
+    "href": "About/general_info.html#costs",
+    "title": "General Information📄",
+    "section": "Costs 💰",
+    "text": "Costs 💰\n\n\n\n\n\n\nImportant\n\n\n\nThe participation in science school is free of charge. In addtion, the organisers expect that we should be able to partly/fully cover expences for accommodation, lectures, main meals, and materials. Costs for travelling need to be covered by the applicant. However, the organisers may be able to reimburse some travel expenses."
+  },
+  {
+    "objectID": "About/general_info.html#funding",
+    "href": "About/general_info.html#funding",
+    "title": "General Information📄",
+    "section": "Funding",
+    "text": "Funding\nThe Science School of Quantitative Ecology 2026 have applied for funding from the The Bavarian-Czech Academic Agency (TBHA)"
+  },
+  {
     "objectID": "About/checklist_2025.html",
     "href": "About/checklist_2025.html",
     "title": "SSoQE Checklist",
@@ -224,39 +259,32 @@
     "text": "During the Science School, we will be working with R a lot. So to assess your prior knowledge in R and Ecology, please fill in this short quiz by 15.08.2025. You can find it in the external Elearning course “Science School on Quantitative Ecology 2025” of the University of Bayreuth. The enrollment key is: SSoQE2025\nIf you are a student of Bayreuth University or already have a bt-account, you can simply log in. Otherwise, please choose “Create a new account” and set up an account. The enrollment key is: SSoQE2025"
   },
   {
-    "objectID": "About/general_info.html",
-    "href": "About/general_info.html",
-    "title": "General Information📄",
+    "objectID": "About/learning_outcomes_2026.html",
+    "href": "About/learning_outcomes_2026.html",
+    "title": "Learning outcomes 🎯",
     "section": "",
-    "text": "Warning\n\n\n\n📅Date: 14.09.2026 - 19.09.2026 (Monday to Saturday)\n🗺️Location: Wallenfels, Germany\n\n\nGet ready to dive deep into the fascinating world of ecology! Our diverse team of instructors, who are active researchers in various ecological subdisciplines, will guide you through both theoretical and practical aspects of the course. Here’s what you can expect:\n\nEngaging Lectures🔬: Drawn directly from the instructors’ current research projects, ensuring you learn the most up-to-date information.\nHands-On Practice🤝: Sharpen your skills with practical exercises in R, tailored to help you tackle real-world data challenges.\nSocial Events😊: From barbecues to informal gatherings, you’ll have plenty of opportunities to relax, network, and forge new friendships with fellow participants."
+    "text": "TipBy the end of the week, participants will be able to\n\n\n\n\nFormulate ecological questions in terms of exploration, inference, and prediction, and choose analysis strategies accordingly.\nSet up and run a reproducible analysis workflow (clear project structure, documented steps, and dependency-aware environments).\nUse version control with Git/GitHub to track changes, collaborate, and resolve common issues (e.g. merge conflicts).\nWork confidently with ecological data in R (import, clean, transform, visualize, and report results).\nBuild and interpret common quantitative-ecology analyses across key domains:\n\nSpecies distributions (correlative SDMs)\nCommunity ecology (ordination, dissimilarity, clustering)\nBiodiversity patterns (hypothesis-driven model comparison)\nPhylogenetics & macroecology (trait evolution and diversity patterns)\n(Paleo)ecology (fossil pollen workflows)\nModern modelling (introductory deep learning workflow)\n\nCritically evaluate model assumptions, uncertainty, bias, and the limits of prediction."
   },
   {
-    "objectID": "About/general_info.html#general-information",
-    "href": "About/general_info.html#general-information",
-    "title": "General Information📄",
+    "objectID": "About/learning_outcomes_2026.html#learning-outcomes-ssoqe-2026",
+    "href": "About/learning_outcomes_2026.html#learning-outcomes-ssoqe-2026",
+    "title": "Learning outcomes 🎯",
     "section": "",
-    "text": "Warning\n\n\n\n📅Date: 14.09.2026 - 19.09.2026 (Monday to Saturday)\n🗺️Location: Wallenfels, Germany\n\n\nGet ready to dive deep into the fascinating world of ecology! Our diverse team of instructors, who are active researchers in various ecological subdisciplines, will guide you through both theoretical and practical aspects of the course. Here’s what you can expect:\n\nEngaging Lectures🔬: Drawn directly from the instructors’ current research projects, ensuring you learn the most up-to-date information.\nHands-On Practice🤝: Sharpen your skills with practical exercises in R, tailored to help you tackle real-world data challenges.\nSocial Events😊: From barbecues to informal gatherings, you’ll have plenty of opportunities to relax, network, and forge new friendships with fellow participants."
+    "text": "TipBy the end of the week, participants will be able to\n\n\n\n\nFormulate ecological questions in terms of exploration, inference, and prediction, and choose analysis strategies accordingly.\nSet up and run a reproducible analysis workflow (clear project structure, documented steps, and dependency-aware environments).\nUse version control with Git/GitHub to track changes, collaborate, and resolve common issues (e.g. merge conflicts).\nWork confidently with ecological data in R (import, clean, transform, visualize, and report results).\nBuild and interpret common quantitative-ecology analyses across key domains:\n\nSpecies distributions (correlative SDMs)\nCommunity ecology (ordination, dissimilarity, clustering)\nBiodiversity patterns (hypothesis-driven model comparison)\nPhylogenetics & macroecology (trait evolution and diversity patterns)\n(Paleo)ecology (fossil pollen workflows)\nModern modelling (introductory deep learning workflow)\n\nCritically evaluate model assumptions, uncertainty, bias, and the limits of prediction."
   },
   {
-    "objectID": "About/general_info.html#course-content",
-    "href": "About/general_info.html#course-content",
-    "title": "General Information📄",
-    "section": "Course Content 🎯",
-    "text": "Course Content 🎯\n\n\n\n\n\n\nTipWhat to expect\n\n\n\nDive into a diverse range of exciting subjects designed to empower you with advanced ecological analysis skills and a deep understanding of the environment. By the end of this course, you’ll be equipped to tackle pressing ecological questions such as:\n\n🌐 Quantitative Ecology Fundamentals: Understand why we use quantitative analysis in ecology, exploring the differences between data exploration, inference, and prediction.\n🛠️ Mastering Project Management: Gain proficiency in managing large, reproducible ecological projects with tools like Git/GitHub, and learn the art of clean coding and effective project planning.\n🌿 Plant Taxonomy Deep Dive: Gain a comprehensive overview of resources regarding plant taxonomy, occurrences, and traits, essential for accurate (paleo)ecological research.\n🌱 From Past to Present: Seamlessly integrate paleoecological data with current plant species data to uncover ecological trends. Learn to address macro-ecological questions using paleontological data, connecting ancient life with today’s plant species.\n🌍 Evolution of Ecological Patterns: Delve into (paleo)ecological patterns on grand scales to study the processes that have shaped life on Earth over millions of years with the help of phylogenies.\n\n\n\nAdditional Topics We Might Cover:\n\n💻 Coding for Ecologists: Enhance your coding skills in R for a variety of applications from functional programming to developing R packages.\n🎲 Statistical Sophistication: Get to grips with Bayesian basics, causal inference, multivariate analysis, and advanced modeling techniques like hierarchical models.\n🤖 Tech Meets (Paleo)Ecology: Explore the intersection of machine learning, deep learning, AI, and remote sensing in (paleo)ecological research."
+    "objectID": "About/learning_outcomes_2026.html#what-these-outcomes-map-to-in-the-programme",
+    "href": "About/learning_outcomes_2026.html#what-these-outcomes-map-to-in-the-programme",
+    "title": "Learning outcomes 🎯",
+    "section": "What these outcomes map to in the programme",
+    "text": "What these outcomes map to in the programme\nThe week is organised into short lectures and hands-on sessions (see the current Program📅). Below is a “skills map” that connects the 2026 sessions to concrete competencies.\n\nCore workflow skills\n\nR workflow basics: Navigate an IDE, understand environments/sessions, and use R Projects for robust paths.\nReproducibility & open science: Structure projects, keep analyses self-contained, and communicate computational steps clearly.\nVersion control: Create repositories, commit changes, push/pull, and handle merge conflicts.\nCollaboration & project management: Use branches/pull requests, discussions, issues, and task boards to coordinate work.\n\n\n\nQuantitative ecology & modelling\n\nSpecies distribution modelling (I & II)\n\nObtain occurrence and environmental predictor data and perform basic data-quality checks.\nFit a simple correlative SDM (e.g. GLM), evaluate it at a basic level, and project predictions across space and scenarios.\n\nBiodiversity and richness\n\nDescribe and visualize broad-scale richness patterns.\nCompare competing hypotheses using model comparison tools (e.g. AIC / Akaike weights) and interpret results.\n\nAnalysing Community Data (I & II)\n\nCompute community dissimilarity and use ordination methods (e.g. CA / NMDS) to summarize multivariate patterns.\nInterpret ordination outputs and link community change to time or gradients.\n\nHypothesis testing and null models\n\nUnderstand why null models are used, what they test, and how results depend on assumptions.\nInterpret outputs as evidence about processes rather than as “one-number verdicts”.\n\nSample standardisation, resampling, and bias\n\nRecognize common sources of sampling bias and measurement processes in ecological and paleoecological datasets.\nUnderstand why standardisation approaches exist and what trade-offs they imply.\n\n\n\n\n(Paleo)ecology: fossil pollen\n\nRetrieve fossil pollen records from open databases and handle them in R.\nVisualize pollen data (e.g. pollen diagrams) and build an age–depth model.\nConnect paleoecological signals to broader ecological questions.\n\n\n\nPhylogenetics, macroecology, and evolution\n\nFit and compare alternative models of trait evolution (e.g. BM vs OU vs EB) and interpret results.\nUse phylogenetic thinking to address non-independence among species.\nExplore how evolutionary history can help explain biodiversity patterns and macroecological structure.\n\n\n\nDeep learning (introductory)\n\nExplain the basic training/validation workflow for a deep learning model.\nModify key hyperparameters and interpret changes in model performance.\nReflect on when deep learning is (and is not) a sensible tool for ecological research."
   },
   {
-    "objectID": "About/general_info.html#costs",
-    "href": "About/general_info.html#costs",
-    "title": "General Information📄",
-    "section": "Costs 💰",
-    "text": "Costs 💰\n\n\n\n\n\n\nImportant\n\n\n\nThe participation in science school is free of charge. In addtion, the organisers expect that we should be able to partly/fully cover expences for accommodation, lectures, main meals, and materials. Costs for travelling need to be covered by the applicant. However, the organisers may be able to reimburse some travel expenses."
-  },
-  {
-    "objectID": "About/general_info.html#funding",
-    "href": "About/general_info.html#funding",
-    "title": "General Information📄",
-    "section": "Funding",
-    "text": "Funding\nThe Science School of Quantitative Ecology 2026 have applied for funding from the The Bavarian-Czech Academic Agency (TBHA)"
+    "objectID": "About/learning_outcomes_2026.html#expected-background",
+    "href": "About/learning_outcomes_2026.html#expected-background",
+    "title": "Learning outcomes 🎯",
+    "section": "Expected background",
+    "text": "Expected background\n\n\n\n\n\n\nWarning\n\n\n\n\nBasic proficiency in R is expected.\nThe course is taught in English."
   },
   {
     "objectID": "About/logistics_de.html",
@@ -298,14 +326,14 @@
     "href": "About/program.html",
     "title": "Program📅",
     "section": "",
-    "text": "Time\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\n\n\n\n\n8:00 - 9:00\nArrival\nBreakfast\nBreakfast\nBreakfast\nBreakfast\nBreakfast\n\n\n9:00 - 10:30\nArrival\nSpecies Distribution Modelling I\nSample Standardisation and Resampling\nAnalysing Community Data I\nProject Management and Collaboration (using GitHub)\nExcursion\n\n\n10:30 - 10:45\nArrival\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\nExcursion\n\n\n10:45 - 12:00\nArrival\nSpecies Distribution Modelling II\nReproducibility and Data Science\nAnalysing Community Data II\nPhylogenetic Data in Ecology\nExcursion\n\n\n12:00 - 13:00\nLunch\nLunch\nLunch\nLunch\nLunch\nLunch\n\n\n13:00 - 15:00\nGet to know us\nHypothesis testing and null models\nBiases in ecological and paleoecological data\nDeep learning\nPhylogenies in Community Ecology\nExcursion\n\n\n15:00 - 15:30\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\n-\n\n\n15:30 - 17:00\nGet to know each other\nBiodiversity and richness\nExploring Past Vegetation Using Fossil Pollen\nVersion Control\nEcology of Speciation, Extinction, and Macroevolution\n-\n\n\n17:00 - 18:00\nGet to know our way of R\nFree time\nFree time\nFree time\nFree time\n-\n\n\n18:00 - 19:30\nDinner\nDinner\nDinner\nDinner\nDinner\n-\n\n\n19:30 - 00:00\nSocial\nSocial\nSocial\nSocial\nSocial\n-"
+    "text": "See also: Learning outcomes 🎯\n\n\n\n\n\n\n\n\n\n\n\n\nTime\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\n\n\n\n\n8:00 - 9:00\nArrival\nBreakfast\nBreakfast\nBreakfast\nBreakfast\nBreakfast\n\n\n9:00 - 10:30\nArrival\nSpecies Distribution Modelling I\nSample Standardisation and Resampling\nAnalysing Community Data I\nProject Management and Collaboration (using GitHub)\nExcursion\n\n\n10:30 - 10:45\nArrival\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\nExcursion\n\n\n10:45 - 12:00\nArrival\nSpecies Distribution Modelling II\nReproducibility and Data Science\nAnalysing Community Data II\nPhylogenetic Data in Ecology\nExcursion\n\n\n12:00 - 13:00\nLunch\nLunch\nLunch\nLunch\nLunch\nLunch\n\n\n13:00 - 15:00\nGet to know us\nHypothesis testing and null models\nBiases in ecological and paleoecological data\nDeep learning\nPhylogenies in Community Ecology\nExcursion\n\n\n15:00 - 15:30\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\n-\n\n\n15:30 - 17:00\nGet to know each other\nBiodiversity and richness\nExploring Past Vegetation Using Fossil Pollen\nVersion Control\nEcology of Speciation, Extinction, and Macroevolution\n-\n\n\n17:00 - 18:00\nGet to know our way of R\nFree time\nFree time\nFree time\nFree time\n-\n\n\n18:00 - 19:30\nDinner\nDinner\nDinner\nDinner\nDinner\n-\n\n\n19:30 - 00:00\nSocial\nSocial\nSocial\nSocial\nSocial\n-"
   },
   {
     "objectID": "About/program.html#preliminary-program-2026",
     "href": "About/program.html#preliminary-program-2026",
     "title": "Program📅",
     "section": "",
-    "text": "Time\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\n\n\n\n\n8:00 - 9:00\nArrival\nBreakfast\nBreakfast\nBreakfast\nBreakfast\nBreakfast\n\n\n9:00 - 10:30\nArrival\nSpecies Distribution Modelling I\nSample Standardisation and Resampling\nAnalysing Community Data I\nProject Management and Collaboration (using GitHub)\nExcursion\n\n\n10:30 - 10:45\nArrival\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\nExcursion\n\n\n10:45 - 12:00\nArrival\nSpecies Distribution Modelling II\nReproducibility and Data Science\nAnalysing Community Data II\nPhylogenetic Data in Ecology\nExcursion\n\n\n12:00 - 13:00\nLunch\nLunch\nLunch\nLunch\nLunch\nLunch\n\n\n13:00 - 15:00\nGet to know us\nHypothesis testing and null models\nBiases in ecological and paleoecological data\nDeep learning\nPhylogenies in Community Ecology\nExcursion\n\n\n15:00 - 15:30\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\n-\n\n\n15:30 - 17:00\nGet to know each other\nBiodiversity and richness\nExploring Past Vegetation Using Fossil Pollen\nVersion Control\nEcology of Speciation, Extinction, and Macroevolution\n-\n\n\n17:00 - 18:00\nGet to know our way of R\nFree time\nFree time\nFree time\nFree time\n-\n\n\n18:00 - 19:30\nDinner\nDinner\nDinner\nDinner\nDinner\n-\n\n\n19:30 - 00:00\nSocial\nSocial\nSocial\nSocial\nSocial\n-"
+    "text": "See also: Learning outcomes 🎯\n\n\n\n\n\n\n\n\n\n\n\n\nTime\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\n\n\n\n\n8:00 - 9:00\nArrival\nBreakfast\nBreakfast\nBreakfast\nBreakfast\nBreakfast\n\n\n9:00 - 10:30\nArrival\nSpecies Distribution Modelling I\nSample Standardisation and Resampling\nAnalysing Community Data I\nProject Management and Collaboration (using GitHub)\nExcursion\n\n\n10:30 - 10:45\nArrival\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\nExcursion\n\n\n10:45 - 12:00\nArrival\nSpecies Distribution Modelling II\nReproducibility and Data Science\nAnalysing Community Data II\nPhylogenetic Data in Ecology\nExcursion\n\n\n12:00 - 13:00\nLunch\nLunch\nLunch\nLunch\nLunch\nLunch\n\n\n13:00 - 15:00\nGet to know us\nHypothesis testing and null models\nBiases in ecological and paleoecological data\nDeep learning\nPhylogenies in Community Ecology\nExcursion\n\n\n15:00 - 15:30\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\nCoffee Break\n-\n\n\n15:30 - 17:00\nGet to know each other\nBiodiversity and richness\nExploring Past Vegetation Using Fossil Pollen\nVersion Control\nEcology of Speciation, Extinction, and Macroevolution\n-\n\n\n17:00 - 18:00\nGet to know our way of R\nFree time\nFree time\nFree time\nFree time\n-\n\n\n18:00 - 19:30\nDinner\nDinner\nDinner\nDinner\nDinner\n-\n\n\n19:30 - 00:00\nSocial\nSocial\nSocial\nSocial\nSocial\n-"
   },
   {
     "objectID": "index.html",

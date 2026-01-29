@@ -27,6 +27,8 @@ Here's what you can expect:
 
 ## Course Content 🎯
 
+For a detailed list of skills you can expect to gain, see [Learning outcomes 🎯](learning_outcomes_2026.qmd).
+
 ::: callout-tip
 ### What to expect
 
