@@ -1,0 +1,88 @@
+---
+title: "Learning outcomes 🎯"
+format: html
+date: 2024/04/10
+date-format: long
+date-modified: last-modified
+editor:
+  markdown:
+    wrap: sentence
+---
+
+## Learning outcomes (SSoQE 2026)
+
+::: callout-tip
+### By the end of the week, participants will be able to
+
+- Formulate ecological questions in terms of **exploration**, **inference**, and **prediction**, and choose analysis strategies accordingly.
+- Set up and run a **reproducible analysis workflow** (clear project structure, documented steps, and dependency-aware environments).
+- Use **version control with Git/GitHub** to track changes, collaborate, and resolve common issues (e.g. merge conflicts).
+- Work confidently with ecological data in **R** (import, clean, transform, visualize, and report results).
+- Build and interpret common quantitative-ecology analyses across key domains:
+  - **Species distributions** (correlative SDMs)
+  - **Community ecology** (ordination, dissimilarity, clustering)
+  - **Biodiversity patterns** (hypothesis-driven model comparison)
+  - **Phylogenetics & macroecology** (trait evolution and diversity patterns)
+  - **(Paleo)ecology** (fossil pollen workflows)
+  - **Modern modelling** (introductory deep learning workflow)
+- Critically evaluate model assumptions, uncertainty, bias, and the limits of prediction.
+:::
+
+## What these outcomes map to in the programme
+
+The week is organised into short lectures and hands-on sessions (see the current [Program📅](program.qmd)).
+Below is a “skills map” that connects the 2026 sessions to concrete competencies.
+
+### Core workflow skills
+
+- **R workflow basics**: Navigate an IDE, understand environments/sessions, and use R Projects for robust paths.
+- **Reproducibility & open science**: Structure projects, keep analyses self-contained, and communicate computational steps clearly.
+- **Version control**: Create repositories, commit changes, push/pull, and handle merge conflicts.
+- **Collaboration & project management**: Use branches/pull requests, discussions, issues, and task boards to coordinate work.
+
+### Quantitative ecology & modelling
+
+- **Species distribution modelling (I & II)**
+  - Obtain occurrence and environmental predictor data and perform basic data-quality checks.
+  - Fit a simple correlative SDM (e.g. GLM), evaluate it at a basic level, and project predictions across space and scenarios.
+
+- **Biodiversity and richness**
+  - Describe and visualize broad-scale richness patterns.
+  - Compare competing hypotheses using model comparison tools (e.g. AIC / Akaike weights) and interpret results.
+
+- **Analysing Community Data (I & II)**
+  - Compute community dissimilarity and use ordination methods (e.g. CA / NMDS) to summarize multivariate patterns.
+  - Interpret ordination outputs and link community change to time or gradients.
+
+- **Hypothesis testing and null models**
+  - Understand why null models are used, what they test, and how results depend on assumptions.
+  - Interpret outputs as evidence about processes rather than as “one-number verdicts”.
+
+- **Sample standardisation, resampling, and bias**
+  - Recognize common sources of sampling bias and measurement processes in ecological and paleoecological datasets.
+  - Understand why standardisation approaches exist and what trade-offs they imply.
+
+### (Paleo)ecology: fossil pollen
+
+- Retrieve fossil pollen records from open databases and handle them in R.
+- Visualize pollen data (e.g. pollen diagrams) and build an **age–depth model**.
+- Connect paleoecological signals to broader ecological questions.
+
+### Phylogenetics, macroecology, and evolution
+
+- Fit and compare alternative models of trait evolution (e.g. BM vs OU vs EB) and interpret results.
+- Use phylogenetic thinking to address non-independence among species.
+- Explore how evolutionary history can help explain biodiversity patterns and macroecological structure.
+
+### Deep learning (introductory)
+
+- Explain the basic training/validation workflow for a deep learning model.
+- Modify key hyperparameters and interpret changes in model performance.
+- Reflect on when deep learning is (and is not) a sensible tool for ecological research.
+
+## Expected background
+
+::: callout-warning
+- Basic proficiency in **R** is expected.
+- The course is taught in **English**.
+:::

@@ -24,6 +24,8 @@ website:
         menu:
           - text: General Information📄
             href: About/general_info.qmd
+          - text: Learning outcomes🎯
+            href: About/learning_outcomes_2026.qmd
           - text: Program📅
             href: About/program.qmd
           - text: Logistics🏕️

@@ -11,6 +11,8 @@ editor:
 
 ## Preliminary Program 2026
 
+See also: [Learning outcomes 🎯](learning_outcomes_2026.qmd)
+
 | Time | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday |
 |:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 | 8:00 - 9:00 | Arrival | Breakfast | Breakfast | Breakfast | Breakfast | Breakfast |
