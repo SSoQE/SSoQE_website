@@ -43,31 +43,24 @@ If you are a student of either of the two hosting universities, you should sign 
 
 Here, how you can currently get in as a student from Charles University:
 
-**<!--- 1) --->SIS Course Registration**
+** 1) SIS Course Registration**
 
   * The best route is via the SIS course [MB120C28: Science School on Quantitative  Ecology](https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB120C28).
   
-<!---
   * ‼️**Please note that all slots in SIS are currently filled** - but don't worry! You can still register and be placed on the waiting list. If want to do so, please send email to ssoqe@natur.cuni.cz (with your name in the subject).
 
 **2) Wildcard Application**
 
-  * You can also apply as a "*wildcard*" (i.e. [student from another university](/About/registration.qmd#students-from-other-universities-(🌍))). Just follow the instructions below. Applications are open until **6 May 2025**, and the selection committee will review all wildcard applications in May.
+  * You can also apply as a "*wildcard*" (i.e. [student from another university](/About/registration.qmd#students-from-other-universities-(🌍))). Just follow the instructions below. Applications are open until **8 May 2026**, and the selection committee will review all wildcard applications in May.
 
 To maximise your chances, we recommend doing both!
--->
 
 :::
 
 ## 2. Students from other universities - *wildcard* (🌍)
 
-Curently, we are accepting applications only from students of Charles University and University of Bayreuth.
 
-We will open applications for students from other universities later (March?) in 2026.
-
-<!---
-
-Register via our [application form](https://forms.gle/UEoxmgjoqJ8Q9j7p7) until **Tuesday, 06.05.2025**
+Register via our [application form](https://forms.gle/JTtG5f7kTymCepDfA) until **Friday, 08.05.2026**
 
 There is a limited number of places for students from other universities. 
 
@@ -75,7 +68,6 @@ A successful registration will be confirmed by an automatic copy of the filled f
 
 In case of urgent questions, please contact: ssoqe@natur.cuni.cz (with your name in the subject).
 
--->
 
 ## Credits and Certificates 📜
 
