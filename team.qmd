@@ -17,7 +17,7 @@ editor:
 -   🏦University of Bayreuth, Bayreuth, Germany
 -   📬email: franka.gaiser(at)uni-bayreuth.de
 -   [![ORCID](https://img.shields.io/badge/orcid-0000--0003--2600--6603-509A8E.svg)](https://orcid.org/0009-0003-2600-6603)
--   [🔗personal webiste](https://www.spowi5.uni-bayreuth.de/en/team/Gaiser/index.php)
+-   [🔗personal website](https://www.spowi5.uni-bayreuth.de/en/team/Gaiser/index.php)
 
 ### Antonin Machač <img src="/photos/antonin-machac_orig.jpg" align="right" width="120"/>
 
@@ -25,7 +25,7 @@ editor:
 -   🏦IMIC Czech Academy of Sciences, Prague, Czech Republic
 -   📬email: A.Machac(at)email.cz
 -   [![ORCID](https://img.shields.io/badge/orcid-0000--0001--6754--5038-509A8E.svg)](https://orcid.org/0000-0001-6754-5038)
--   [🔗personal webiste](https://machac.weebly.com/)
+-   [🔗personal website](https://machac.weebly.com/)
 
 ### Ondřej Mottl <img src="/photos/Ondra.jpg" align="right" width="120"/>
 
@@ -33,7 +33,7 @@ editor:
 -   🏦Department of Botany, Faculty of Science, Charles University, Prague, Czech Republic
 -   📬email: ondrej.mottl(at)gmail.com
 -   [![ORCID](https://img.shields.io/badge/orcid-0000--0002--9796--5081-509A8E.svg)](https://orcid.org/0000-0002-9796-5081)
--   [🔗personal webiste](https://ondrejmottl.github.io/)
+-   [🔗personal website](https://ondrejmottl.github.io/)
 
 ### Manuel Steinbauer <img src="/photos/manuel.jpg" align="right" width="120"/>
 
@@ -41,7 +41,7 @@ editor:
 -   🏦Bayreuth Center of Ecology and Environmental Research, University of Bayreuth, Bayreuth, Germany
 -   📬email: manuel.steinbauer(at)uni-bayreuth.de
 -   [![ORCID](https://img.shields.io/badge/orcid-0000--0002--7142--9272-509A8E.svg)](https://orcid.org/0000-0002-7142-9272)
--   [🔗personal webiste](https://www.spowi5.uni-bayreuth.de/en/team/steinbauer/index.php)
+-   [🔗personal website](https://www.spowi5.uni-bayreuth.de/en/team/steinbauer/index.php)
 
 ## Guest instructors 🧙
 
