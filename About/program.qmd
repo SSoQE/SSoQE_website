@@ -12,17 +12,18 @@ editor:
 ## Preliminary Program 2026
 
 | Time | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday |
-|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
-| 8:00 - 9:00 | Arrival | Breakfast | Breakfast | Breakfast | Breakfast | Breakfast |
-| 9:00 - 10:30 | Arrival | Species Distribution Modelling I | Sample Standardisation and Resampling | Analysing Community Data I | Project Management and Collaboration (using GitHub) | Excursion |
-| 10:30 - 10:45 | Arrival | Coffee Break | Coffee Break | Coffee Break | Coffee Break | Excursion |
-| 10:45 - 12:00 | Arrival | Species Distribution Modelling II | Reproducibility and Data Science | Analysing Community Data II | Phylogenetic Data in Ecology | Excursion |
-| 12:00 - 13:00 | Lunch | Lunch | Lunch | Lunch | Lunch | Lunch |
-| 13:00 - 15:00 | Get to know us | Hypothesis testing and null models | Biases in ecological and paleoecological data | Deep learning | Phylogenies in Community Ecology | Excursion |
-| 15:00 - 15:30 | Coffee Break | Coffee Break | Coffee Break | Coffee Break | Coffee Break | \- |
-| 15:30 - 17:00 | Get to know each other | Biodiversity and richness | Exploring Past Vegetation Using Fossil Pollen | Version Control | Ecology of Speciation, Extinction, and Macroevolution | \- |
-| 17:00 - 18:00 | Get to know our way of R | Free time | Free time | Free time | Free time | \- |
-| 18:00 - 19:30 | Dinner | Dinner | Dinner | Dinner | Dinner | \- |
-| 19:30 - 00:00 | Social | Social | Social | Social | Social | \- |
+|:---:|:---|:---|:---|:---|:---|:---|
+| 8:00 - 9:00 | \- | Breakfast | Breakfast | Breakfast | Breakfast | Breakfast |
+| 9:00 - 10:30 | Arrival | Our way of R and Reproducibility | Functional programming in the world of AI | Analysing Community Data | Project Management and Collaboration (using GitHub) | Model-based ordinations |
+| 10:30 - 11:00 | Arrival | Coffee Break | Coffee Break | Coffee Break | Coffee Break | Coffee Break |
+| 11:00 - 12:30 | Arrival | Hypothesis Testing and Null Models | Deep Learning | Exploring Past Vegetation Using Fossil Pollen | Phylogenetic Data in Ecology | Reproducible Analytical Pipelines |
+| 12:30 - 13:15 | Arrival | Lunch | Lunch | Lunch | Lunch | Lunch |
+| 13:15 - 14:00 | Arrival | Walk outside | Excursion | Walk outside | Walk outside | Wrap-up & Feedback |
+| 14:00 - 16:00 | **!!15:00!!**<br>Welcome and Ice Breaker | Biodiversity and Richness | Excursion | Biases in Ecological and Paleoecological Data | Phylogenies in Community Ecology | \- |
+| 16:00 - 16:30 | Coffee Break | Coffee Break | Excursion | Coffee Break | Coffee Break | \- |
+| 16:30 - 18:00 | Species Distribution Modelling | Sample Standardisation and Resampling | Excursion | Version Control | Ecology of Speciation, Extinction, and Macroevolution | \- |
+| 18:00 - 19:00 | Free time | Free time | Free time | Free time | Free time | \- |
+| 19:00 - 20:00 | Dinner | Dinner | Dinner | Dinner | Dinner | \- |
+| 20:00 - 00:00 | Social | Social | Social | Social | Social | \- |
 
 : {.striped}
