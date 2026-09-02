@@ -1,316 +1,347 @@
 ---
-title: Pre-workshop technical Setup🖥️
-format: html
-date: 2024/04/10
-date-format: long
-date-modified: last-modified
-editor: 
-  markdown: 
-    wrap: sentence
+title: "Pre-arrival technical setup 🧰"
+description: "Prepare and verify your computer before SSoQE 2026."
+toc: true
+toc-depth: 2
 ---
 
-```{r}
-#| label: chunk-setup
-#| include: false
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
+Please complete this setup **before travelling to SSoQE 2026**. No previous experience with R, Python, Git, or a command-line shell is assumed on this page. The first Tuesday lesson does assume that the setup has been completed. If one of the final checks fails, send us the report before the school so that we can help.
+
+::: {.callout-tip icon="true"}
+## Pack your digital field kit 🌿
+
+Think of this page as packing for fieldwork—but for your computer. Work through it one step at a time, tick off what works, and ask for help if something behaves strangely. You are not expected to know any of this already! ✨
+:::
+
+## At a glance 🗺️
+
+- [ ] 🐚 Learn the difference between the R Console and a shell Terminal.
+- [ ] 📊 Install R 4.5.x and the current RStudio Desktop release.
+- [ ] 🛠️ Install Quarto and, on Windows, the Rtools version matching R 4.5.
+- [ ] 🌱 Install Git, create a GitHub account, and sign in through a browser flow.
+- [ ] 🐍 Install Python 3.10–3.14, connect it to RStudio, and install CPU PyTorch.
+- [ ] 📥 Use the SSoQE script to download the latest lesson releases.
+- [ ] 📦 Run the SSoQE preparation checks and keep the final report.
+- [ ] ✅ Complete the manual final checks at the bottom of this page.
+
+## 1. Meet the shell and Terminal 🐚
+
+A **shell** is a text-based way to give commands to your computer. A **Terminal** is the window in which the shell runs. Windows normally uses PowerShell; macOS and Linux commonly use shells such as `zsh` or `bash`. For the simple commands on this page, they behave similarly.
+
+RStudio contains two different places where you can type commands:
+
+- The **R Console** runs R code. Its prompt normally starts with `>`.
+- The **Terminal** runs shell commands such as `git`, `quarto`, and `python`.
+
+Do not type the prompt symbols shown by the application. Type only the command after the prompt and press Enter.
+
+### Open a Terminal 🚪
+
+In RStudio, choose **Tools → Terminal → New Terminal**, or open the **Terminal** tab beside the Console. You can also use Windows Terminal or PowerShell on Windows, Terminal on macOS, or your distribution's Terminal application on Linux.
+
+Try these harmless commands one at a time:
+
+```powershell
+pwd
+ls
 ```
 
-Pre-workshop technical instructions for participants.
-Let's get ready to rock!
-🚀  
+`pwd` prints the folder in which the shell is currently working. `ls` lists its contents. To move into another folder, use `cd` followed by its path. Put quotation marks around a path containing spaces:
 
-## Required Software Checklist ✅
+```powershell
+cd "Documents/SSoQE-2026"
+```
 
-Before attending SSoQE 2025, please ensure you have the following software installed:
+Press the Up arrow to recall the previous command. Press Ctrl+C to stop a command that is still running. Read a command before pasting it: do not run commands you do not understand, especially commands that delete files or request administrator access.
 
-- [ ] **R** (version 4.5+ recommended)
-- [ ] **RStudio** (latest version)
-- [ ] **Rtools** (Windows only)
-- [ ] **Git** (for version control)
-- [ ] **GitHub account** (free)
-- [ ] **Python** (version 3.12+ recommended)
+### R Console or Terminal? 🧭
 
-## R and RStudio 💻
+```r
+# R Console: this is R code
+R.version.string
+```
 
-- [R](https://en.wikipedia.org/wiki/R_(programming_language)) is a fantastic software for statistical analyses.
-- 📊 [RStudio](https://posit.co/products/open-source/rstudio/) is your trusty sidekick, helping you navigate the R universe with ease.
+```powershell
+# Terminal: these are shell commands
+git --version
+quarto --version
+python --version
+```
 
-### Install/Update R
+If the shell says that a command is not recognized or not found, the program is either not installed or not available on the shell's `PATH`. Restart RStudio after installing software before trying again.
 
-Make sure you have **R version 4.5 or later** installed. You can:
+## 2. R, RStudio, Quarto, and Rtools 📊
 
-- Download the latest version from [CRAN](https://cran.r-project.org/)
-- Check your current version by running `R.version.string` in R Console
+Install **R 4.5.x** from [CRAN](https://cran.r-project.org/), then install [RStudio Desktop](https://posit.co/download/rstudio-desktop/). R is the language; RStudio is the interface in which we will write and run R code. The [RStudio user guide](https://docs.posit.co/ide/user/) is the authoritative reference if installation or first launch behaves unexpectedly.
+
+Install [Quarto](https://quarto.org/docs/get-started/). Quarto is separate from RStudio and is used to render several SSoQE presentations, exercises, and reports.
+
+Windows participants should also install the [Rtools release matching R 4.5](https://cran.r-project.org/bin/windows/Rtools/). macOS and Linux users do not install Rtools; use the platform-specific build tools described by CRAN only if the preparation report says they are needed.
+
+Restart RStudio. Run the first line in the R Console and the second line in the Terminal:
 
 ```r
 R.version.string
-# [1] "R version 4.5.1 (2025-06-13 ucrt)"
 ```
 
-### Install/Update RStudio
+```powershell
+quarto --version
+```
 
-Download and install the **latest version** of RStudio from the [RStudio website](https://rstudio.com/products/rstudio/download/).
+## 3. Git and GitHub 🌱
 
-You can check your RStudio version by running:
+### Install Git 💾
+
+Install [Git](https://git-scm.com/downloads), restart RStudio, and verify the installation in the Terminal:
+
+```powershell
+git --version
+```
+
+::: {.callout-important}
+## Required: create your GitHub account now 🪪
+
+After installing Git, create a free account at [GitHub.com](https://github.com/signup). Do not continue until you can sign in to the account in your browser: the account is needed to request private-material access and participate in the collaboration exercises.
+
+Choose a professional username that you will be comfortable using in scientific work. Add an email address you can access and verify it when GitHub sends the confirmation message. An institutional email can also make you eligible for [GitHub Education](https://education.github.com/).
+:::
+
+Git and GitHub are related but different: Git is the program installed on your computer; GitHub is the online service and account used to share Git repositories.
+
+### Introduce yourself to Git 👋
+
+Git records a name and email with your work. Use the same verified email address as your GitHub account. Open the Terminal and substitute your own details:
+
+```powershell
+git config --global user.name "Your Name"
+git config --global user.email "you@example.org"
+```
+
+Verify the saved values without changing them:
+
+```powershell
+git config --global user.name
+git config --global user.email
+```
+
+The last two commands should print the identity you entered. They do not change it.
+
+### Check Git from R with `{usethis}` 🔎
+
+The SSoQE preparation script installs `{usethis}`. After completing Section 6, return to this check and run the following in the R Console:
 
 ```r
-rstudioapi::versionInfo()$version
-# [1] ‘2025.5.1.513’
+usethis::git_sitrep()
 ```
 
-### Rtools (Windows Users Only) 🪟
+`git_sitrep()` reports whether R and RStudio can find Git, which name and email Git will use, and whether GitHub credentials are available. Read the report; do not worry if it contains more detail than you recognize.
 
-If you're using Windows, you'll need **Rtools** for building R packages. Download the version compatible with your R version from the [CRAN Rtools page](https://cran.r-project.org/bin/windows/Rtools/).
+If the report shows the wrong identity, set it from the R Console as an alternative to the Terminal commands:
 
-For R 4.5+, use Rtools 4.5 etc.
+```r
+usethis::use_git_config(
+  user.name = "Your Name",
+  user.email = "you@example.org"
+)
+```
 
-### Additional Resources
+The related `usethis::use_git()` function initializes Git inside the current R Project. It is useful later, but it is **not** a general installation check: run it only when you deliberately want to place that specific project under version control.
 
-There are plenty of additional guides available to help you:
+### Sign in securely 🔐
 
--   [R Basics for Paleoecologists](https://ckiahtipes.github.io/) by C.A. Kiahtipes
--   [Install or Update R tutorial](https://jennhuck.github.io/workshops/install_update_R.html) by Jennifer Huck
+GitHub requires authentication for private repositories and for operations such as pushing changes. Your GitHub website password cannot be used as the password for HTTPS Git operations. There are two supported routes; use the browser-managed route first, then create a PAT if the R checks show that one is still needed.
 
-## Python and Python packages 🐍
-First, check if Python is installed on your computer by opening the **terminal** and running `python --version`. If nothing is displayed or the version is <3.12, download and install the **latest version** of Python from the [Python website](https://www.python.org/downloads/).
+#### Route A: browser-managed credentials 🌐
 
-Then, install the **required Python packages** using pip:  
-1. Open the **terminal** of either RStudio or your computer.  
-2. Install **pytorch** for building deep learning models by running the following command `pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126`  
-3. Install **torchvision** for visualising deep learning models by running the following command `pip3 install torchinfo`  
-4. Install **matplotlib** for creating plots by running the following command `pip3 install matplotlib`  
-5. Install **numpy** for mathematical operations by running the following command `pip3 install numpy`  
-6. Install **pandas** for handling data frames by running the following command `pip3 install pandas`  
+GitHub recommends GitHub CLI or Git Credential Manager for remembering HTTPS credentials. Current Git for Windows includes Git Credential Manager; it opens a browser login when an authenticated Git operation is first required. GitHub CLI provides a similar browser flow through `gh auth login` and can configure Git to use its credential helper. When one of these helpers supplies a credential to Git **and** `gh::gh_whoami()` succeeds, you do not need to create or paste a PAT manually.
 
-You can leave Python by running `exit()`.    
+Follow GitHub's platform-specific [credential-helper instructions](https://docs.github.com/en/get-started/git-basics/caching-your-github-credentials-in-git), complete the browser login, and then run the `{usethis}` checks below after Section 6.
 
-⚠️If pip wasn't installed with Python, follow the instructions on how to install pip [here](https://www.geeksforgeeks.org/installation-guide/how-to-install-pip-on-windows/).  
+#### Route B: PAT for R and HTTPS 🔑
 
-## Git and GitHub 🌐
+If `usethis::git_sitrep()` or `gh::gh_whoami()` says that no GitHub token is available, create a Personal Access Token from the R Console:
 
-Please follow the tutorial [here](https://ondrejmottl.github.io/VersionControl_gitHell/) to install Git and set up a GitHub account.
+```r
+usethis::create_github_token()
+```
 
-Specifically, we will be using Git, GitHub, and RStudio for version control and collaboration during the workshop.
-🤝
+Review the requested permissions and expiration on GitHub before generating the token. Copy the token once, return to the R Console, and store it through the secure Git credential prompt:
 
-### Quick setup checklist
+```r
+gitcreds::gitcreds_set()
+```
 
-1. **Install Git** - Download from [git-scm.com](https://git-scm.com/)
-2. **Create GitHub account** - Sign up at [github.com](https://github.com/)
-3. **Configure Git** with your name and email:
-   ```bash
-   git config --global user.name "Your Name"
-   git config --global user.email "your.email@example.com"
-   ```
-4. **Set up authentication** - We'll help you with Personal Access Tokens (PAT) during the workshop
+Paste the token only into that prompt. Do not put it in a script, `.Renviron`, a Discussion post, email, chat, screenshot, or preparation report. The [current `{usethis}` credential guide](https://usethis.r-lib.org/articles/git-credentials.html) explains why the Git credential store is preferred over a plain-text environment file.
 
-## Packages 📦
+Verify the result:
 
-Packages are like magic toolboxes 🧰 that contain a collection of functions for specific needs.
-We want to make sure that everyone has the necessary packages installed for this workshop.
+```r
+usethis::git_sitrep()
+gh::gh_whoami()
+```
 
-### Essential packages for SSoQE 2025
+`gh::gh_whoami()` should print your GitHub username. If browser-managed credentials already made this check pass, do not create an additional PAT merely for this setup.
 
-Let's create a list of the core packages we'll need from CRAN:
+## 4. Python, RStudio, and CPU PyTorch 🐍
 
-```{r}
-#| label: chunk-pkg-list
-#| output: false
-#| warning: false
-#| message: false
-# Complete list of R packages used across SSoQE lectures
-# Generated on September 11, 2025
-ssoqe_package_list <-
-  c(
-    # Project management & Environment
-    "here",
-    "remotes",
-    "renv",
-    "usethis",
+Install a 64-bit Python version from **3.10 through 3.14** using the official [Python downloads](https://www.python.org/downloads/). During a Windows installation, enable the option that adds Python to `PATH`. A GPU is not required for SSoQE.
 
-    # Data manipulation & Analysis
-    "janitor",
-    "rlang",
-    "tidyverse",
+The [Posit guide to Python in RStudio](https://docs.posit.co/ide/user/ide/guide/environments/py/python.html) explains that RStudio connects to Python through the R package `reticulate`. It also explains how RStudio discovers Python installations and environments.
 
-    # Visualization & Graphics
-    "showtext",
-    "sysfonts",
+After installing Python, restart RStudio and open **Tools → Global Options → Python**. Select the Python interpreter you installed. If several interpreters are listed, choose the one whose version matches the following Terminal command:
 
-    # File & Data management
-    "fs",
-    "jsonlite",
-    "rjson",
+```powershell
+python --version
+```
 
-    # Document generation & Reporting
-    "knitr",
-    "pander",
-    "quarto",
-    "tinytable",
+On Windows, try `py -3 --version` if `python --version` is not found. The SSoQE preparation script installs `reticulate`; after that, this R Console command shows the interpreter R will use:
 
-    # Regression & Statistical Modelling
-    "lme4",
+```r
+reticulate::py_config()
+```
 
-    # Spatial & Geographic analyses
-    "geojsonsf",
-    "terra",
-    "sdm",
+### Install CPU PyTorch 🔥
 
-    # Paleoecological/Scientific packages
-    "Bchron",
-    "neotoma2",
+Use the selector on the official [PyTorch installation page](https://pytorch.org/get-started/locally/) and choose your operating system, **Pip**, **Python**, and **CPU**. Run the command it provides in the Terminal. Using the official selector avoids prescribing a CUDA build that may not match your computer.
 
-    # Diversity
-    "iNEXT",
-    "vegan",
-    "picante",
+Use `python -m pip` rather than a bare `pip` command when possible. This makes it clearer which Python installation receives the package. Verify Python and PyTorch in the Terminal:
 
-    # Phylogenetic analyses,
-    "ape",
-    "geiger",
-    "phytools",
+```powershell
+python --version
+python -c "import torch; print(torch.__version__); print(torch.rand(2, 2))"
+```
 
-    # Machine learning
-    "torch",
-    "cito",
+The second command should print a PyTorch version and a small two-by-two tensor. On Windows, replace `python` with `py -3` in both commands if necessary.
 
-    # Datasets
-    "palmerpenguins",
+## 5. Download the latest SSoQE lesson releases 📥
 
-    # Development & Programming
-    "languageserver",
+Each lesson will be distributed as a published GitHub Release. The SSoQE script contains the authoritative list of the 18 scheduled lesson repositories and downloads the latest published full release of each one. Drafts and prereleases are not selected.
 
-    # UI & Interactive elements
-    "countdown",
-    "qrcode",
+### Check access to private repositories first 🔒
 
-    # Python integration
-    "png",
-    "RcppTOML",
-    "reticulate"
+Some materials may be private while they are being prepared. Request and confirm access **before running the downloader**:
+
+1. Go to the [SSoQE access discussion](https://github.com/orgs/SSoQE/discussions/28) and comment with your GitHub username.
+2. Wait for the organisers to grant access, then accept the invitation sent by GitHub.
+3. Sign in to GitHub in your browser and confirm that you can open the private repository.
+
+The automatic downloader intentionally uses only public, unauthenticated release access. GitHub returns “not found” for private repositories through that route, even after browser access has been granted. If the download report identifies a private lesson as `FAIL`, open that repository's **Releases** page while signed in, download its latest course-material archive or source ZIP, and extract it inside `materials_dir`. The later `prepare_ssoqe(materials_dir)` step will discover it there.
+
+Do not send passwords, authentication codes, or access tokens to the organisers or post them in a Discussion.
+
+First download [`prepare_ssoqe.R`](../R/prepare_ssoqe.R) to a location you can find, such as Downloads. Open RStudio, run the following line in the R Console, and select the downloaded script in the file chooser:
+
+```r
+source(file.choose())
+```
+
+Choose where the lesson materials should live. This cross-platform example creates `SSoQE-2026` inside your home folder:
+
+```r
+materials_dir <- 
+  file.path(
+    path.expand("~"),
+    "SSoQE-2026"
   )
 ```
 
-### Test if all packages are ready ✅
+Inspect the lesson list and perform a dry run. A dry run reports planned work without using the network or creating files:
 
-Let's do a quick test to make sure everything is in order.
-Running the following code should produce `"Everything is good to go!"` instead of an error message.
+```r
+ssoqe_lesson_manifest()
 
-```{r}
-#| label: chunk-pkg-test
-#| eval: false
-missing_packages <-
-  installed.packages() |>
-  rownames() |>
-  setdiff(x = ssoqe_package_list)
-
-if (
-  length(missing_packages) == 0
-) {
-  cat("Everything is good to go!")
-} else {
-  paste(
-    "The following packages are not installed: \n\n",
-    missing_packages |>
-      paste(collapse = ", "),
-    "\n\nPlease install them before the workshop."
-  ) |>
-    warning()
-}
+download_report <- 
+  download_ssoqe_materials(
+    materials_dir,
+    dry_run = TRUE
+  )
 ```
 
-Now, let's install all the missing packages:
+When the list looks correct, download the materials:
 
-```{r}
-#| label: chunk-pkg-install
-#| eval: false
-# Install packages one by one with error handling
-for (pkg in missing_packages) {
-  if (!require(pkg, character.only = TRUE, quietly = TRUE)) {
-    install.packages(pkg)
-  }
-}
+```r
+download_report <- 
+  download_ssoqe_materials(materials_dir)
 ```
 
-### Test if RStudio has successfully connected with Python ✅
+The downloader queries GitHub's public latest-release endpoint and does not require a token for public SSoQE repositories. It validates archive paths before extraction and places each release in a versioned folder such as `SSoQE-Our_Way_of_R_and_Reproducibility-v2026.1`. It never overwrites an existing folder. A rerun skips releases already downloaded, records a failure if a lesson has no published release yet, and continues with the remaining lessons.
 
-Run the following code chunk in R:
+Save the report if any row says `FAIL`:
 
-```{r}
-#| output: false
-#| warning: false
-#| message: false
-#| eval: false
-    library(reticulate)
+```r
+utils::write.csv(
+  download_report,
+  file.path(materials_dir, "ssoqe-download-report.csv"),
+  row.names = FALSE
+)
 ```
-If you receive an error/warning message because **{reticulate} cannot find** your Python programme,
 
-1. Open the **terminal** and run the command `python -c "import sys; print(sys.version); print(sys.executable)"` to get the path of your current python version.
+## 6. Prepare R packages and lesson projects 📦
 
-2. Plug in the path to your python version in the following **R** code chunk and run it.
+The same script contains the audited 2026 global R package manifest. That list is a convenient baseline; each lesson's `renv.lock` remains authoritative for the exact versions used by that lesson.
 
-```{r}
-#| output: false
-#| warning: false
-#| message: false
-#| eval: false
-reticulate::use_python(PATH/TO/PYTHON) #Enter the correct path to your python version
+Start with a dry run in the R Console:
+
+```r
+report <- 
+  prepare_ssoqe(
+    materials_dir = materials_dir,
+    dry_run = TRUE
+  )
+
+# When the dry run looks correct:
+report <- 
+  prepare_ssoqe(materials_dir)
 ```
-Now you should be ready to run Python and train deep learning models in RStudio using Markdown files! 🎉
 
-## Getting the workshop materials ‼️
+The script checks required software and Git identity, installs missing packages from their documented source, discovers downloaded projects with `renv.lock`, and restores each project in an isolated R process. It records `PASS`, `FAIL`, `WARN`, `SKIP`, or `DRY-RUN` for every component, continues after a failure, skips work already completed, and verifies that restoration did not change any lockfile.
 
-The internet connection might be an issue at the venue. Therefore we [STRONGLY]{.text-bold} recommend to download ALL workshop materials needed for SSoQE 2025. 
+Running the script again is safe. Already installed packages and synchronized project libraries are reported and skipped. Save the report if you need help:
 
-## SSoQE 2025
+```r
+utils::write.csv(
+  report,
+  file.path(materials_dir, "ssoqe-preflight-report.csv"),
+  row.names = FALSE
+)
+```
 
-::: {.callout-important}
+### Audited global package manifest 📋
 
-The list of required repositories can be found [here](https://github.com/orgs/SSoQE/discussions/16).
+The manifest was assembled from direct package use in the active 2026 programme repositories. It includes shared workflow and teaching infrastructure plus the ecology, spatial, ordination, reporting, and deep-learning packages used directly by lessons. All current global entries are installed from CRAN. Packages needed only by a particular project can remain exclusive to that project's `renv` library.
 
-:::
+Inspect the self-contained manifest after sourcing the script:
 
-## How to download materials?
+```r
+ssoqe_package_manifest()
+```
 
-Here is a step-by-step [guide to download the materials](https://scribehow.com/viewer/Download_a_Reproducibility_in_Science_lecture_from_GitHib__nrjukbSHTpqNcEfliqzTRw). 
+## 7. Final verification ✅
 
-Simple instructions:
+Before travelling, confirm all of the following:
 
-1. Go to the [SSoQE GitHub repositories](https://github.com/orgs/SSoQE/repositories).
-2. click the `Code` button on the right side of the repository page
-3. Select `Download ZIP`
-4. Unzip the downloaded file to a folder on your computer
-
-### Private repositories
-
-Some materials might not be publicly available and require repository access.
-
-1. Go to [this Discussion thread](https://github.com/orgs/SSoQE/discussions/9) and comment with your GitHub username
-2. Wait for organizers to grant you access to the repository
-3. Check your email for the invitation to SSoQE
-4. You'll then be able to access private repositories and download materials
-
-## Final Checklist Before SSoQE 2025 🎯
-
-Before arriving at the workshop, please verify:
-
-- [ ] R version 4.5+ is installed and working
-- [ ] RStudio latest version is installed
-- [ ] Rtools installed (Windows users)
-- [ ] Git is installed and configured with your name/email
-- [ ] GitHub account created
-- [ ] All essential packages install without errors
-- [ ] Downloaded all required workshop materials
+- You can identify whether a command belongs in the R Console or Terminal.
+- The download and preparation reports contain no unresolved `FAIL` rows.
+- RStudio opens and reports R 4.5.x in the Console.
+- `quarto check` succeeds in the Terminal.
+- `git config --global user.name` and `git config --global user.email` return your identity.
+- `gh::gh_whoami()` prints your GitHub username in the R Console.
+- `python -c "import torch; print(torch.rand(2, 2))"` prints a small tensor.
+- RStudio's Python settings point to the intended Python interpreter.
+- At least one downloaded lesson opens as an R Project.
+- For a lesson with `renv.lock`, `renv::status()` reports that the project is synchronized.
 
 ## Need Help? 🆘
 
-If you encounter any issues during setup:
+If you encounter problems, please ask before travelling:
 
-1. Check the [SSoQE Discussion forum](https://github.com/orgs/SSoQE/discussions/categories/questions)
-2. Ask questions in the discussion thread
-3. We'll help troubleshoot during the workshop introduction
+1. Rerun `download_ssoqe_materials(..., dry_run = TRUE)` or `prepare_ssoqe(..., dry_run = TRUE)` and copy the failing rows.
+2. Record your operating system, R version, and the exact error message.
+3. Search or ask in the [SSoQE questions forum](https://github.com/orgs/SSoQE/discussions/categories/questions).
+4. Include what you tried and which step of this page you reached, but never include passwords, authentication codes, or access tokens.
 
-**See you at SSoQE 2025!** 🎉
+We would much rather troubleshoot before the school than spend the first practical session installing software.
+
+Common fixes are to restart RStudio after installing R, Quarto, Git, or Python; check whether you typed a shell command into the Terminal rather than the R Console; avoid cloud-synchronized folders when they cause file-locking errors; and check that security software has not blocked the programs. Do not delete `renv.lock`, edit it by hand, or replace a lesson's project library with the global package library.
+
+**See you at SSoQE 2026!** 🎉
