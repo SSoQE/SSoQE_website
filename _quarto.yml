@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - R/prepare_ssoqe.R
 
 website:
   title: "Science School of Quantitative Ecology"
@@ -30,8 +32,8 @@ website:
             href: About/logistics_de.qmd
           - text: Registration📝
             href: About/registration.qmd
-#          - text: Pre-workshop technical Setup🖥️
-#            href: About/pre_workshop.qmd
+          - text: Pre-arrival technical setup🖥️
+            href: About/pre_workshop.qmd
       - text: Meet the Team👥
         href: team.qmd
       - text: "Previous runs🏃‍♂️"
