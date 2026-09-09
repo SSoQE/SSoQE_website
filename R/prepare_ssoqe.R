@@ -1,5 +1,28 @@
 # SSoQE 2026 pre-arrival preparation -----------------------------------------
 
+current_year <- function() {
+  as.integer(format(Sys.Date(), "%Y"))
+}
+
+ssoqe_validate_year <- function(year) {
+  valid <- is.numeric(year) &&
+    length(year) == 1L &&
+    !is.na(year) &&
+    is.finite(year) &&
+    year >= 1000 &&
+    year <= 9999 &&
+    year == floor(year)
+  if (!valid) {
+    stop("year must be one four-digit number", call. = FALSE)
+  }
+  as.integer(year)
+}
+
+ssoqe_release_token <- function(year = current_year()) {
+  year <- ssoqe_validate_year(year)
+  paste0("ssoqe-", year)
+}
+
 ssoqe_package_manifest <- function() {
   workflow <- c(
     "countdown", "fs", "here", "janitor", "jsonlite", "knitr",
@@ -36,7 +59,8 @@ ssoqe_result <- function(component, status, detail) {
   )
 }
 
-ssoqe_lesson_manifest <- function() {
+ssoqe_lesson_manifest <- function(year = current_year()) {
+  release_token <- ssoqe_release_token(year)
   data.frame(
     lesson = c(
       "Welcome and Ice Breaker",
@@ -78,6 +102,7 @@ ssoqe_lesson_manifest <- function() {
       "SSoQE-Model_Based_Ordinations",
       "SSoQE-Reproducible_Analytical_Pipelines"
     ),
+    release_token = release_token,
     stringsAsFactors = FALSE
   )
 }
@@ -90,36 +115,216 @@ ssoqe_archive_is_safe <- function(entries) {
   all(is_relative & no_parent)
 }
 
-ssoqe_latest_release <- function(repository) {
-  metadata_file <- tempfile(fileext = ".json")
-  on.exit(unlink(metadata_file), add = TRUE)
-  api_url <- paste0(
-    "https://api.github.com/repos/SSoQE/",
-    repository,
-    "/releases/latest"
-  )
-  utils::download.file(
-    api_url,
-    metadata_file,
-    mode = "wb",
-    quiet = TRUE,
-    headers = c(
-      Accept = "application/vnd.github+json",
-      `User-Agent` = "SSoQE-2026-preflight"
-    )
-  )
-  metadata <- jsonlite::fromJSON(metadata_file, simplifyVector = TRUE)
-  if (!nzchar(metadata$tag_name) || !nzchar(metadata$zipball_url)) {
-    stop("Latest release metadata is incomplete", call. = FALSE)
+ssoqe_release_records <- function(metadata) {
+  if (!length(metadata)) {
+    return(data.frame())
   }
-  list(tag = metadata$tag_name, zipball_url = metadata$zipball_url)
+  records <- lapply(
+    metadata,
+    function(release) {
+      data.frame(
+        id = if (is.null(release$id)) NA_real_ else release$id,
+        tag_name = if (is.null(release$tag_name)) {
+          NA_character_
+        } else {
+          release$tag_name
+        },
+        draft = if (is.null(release$draft)) NA else release$draft,
+        prerelease = if (is.null(release$prerelease)) {
+          NA
+        } else {
+          release$prerelease
+        },
+        published_at = if (is.null(release$published_at)) {
+          NA_character_
+        } else {
+          release$published_at
+        },
+        zipball_url = if (is.null(release$zipball_url)) {
+          NA_character_
+        } else {
+          release$zipball_url
+        },
+        stringsAsFactors = FALSE
+      )
+    }
+  )
+  do.call(rbind, records)
 }
 
-ssoqe_download_release <- function(repository, materials_dir) {
+ssoqe_release_page <- function(repository, page, year) {
+  endpoint <- paste0("/repos/SSoQE/", repository, "/releases")
+  metadata <- gh::gh(
+    endpoint,
+    per_page = 100,
+    page = page,
+    .progress = FALSE,
+    .send_headers = c(
+      `X-GitHub-Api-Version` = "2022-11-28",
+      `User-Agent` = paste0("SSoQE-", year, "-preflight")
+    )
+  )
+  ssoqe_release_records(metadata)
+}
+
+ssoqe_repository_releases <- function(repository, year) {
+  releases <- list()
+  page <- 1L
+  repeat {
+    current <- ssoqe_release_page(repository, page, year)
+    if (!nrow(current)) {
+      break
+    }
+    releases[[length(releases) + 1L]] <- current
+    if (nrow(current) < 100L) {
+      break
+    }
+    page <- page + 1L
+  }
+  if (!length(releases)) {
+    return(data.frame())
+  }
+  do.call(rbind, releases)
+}
+
+ssoqe_select_release <- function(releases, year = current_year()) {
+  token <- ssoqe_release_token(year)
+  if (!nrow(releases)) {
+    return(NULL)
+  }
+  required <- c(
+    "id", "tag_name", "draft", "prerelease", "published_at",
+    "zipball_url"
+  )
+  if (!all(required %in% names(releases))) {
+    stop("Release metadata is incomplete", call. = FALSE)
+  }
+  matches <- !is.na(releases$tag_name) &
+    grepl(token, releases$tag_name, fixed = TRUE) &
+    !is.na(releases$draft) &
+    !releases$draft &
+    !is.na(releases$prerelease) &
+    !releases$prerelease
+  candidates <- releases[matches, , drop = FALSE]
+  if (!nrow(candidates)) {
+    return(NULL)
+  }
+  published <- as.POSIXct(
+    candidates$published_at,
+    format = "%Y-%m-%dT%H:%M:%SZ",
+    tz = "UTC"
+  )
+  complete <- !is.na(published) &
+    !is.na(candidates$id) &
+    !is.na(candidates$zipball_url) &
+    nzchar(candidates$zipball_url)
+  if (!all(complete)) {
+    stop("Matching release metadata is incomplete", call. = FALSE)
+  }
+  selected <- order(
+    published,
+    candidates$id,
+    decreasing = TRUE
+  )[1L]
+  list(
+    tag = candidates$tag_name[[selected]],
+    zipball_url = candidates$zipball_url[[selected]],
+    published_at = candidates$published_at[[selected]]
+  )
+}
+
+ssoqe_latest_year_release <- function(repository, year) {
+  releases <- ssoqe_repository_releases(repository, year)
+  ssoqe_select_release(releases, year)
+}
+
+ssoqe_download_archive <- function(url, destination, year) {
+  invisible(gh::gh(
+    url,
+    .destfile = destination,
+    .overwrite = TRUE,
+    .progress = FALSE,
+    .send_headers = c(
+      `X-GitHub-Api-Version` = "2022-11-28",
+      `User-Agent` = paste0("SSoQE-", year, "-preflight")
+    )
+  ))
+}
+
+ssoqe_active_release_file <- function(materials_dir) {
+  file.path(materials_dir, "ssoqe-active-releases.csv")
+}
+
+ssoqe_empty_active_releases <- function() {
+  data.frame(
+    year = integer(),
+    repository = character(),
+    release_tag = character(),
+    published_at = character(),
+    folder = character(),
+    stringsAsFactors = FALSE
+  )
+}
+
+ssoqe_read_active_releases <- function(materials_dir) {
+  registry_file <- ssoqe_active_release_file(materials_dir)
+  if (!file.exists(registry_file)) {
+    return(ssoqe_empty_active_releases())
+  }
+  registry <- utils::read.csv(
+    registry_file,
+    stringsAsFactors = FALSE,
+    check.names = FALSE
+  )
+  required <- names(ssoqe_empty_active_releases())
+  if (!all(required %in% names(registry))) {
+    stop("Active-release registry is incomplete", call. = FALSE)
+  }
+  registry[, required, drop = FALSE]
+}
+
+ssoqe_activate_release <- function(
+    materials_dir,
+    repository,
+    year,
+    release,
+    target) {
+  registry <- ssoqe_read_active_releases(materials_dir)
+  year <- ssoqe_validate_year(year)
+  keep <- registry$year != year | registry$repository != repository
+  registry <- registry[keep, , drop = FALSE]
+  registry <- rbind(
+    registry,
+    data.frame(
+      year = year,
+      repository = repository,
+      release_tag = release$tag,
+      published_at = release$published_at,
+      folder = basename(target),
+      stringsAsFactors = FALSE
+    )
+  )
+  registry <- registry[order(registry$year, registry$repository), ]
+  rownames(registry) <- NULL
+  utils::write.csv(
+    registry,
+    ssoqe_active_release_file(materials_dir),
+    row.names = FALSE
+  )
+}
+
+ssoqe_download_release <- function(repository, materials_dir, year) {
   component <- paste("download:", repository)
   tryCatch(
     {
-      release <- ssoqe_latest_release(repository)
+      release <- ssoqe_latest_year_release(repository, year)
+      if (is.null(release)) {
+        return(ssoqe_result(
+          component,
+          "LESSON_NOT_AVAILABLE",
+          "There is no lesson data to download yet."
+        ))
+      }
       safe_tag <- gsub("[^A-Za-z0-9._-]+", "-", release$tag)
       target <- file.path(
         materials_dir,
@@ -129,6 +334,13 @@ ssoqe_download_release <- function(repository, materials_dir) {
       if (file.exists(marker)) {
         recorded_tag <- trimws(readLines(marker, warn = FALSE, n = 1L))
         if (identical(recorded_tag, release$tag)) {
+          ssoqe_activate_release(
+            materials_dir,
+            repository,
+            year,
+            release,
+            target
+          )
           return(ssoqe_result(
             component,
             "SKIP",
@@ -149,12 +361,10 @@ ssoqe_download_release <- function(repository, materials_dir) {
       on.exit(unlink(archive), add = TRUE)
       on.exit(unlink(extract_dir, recursive = TRUE), add = TRUE)
       dir.create(extract_dir)
-      utils::download.file(
+      ssoqe_download_archive(
         release$zipball_url,
         archive,
-        mode = "wb",
-        quiet = TRUE,
-        headers = c(`User-Agent` = "SSoQE-2026-preflight")
+        year
       )
 
       contents <- utils::unzip(archive, list = TRUE)
@@ -177,6 +387,13 @@ ssoqe_download_release <- function(repository, materials_dir) {
         stop("Could not move the extracted release into place", call. = FALSE)
       }
       writeLines(release$tag, marker, useBytes = TRUE)
+      ssoqe_activate_release(
+        materials_dir,
+        repository,
+        year,
+        release,
+        target
+      )
       ssoqe_result(
         component,
         "PASS",
@@ -189,25 +406,34 @@ ssoqe_download_release <- function(repository, materials_dir) {
   )
 }
 
-#' Download the latest published SSoQE lesson releases
+#' Download the latest matching SSoQE lesson releases
 #'
 #' @param materials_dir Destination folder for all lesson releases.
 #' @param dry_run List planned downloads without network or file changes.
+#' @param year Four-digit SSoQE programme year used to match release tags.
 #' @return Invisibly, a data frame with one row per lesson.
-download_ssoqe_materials <- function(materials_dir, dry_run = FALSE) {
+download_ssoqe_materials <- function(
+    materials_dir,
+    dry_run = FALSE,
+    year = current_year()) {
   stopifnot(
     is.character(materials_dir),
     length(materials_dir) == 1L,
     is.logical(dry_run),
     length(dry_run) == 1L
   )
-  manifest <- ssoqe_lesson_manifest()
+  year <- ssoqe_validate_year(year)
+  manifest <- ssoqe_lesson_manifest(year)
   if (dry_run) {
     report <- lapply(manifest$repository, function(repository) {
       ssoqe_result(
         paste("download:", repository),
         "DRY-RUN",
-        "Would query and download the latest published full release"
+        paste(
+          "Would download the most recently published full release",
+          "with a tag containing",
+          ssoqe_release_token(year)
+        )
       )
     })
     report <- do.call(rbind, report)
@@ -222,14 +448,14 @@ download_ssoqe_materials <- function(materials_dir, dry_run = FALSE) {
     winslash = "/",
     mustWork = TRUE
   )
-  if (!requireNamespace("jsonlite", quietly = TRUE)) {
-    try(utils::install.packages("jsonlite"), silent = TRUE)
+  if (!requireNamespace("gh", quietly = TRUE)) {
+    try(utils::install.packages("gh"), silent = TRUE)
   }
-  if (!requireNamespace("jsonlite", quietly = TRUE)) {
+  if (!requireNamespace("gh", quietly = TRUE)) {
     report <- ssoqe_result(
       "release metadata",
       "FAIL",
-      "Package jsonlite could not be installed from CRAN"
+      "Package gh could not be installed from CRAN"
     )
     print(report, row.names = FALSE)
     return(invisible(report))
@@ -238,7 +464,8 @@ download_ssoqe_materials <- function(materials_dir, dry_run = FALSE) {
   report <- lapply(
     manifest$repository,
     ssoqe_download_release,
-    materials_dir = materials_dir
+    materials_dir = materials_dir,
+    year = year
   )
   report <- do.call(rbind, report)
   rownames(report) <- NULL
@@ -495,7 +722,14 @@ ssoqe_github_auth_check <- function() {
   )
 }
 
-ssoqe_projects <- function(materials_dir) {
+ssoqe_path_is_within <- function(path, parent) {
+  identical(path, parent) || startsWith(path, paste0(parent, "/"))
+}
+
+ssoqe_projects <- function(
+    materials_dir,
+    year = current_year()) {
+  year <- ssoqe_validate_year(year)
   lockfiles <- list.files(
     materials_dir,
     pattern = "^renv[.]lock$",
@@ -504,7 +738,65 @@ ssoqe_projects <- function(materials_dir) {
     include.dirs = FALSE
   )
   lockfiles <- lockfiles[!grepl("[/\\]renv[/\\]", lockfiles)]
-  sort(unique(dirname(lockfiles)))
+  projects <- sort(unique(dirname(lockfiles)))
+  if (!length(projects)) {
+    return(projects)
+  }
+  projects <- normalizePath(
+    projects,
+    winslash = "/",
+    mustWork = TRUE
+  )
+  registry_file <- ssoqe_active_release_file(materials_dir)
+  if (!file.exists(registry_file)) {
+    return(projects)
+  }
+
+  registry <- ssoqe_read_active_releases(materials_dir)
+  registry <- registry[registry$year == year, , drop = FALSE]
+  active_roots <- file.path(materials_dir, registry$folder)
+  active_roots <- active_roots[dir.exists(active_roots)]
+  active_roots <- normalizePath(
+    active_roots,
+    winslash = "/",
+    mustWork = TRUE
+  )
+  marker_files <- list.files(
+    materials_dir,
+    pattern = "^[.]ssoqe-release$",
+    recursive = TRUE,
+    full.names = TRUE,
+    all.files = TRUE,
+    include.dirs = FALSE
+  )
+  automatic_roots <- normalizePath(
+    dirname(marker_files),
+    winslash = "/",
+    mustWork = TRUE
+  )
+  is_automatic <- vapply(
+    projects,
+    function(project) {
+      any(vapply(
+        automatic_roots,
+        function(root) ssoqe_path_is_within(project, root),
+        logical(1)
+      ))
+    },
+    logical(1)
+  )
+  is_active <- vapply(
+    projects,
+    function(project) {
+      any(vapply(
+        active_roots,
+        function(root) ssoqe_path_is_within(project, root),
+        logical(1)
+      ))
+    },
+    logical(1)
+  )
+  projects[!is_automatic | is_active]
 }
 
 ssoqe_project_synchronized <- function(project) {
@@ -583,11 +875,13 @@ ssoqe_restore_project <- function(project, dry_run) {
 #' @param materials_dir Folder containing downloaded SSoQE repositories.
 #' @param dry_run Report planned actions without installing or restoring.
 #' @param restore_projects Restore projects that contain an renv.lock file.
+#' @param year Four-digit SSoQE programme year to prepare.
 #' @return Invisibly, a data frame with one row per checked component.
 prepare_ssoqe <- function(
     materials_dir,
     dry_run = FALSE,
-    restore_projects = TRUE) {
+    restore_projects = TRUE,
+    year = current_year()) {
   stopifnot(
     is.character(materials_dir),
     length(materials_dir) == 1L,
@@ -596,6 +890,7 @@ prepare_ssoqe <- function(
     is.logical(restore_projects),
     length(restore_projects) == 1L
   )
+  year <- ssoqe_validate_year(year)
   materials_dir <- normalizePath(
     materials_dir,
     winslash = "/",
@@ -608,7 +903,7 @@ prepare_ssoqe <- function(
   report <- list(ssoqe_software_checks())
   report[[length(report) + 1L]] <- ssoqe_install_packages(dry_run)
   report[[length(report) + 1L]] <- ssoqe_github_auth_check()
-  projects <- ssoqe_projects(materials_dir)
+  projects <- ssoqe_projects(materials_dir, year)
 
   if (!restore_projects) {
     report[[length(report) + 1L]] <- ssoqe_result(

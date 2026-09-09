@@ -46,6 +46,20 @@ quarto render
 
 The Quarto project writes the rendered website to `docs/`. Review the render log and inspect navigation, links, images, accessibility, and responsive layout before publishing any change.
 
+## 📦 Annual lesson release contract
+
+The participant downloader derives the current year from the computer's system date and selects the most recently published full release whose case-sensitive tag contains that annual token. For 2026, the token is `ssoqe-2026`; valid examples include `ssoqe-2026-v1` and `course-ssoqe-2026-final`. The release title and suffix do not control selection. An explicit `year` argument can select a different year when needed.
+
+Release metadata and archives are retrieved through `{gh}`. It uses the participant's R-accessible GitHub credential for private repositories and works anonymously for public repositories. A private lesson therefore requires both repository access and a successful `gh::gh_whoami()` check.
+
+Teachers should:
+
+1. Prepare and check the lesson on the commit intended for participants.
+2. Create a draft GitHub Release with a lowercase tag containing the annual token.
+3. Publish it as a full release, not a prerelease, when it is ready for participants.
+
+A later matching release becomes active because it has a newer publication date. Previously downloaded folders remain intact, while `ssoqe-active-releases.csv` tells the preparation script which copy to use. If no matching release exists, the downloader reports `LESSON_NOT_AVAILABLE` with the participant-facing message "There is no lesson data to download yet." Technical errors retain the `FAIL` status. The `current_year()` helper automatically changes the selection token with the calendar year; only the year-specific website text and programme configuration need their normal annual update.
+
 ## 🤝 Contributing
 
 Check the repository status and read the local agent instructions before editing. Local edits, staging, commits, pushes, and pull-request actions are separate authorization steps.

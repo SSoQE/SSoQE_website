@@ -196,7 +196,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#r-rstudio-quarto-and-rtools" id="toc-r-rstudio-quarto-and-rtools" class="nav-link" data-scroll-target="#r-rstudio-quarto-and-rtools">2. R, RStudio, Quarto, and Rtools 📊</a></li>
   <li><a href="#git-and-github" id="toc-git-and-github" class="nav-link" data-scroll-target="#git-and-github">3. Git and GitHub 🌱</a></li>
   <li><a href="#python-rstudio-and-cpu-pytorch" id="toc-python-rstudio-and-cpu-pytorch" class="nav-link" data-scroll-target="#python-rstudio-and-cpu-pytorch">4. Python, RStudio, and CPU PyTorch 🐍</a></li>
-  <li><a href="#download-the-latest-ssoqe-lesson-releases" id="toc-download-the-latest-ssoqe-lesson-releases" class="nav-link" data-scroll-target="#download-the-latest-ssoqe-lesson-releases">5. Download the latest SSoQE lesson releases 📥</a></li>
+  <li><a href="#download-the-latest-ssoqe-2026-lesson-releases" id="toc-download-the-latest-ssoqe-2026-lesson-releases" class="nav-link" data-scroll-target="#download-the-latest-ssoqe-2026-lesson-releases">5. Download the latest SSoQE 2026 lesson releases 📥</a></li>
   <li><a href="#prepare-r-packages-and-lesson-projects" id="toc-prepare-r-packages-and-lesson-projects" class="nav-link" data-scroll-target="#prepare-r-packages-and-lesson-projects">6. Prepare R packages and lesson projects 📦</a></li>
   <li><a href="#final-verification" id="toc-final-verification" class="nav-link" data-scroll-target="#final-verification">7. Final verification ✅</a></li>
   <li><a href="#need-help" id="toc-need-help" class="nav-link" data-scroll-target="#need-help">Need Help? 🆘</a></li>
@@ -252,7 +252,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><label><input type="checkbox">🛠️ Install Quarto and, on Windows, the Rtools version matching R 4.5.</label></li>
 <li><label><input type="checkbox">🌱 Install Git, create a GitHub account, and sign in through a browser flow.</label></li>
 <li><label><input type="checkbox">🐍 Install Python 3.10–3.14, connect it to RStudio, and install CPU PyTorch.</label></li>
-<li><label><input type="checkbox">📥 Use the SSoQE script to download the latest lesson releases.</label></li>
+<li><label><input type="checkbox">📥 Use the SSoQE script to download the latest 2026 lesson releases.</label></li>
 <li><label><input type="checkbox">📦 Run the SSoQE preparation checks and keep the final report.</label></li>
 <li><label><input type="checkbox">✅ Complete the manual final checks at the bottom of this page.</label></li>
 </ul>
@@ -379,9 +379,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The second command should print a PyTorch version and a small two-by-two tensor. On Windows, replace <code>python</code> with <code>py -3</code> in both commands if necessary.</p>
 </section>
 </section>
-<section id="download-the-latest-ssoqe-lesson-releases" class="level2">
-<h2 class="anchored" data-anchor-id="download-the-latest-ssoqe-lesson-releases">5. Download the latest SSoQE lesson releases 📥</h2>
-<p>Each lesson will be distributed as a published GitHub Release. The SSoQE script contains the authoritative list of the 18 scheduled lesson repositories and downloads the latest published full release of each one. Drafts and prereleases are not selected.</p>
+<section id="download-the-latest-ssoqe-2026-lesson-releases" class="level2">
+<h2 class="anchored" data-anchor-id="download-the-latest-ssoqe-2026-lesson-releases">5. Download the latest SSoQE 2026 lesson releases 📥</h2>
+<p>Each lesson will be distributed as a published GitHub Release. The SSoQE script contains the authoritative list of the 18 scheduled lesson repositories. For each repository, it downloads the most recently published full release whose case-sensitive tag contains <code>ssoqe-2026</code>. Tags such as <code>ssoqe-2026-v1</code> and <code>course-ssoqe-2026-final</code> match; release titles do not affect selection. Drafts, prereleases, differently capitalized tags, and releases for other years are not selected.</p>
 <section id="check-access-to-private-repositories-first" class="level3">
 <h3 class="anchored" data-anchor-id="check-access-to-private-repositories-first">Check access to private repositories first 🔒</h3>
 <p>Some materials may be private while they are being prepared. Request and confirm access <strong>before running the downloader</strong>:</p>
@@ -390,7 +390,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Wait for the organisers to grant access, then accept the invitation sent by GitHub.</li>
 <li>Sign in to GitHub in your browser and confirm that you can open the private repository.</li>
 </ol>
-<p>The automatic downloader intentionally uses only public, unauthenticated release access. GitHub returns “not found” for private repositories through that route, even after browser access has been granted. If the download report identifies a private lesson as <code>FAIL</code>, open that repository’s <strong>Releases</strong> page while signed in, download its latest course-material archive or source ZIP, and extract it inside <code>materials_dir</code>. The later <code>prepare_ssoqe(materials_dir)</code> step will discover it there.</p>
+<p>The downloader installs the <code>{gh}</code> package if needed and uses the GitHub credential available to R. Public repositories work without a token, but private lessons can be queried and downloaded only after <code>gh::gh_whoami()</code> succeeds and the reported account has repository access. If a private lesson still reports <code>FAIL</code>, confirm your invitation and credentials. As a fallback, open that repository’s <strong>Releases</strong> page while signed in, find the most recently published full release whose tag contains <code>ssoqe-2026</code>, download its course-material archive or source ZIP, and extract it inside <code>materials_dir</code>. The later <code>prepare_ssoqe(materials_dir)</code> step will discover it there.</p>
 <p>Do not send passwords, authentication codes, or access tokens to the organisers or post them in a Discussion.</p>
 <p>First download <a href="../R/prepare_ssoqe.R"><code>prepare_ssoqe.R</code></a> to a location you can find, such as Downloads. Open RStudio, run the following line in the R Console, and select the downloaded script in the file chooser:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="fu">file.choose</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -411,8 +411,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>When the list looks correct, download the materials:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>download_report <span class="ot">&lt;-</span> </span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">download_ssoqe_materials</span>(materials_dir)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>The downloader queries GitHub’s public latest-release endpoint and does not require a token for public SSoQE repositories. It validates archive paths before extraction and places each release in a versioned folder such as <code>SSoQE-Our_Way_of_R_and_Reproducibility-v2026.1</code>. It never overwrites an existing folder. A rerun skips releases already downloaded, records a failure if a lesson has no published release yet, and continues with the remaining lessons.</p>
-<p>Save the report if any row says <code>FAIL</code>:</p>
+<p>The downloader derives the release year from your computer’s current system date, so no yearly code change is required. On this 2026 page, the expected token is <code>ssoqe-2026</code>; an organiser can still request another year explicitly with an argument such as <code>year = 2027</code>.</p>
+<p>The downloader queries GitHub’s release list, using your R credential when one is available. It validates archive paths before extraction and places each release in a versioned folder such as <code>SSoQE-Our_Way_of_R_and_Reproducibility-ssoqe-2026-v2</code>. It never overwrites or deletes an existing folder. The file <code>ssoqe-active-releases.csv</code> records which automatically downloaded folder is current for each lesson. If a teacher publishes a newer matching release, rerun the downloader: it keeps the older folder but makes the new one active, and the preparation step ignores inactive copies.</p>
+<p><code>LESSON_NOT_AVAILABLE</code> is accompanied by the message “There is no lesson data to download yet.” It means that the repository is reachable with your current access but the teacher has not yet published a matching full release. This is not a technical failure; rerun the downloader later. <code>FAIL</code> is reserved for problems such as an inaccessible repository, network error, invalid release metadata, or unsafe archive. In both cases, the downloader continues with the remaining lessons and never substitutes material from another year.</p>
+<p>Save the report if any row says <code>FAIL</code> or <code>LESSON_NOT_AVAILABLE</code>:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>utils<span class="sc">::</span><span class="fu">write.csv</span>(</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  download_report,</span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">file.path</span>(materials_dir, <span class="st">"ssoqe-download-report.csv"</span>),</span>
@@ -433,7 +435,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a><span class="co"># When the dry run looks correct:</span></span>
 <span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>report <span class="ot">&lt;-</span> </span>
 <span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">prepare_ssoqe</span>(materials_dir)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>The script checks required software and Git identity, installs missing packages from their documented source, discovers downloaded projects with <code>renv.lock</code>, and restores each project in an isolated R process. It records <code>PASS</code>, <code>FAIL</code>, <code>WARN</code>, <code>SKIP</code>, or <code>DRY-RUN</code> for every component, continues after a failure, skips work already completed, and verifies that restoration did not change any lockfile.</p>
+<p>The script checks required software and Git identity, installs missing packages from their documented source, discovers current downloaded projects with <code>renv.lock</code>, and restores each project in an isolated R process. It records <code>PASS</code>, <code>FAIL</code>, <code>WARN</code>, <code>SKIP</code>, <code>DRY-RUN</code>, or <code>LESSON_NOT_AVAILABLE</code> as appropriate, continues after a failure or unavailable lesson, skips work already completed, and verifies that restoration did not change any lockfile.</p>
 <p>Running the script again is safe. Already installed packages and synchronized project libraries are reported and skipped. Save the report if you need help:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>utils<span class="sc">::</span><span class="fu">write.csv</span>(</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  report,</span>
@@ -452,7 +454,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Before travelling, confirm all of the following:</p>
 <ul>
 <li>You can identify whether a command belongs in the R Console or Terminal.</li>
-<li>The download and preparation reports contain no unresolved <code>FAIL</code> rows.</li>
+<li>The download and preparation reports contain no unresolved <code>FAIL</code> or <code>LESSON_NOT_AVAILABLE</code> rows.</li>
 <li>RStudio opens and reports R 4.5.x in the Console.</li>
 <li><code>quarto check</code> succeeds in the Terminal.</li>
 <li><code>git config --global user.name</code> and <code>git config --global user.email</code> return your identity.</li>
