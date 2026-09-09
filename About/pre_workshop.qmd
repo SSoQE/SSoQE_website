@@ -20,7 +20,7 @@ Think of this page as packing for fieldwork—but for your computer. Work throug
 - [ ] 🛠️ Install Quarto and, on Windows, the Rtools version matching R 4.5.
 - [ ] 🌱 Install Git, create a GitHub account, and sign in through a browser flow.
 - [ ] 🐍 Install Python 3.10–3.14, connect it to RStudio, and install CPU PyTorch.
-- [ ] 📥 Use the SSoQE script to download the latest lesson releases.
+- [ ] 📥 Use the SSoQE script to download the latest 2026 lesson releases.
 - [ ] 📦 Run the SSoQE preparation checks and keep the final report.
 - [ ] ✅ Complete the manual final checks at the bottom of this page.
 
@@ -213,9 +213,9 @@ python -c "import torch; print(torch.__version__); print(torch.rand(2, 2))"
 
 The second command should print a PyTorch version and a small two-by-two tensor. On Windows, replace `python` with `py -3` in both commands if necessary.
 
-## 5. Download the latest SSoQE lesson releases 📥
+## 5. Download the latest SSoQE 2026 lesson releases 📥
 
-Each lesson will be distributed as a published GitHub Release. The SSoQE script contains the authoritative list of the 18 scheduled lesson repositories and downloads the latest published full release of each one. Drafts and prereleases are not selected.
+Each lesson will be distributed as a published GitHub Release. The SSoQE script contains the authoritative list of the 18 scheduled lesson repositories. For each repository, it downloads the most recently published full release whose case-sensitive tag contains `ssoqe-2026`. Tags such as `ssoqe-2026-v1` and `course-ssoqe-2026-final` match; release titles do not affect selection. Drafts, prereleases, differently capitalized tags, and releases for other years are not selected.
 
 ### Check access to private repositories first 🔒
 
@@ -225,7 +225,7 @@ Some materials may be private while they are being prepared. Request and confirm
 2. Wait for the organisers to grant access, then accept the invitation sent by GitHub.
 3. Sign in to GitHub in your browser and confirm that you can open the private repository.
 
-The automatic downloader intentionally uses only public, unauthenticated release access. GitHub returns “not found” for private repositories through that route, even after browser access has been granted. If the download report identifies a private lesson as `FAIL`, open that repository's **Releases** page while signed in, download its latest course-material archive or source ZIP, and extract it inside `materials_dir`. The later `prepare_ssoqe(materials_dir)` step will discover it there.
+The downloader installs the `{gh}` package if needed and uses the GitHub credential available to R. Public repositories work without a token, but private lessons can be queried and downloaded only after `gh::gh_whoami()` succeeds and the reported account has repository access. If a private lesson still reports `FAIL`, confirm your invitation and credentials. As a fallback, open that repository's **Releases** page while signed in, find the most recently published full release whose tag contains `ssoqe-2026`, download its course-material archive or source ZIP, and extract it inside `materials_dir`. The later `prepare_ssoqe(materials_dir)` step will discover it there.
 
 Do not send passwords, authentication codes, or access tokens to the organisers or post them in a Discussion.
 
@@ -264,9 +264,13 @@ download_report <-
   download_ssoqe_materials(materials_dir)
 ```
 
-The downloader queries GitHub's public latest-release endpoint and does not require a token for public SSoQE repositories. It validates archive paths before extraction and places each release in a versioned folder such as `SSoQE-Our_Way_of_R_and_Reproducibility-v2026.1`. It never overwrites an existing folder. A rerun skips releases already downloaded, records a failure if a lesson has no published release yet, and continues with the remaining lessons.
+The downloader derives the release year from your computer's current system date, so no yearly code change is required. On this 2026 page, the expected token is `ssoqe-2026`; an organiser can still request another year explicitly with an argument such as `year = 2027`.
 
-Save the report if any row says `FAIL`:
+The downloader queries GitHub's release list, using your R credential when one is available. It validates archive paths before extraction and places each release in a versioned folder such as `SSoQE-Our_Way_of_R_and_Reproducibility-ssoqe-2026-v2`. It never overwrites or deletes an existing folder. The file `ssoqe-active-releases.csv` records which automatically downloaded folder is current for each lesson. If a teacher publishes a newer matching release, rerun the downloader: it keeps the older folder but makes the new one active, and the preparation step ignores inactive copies.
+
+`LESSON_NOT_AVAILABLE` is accompanied by the message "There is no lesson data to download yet." It means that the repository is reachable with your current access but the teacher has not yet published a matching full release. This is not a technical failure; rerun the downloader later. `FAIL` is reserved for problems such as an inaccessible repository, network error, invalid release metadata, or unsafe archive. In both cases, the downloader continues with the remaining lessons and never substitutes material from another year.
+
+Save the report if any row says `FAIL` or `LESSON_NOT_AVAILABLE`:
 
 ```r
 utils::write.csv(
@@ -294,7 +298,7 @@ report <-
   prepare_ssoqe(materials_dir)
 ```
 
-The script checks required software and Git identity, installs missing packages from their documented source, discovers downloaded projects with `renv.lock`, and restores each project in an isolated R process. It records `PASS`, `FAIL`, `WARN`, `SKIP`, or `DRY-RUN` for every component, continues after a failure, skips work already completed, and verifies that restoration did not change any lockfile.
+The script checks required software and Git identity, installs missing packages from their documented source, discovers current downloaded projects with `renv.lock`, and restores each project in an isolated R process. It records `PASS`, `FAIL`, `WARN`, `SKIP`, `DRY-RUN`, or `LESSON_NOT_AVAILABLE` as appropriate, continues after a failure or unavailable lesson, skips work already completed, and verifies that restoration did not change any lockfile.
 
 Running the script again is safe. Already installed packages and synchronized project libraries are reported and skipped. Save the report if you need help:
 
@@ -321,7 +325,7 @@ ssoqe_package_manifest()
 Before travelling, confirm all of the following:
 
 - You can identify whether a command belongs in the R Console or Terminal.
-- The download and preparation reports contain no unresolved `FAIL` rows.
+- The download and preparation reports contain no unresolved `FAIL` or `LESSON_NOT_AVAILABLE` rows.
 - RStudio opens and reports R 4.5.x in the Console.
 - `quarto check` succeeds in the Terminal.
 - `git config --global user.name` and `git config --global user.email` return your identity.
