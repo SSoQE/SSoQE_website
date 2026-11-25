@@ -38,6 +38,8 @@ website:
         href: team.qmd
       - text: "Previous runs🏃‍♂️"
         menu:
+        - text: "2026"
+          href: Previous/2026/2026.qmd
         - text: "2025"
           href: Previous/2025/2025.qmd
         - text: "2024"
